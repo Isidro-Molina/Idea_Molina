@@ -1,0 +1,1106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    background-color: rgb(40, 78, 181);
+}
+
+@font-face {
+    font-family: "Teko";
+    src: url('../fonts/Teko-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Teko2";
+    src: url('../fonts/Teko-Regular.ttf');
+}
+
+@media screen and (min-width:1024px) {
+    .grilla {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 25px;
+        height: 100%;
+        grid-template-areas: "header header header"
+            "club club club"
+            "real real"
+            "tigre tigre"
+            "footer footer";
+    }
+
+    .grilla .header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 150px;
+        background-color: rgb(0, 0, 255);
+        position: fixed;
+        border: 5px solid black;
+    }
+
+    .grilla .innerHeader h1 {
+        color: yellow;
+        margin-top: 5px;
+        font-family: "Teko";
+        font-size: 30pt;
+        text-align: center;
+    }
+
+    .grilla .innerHeader h2 {
+        color: yellow;
+        font-family: "Teko";
+        font-size: 20pt;
+        margin-top: -20px;
+        text-align: center;
+    }
+
+    .grilla .header img {
+        margin: 5px 5px 5px 5px;
+        float: left;
+        width: 120px;
+        height: 130px;
+        padding: 2px;
+    }
+
+    .grilla .menu li {
+        display: inline;
+        text-decoration: none;
+        border: 2px solid black;
+        border-radius: 7px;
+        padding: 7px;
+        margin-right: 90px;
+        margin-top: 3px;
+        background-color: yellow;
+        font-size: 16pt;
+        list-style-type: none;
+    }
+
+    .grilla .menu li a{
+        color: blue;
+    }
+
+    .grilla a {
+        text-decoration: none;
+    }
+
+    .grilla li:hover {
+        background-color: rgb(160, 140, 210);
+    }
+
+    /* --------------------------------------------------INDEX------------------------------------------------------------------------*/
+
+    .grilla section#club {
+        margin-top: 150px;
+    }
+
+    .grilla .fundacion {
+        width: 100%;
+        height: 410px;
+        background-image: url('../img/diario.jpg');
+        border: 5px solid black;
+    }
+
+    .grilla .fundacion h2 {
+        font-size: 40pt;
+        padding: 3px;
+        margin: 8px 0px 0px 690px;
+        width: 20%;
+    }
+
+    .grilla .fundacion img {
+        height: 358px;
+        width: 580px;
+        margin: -60px 3px;
+        float: left;
+        border: 3px solid black;
+    }
+
+    .grilla .fundacion p {
+        font-size: 14pt;
+        text-align: left;
+        margin-top: 20px;
+        margin-left: 600px;
+        margin-right: 10px;
+        padding: 2px;
+    }
+
+    .grilla #his {
+        width: 100px;
+        border-radius: 4px;
+        border: 2px solid black;
+        float: right;
+        font-size: 16pt;
+        margin-right: 40px;
+        outline: none;
+    }
+
+    #his:hover {
+        cursor: pointer;
+        background-color: rgb(231, 231, 46);
+    }
+
+    /* ------------------------------------------------------------------------------------------------------------------------------ */
+
+    .grilla .Real-Madrid {
+        width: 100%;
+        height: 380px;
+        border: 5px solid black;
+    }
+
+    .grilla .Real-Madrid h2 {
+        margin-left: 8px;
+        font-size: 36pt;
+        width: 46%;
+        padding: 2px;
+        text-align: left;
+    }
+
+    .grilla .Real-Madrid iframe {
+        height: 370px;
+        width: 530px;
+        float: right;
+        margin: -122px 0px;
+        border: 1px solid white;
+    }
+
+    .grilla .Real-Madrid p {
+        font-size: 16pt;
+        margin: 8px 8px 0px 15px;
+        text-align: left;
+        width: 46%;
+    }
+
+    .grilla #tit {
+        width: 100px;
+        border-radius: 4px;
+        border: 2px solid black;
+        float: right;
+        font-size: 16pt;
+        margin-right: 40px;
+        outline: none;
+    }
+
+    .grilla #tit:hover {
+        cursor: pointer;
+        background-color: rgb(231, 231, 46);
+    }
+
+    /* --------------------------------------------------------------------------------------------------------------------------- */
+
+    .grilla .torneo {
+        width: 100%;
+        height: 380px;
+        border: 5px solid black;
+    }
+
+    .grilla .torneo h2 {
+        font-size: 40pt;
+        margin: 8px 0px 0px 465px;
+        padding: 3px;
+        width: 54%;
+    }
+
+    .grilla .torneo img {
+        height: 330px;
+        width: 454px;
+        margin: -60px 3px;
+        float: left;
+        border: 3px solid black;
+    }
+
+    .grilla .torneo p {
+        font-size: 16pt;
+        margin: 10px 10px 0px 480px;
+        text-align: left;
+    }
+
+    .grilla #not {
+        width: 100px;
+        border-radius: 4px;
+        border: 2px solid black;
+        float: right;
+        font-size: 16pt;
+        margin-right: 40px;
+        outline: none;
+    }
+
+    .grilla #not:hover {
+        cursor: pointer;
+        background-color: rgb(231, 231, 46);
+    }
+
+    /* ------------------------------------------------------------FOOTER------------------------------------------------------------ */
+
+    .grilla .footer-container {
+        background-color: rgb(8, 57, 142);
+        border: 5px solid black;
+        margin-top: -5px;
+        width: 100%;
+    }
+
+    .grilla .footer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 90%;
+        height: 9rem;
+        background-color: rgb(8, 57, 142);
+        color: white;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    .grilla .contacto h2 {
+        font-family: 'Teko';
+        font-size: 26pt;
+        color: white;
+        text-decoration: none;
+        height: 48px;
+        margin-top: 30px;
+        padding: 3px;
+    }
+
+    .grilla .contacto h2:hover {
+        color: yellow;
+    }
+
+    .grilla .seguir {
+        height: 120px;
+        margin-top: 10px;
+    }
+
+    .grilla .seguir h2 {
+        font-family: 'Teko';
+        font-size: 26pt;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .grilla .seguir img {
+        width: 60px;
+        padding: 5px;
+    }
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 25px;
+    height: 100vh;
+    grid-template-areas: "header header"
+        "club club"
+        "real real"
+        "tigre tigre"
+        "footer footer";
+}
+
+.grilla a{
+    text-decoration: none;
+}
+
+header {
+    grid-area: header;
+}
+
+section#club {
+    grid-area: club;
+}
+
+section#real {
+    grid-area: real;
+}
+
+section#tigre {
+    grid-area: tigre;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 0, 255);
+    position: fixed;
+    border: 5px solid black;
+}
+
+.innerHeader h1 {
+    color: yellow;
+    margin-top: 5px;
+    font-family: "Teko";
+    font-size: 17pt;
+    text-align: center;
+}
+
+.innerHeader h2 {
+    color: yellow;
+    font-family: "Teko";
+    font-size: 14pt;
+    margin-top: -2px;
+    text-align: center;
+}
+
+.header img {
+    margin: 0 auto;
+    float: left;
+    width: 80px;
+    height: 88px;
+    padding: 2px;
+}
+
+.menu li {
+    display: inline;
+    text-decoration: none;
+    float: right;
+    border: 2px solid black;
+    padding: 2px;
+    margin-top: 2.5px;
+    margin-right: 11px;
+    background-color: yellow;
+    font-size: 8pt;
+    list-style-type: none;
+}
+
+.menu li a{
+    color: blue;
+}
+
+li:hover {
+    background-color: rgb(160, 140, 210);
+}
+
+/* --------------------------------------------------------------INDEX----------------------------------------------------------------*/
+
+section#club {
+    margin-top: 100px;
+}
+
+.fundacion {
+    width: 100%;
+    height: 450px;
+    background-image: url('../img/diario.jpg');
+    border: 5px solid black;
+}
+
+.fundacion h2 {
+    font-size: 18pt;
+    padding: 3px;
+    margin: 8px 0px 0px 18px;
+    width: 90%;
+    text-align: center;
+}
+
+.fundacion img {
+    height: 170px;
+    width: 350px;
+    margin: 6px 3px;
+    float: left;
+    border: 3px solid black;
+}
+
+.fundacion p {
+    font-size: 11pt;
+    text-align: left;
+    margin: 189px 0px 0px 5px;
+}
+
+#his {
+    width: 80px;
+    border-radius: 4px;
+    border: 2px solid black;
+    float: right;
+    font-size: 10pt;
+    margin-right: 20px;
+    outline: none;
+}
+
+#his:hover {
+    cursor: pointer;
+    background-color: rgb(231, 231, 46);
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+.Real-Madrid {
+    width: 100%;
+    height: 380px;
+    border: 5px solid black;
+}
+
+.Real-Madrid h2 {
+    font-size: 18pt;
+    margin: 8px 0px 0px 25px;
+    width: 85%;
+    padding: 2px;
+    text-align: center;
+}
+
+.Real-Madrid iframe {
+    height: 170px;
+    width: 350px;
+    margin: 6px 3px;
+    border: 1px solid white;
+}
+
+.Real-Madrid p {
+    font-size: 11pt;
+    margin: 3px 0px 0px 5px;
+    text-align: left;
+}
+
+#tit {
+    width: 80px;
+    border-radius: 4px;
+    border: 2px solid black;
+    float: right;
+    font-size: 10pt;
+    margin-right: 20px;
+    outline: none;
+}
+
+#tit:hover {
+    cursor: pointer;
+    background-color: rgb(231, 231, 46);
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+.torneo {
+    width: 100%;
+    height: 380px;
+    border: 5px solid black;
+}
+
+.torneo h2 {
+    font-size: 18pt;
+    margin: 8px 0px 0px 25px;
+    width: 85%;
+    text-align: center;
+}
+
+.torneo img {
+    height: 170px;
+    width: 350px;
+    margin: 6px 3px;
+    float: left;
+    border: 3px solid black;
+}
+
+.torneo p {
+    font-size: 11pt;
+    margin: 10px 0px 0px 5px;
+    text-align: left;
+}
+
+#not {
+    width: 80px;
+    border-radius: 4px;
+    border: 2px solid black;
+    float: right;
+    font-size: 10pt;
+    margin-right: 20px;
+    outline: none;
+}
+
+#not:hover {
+    cursor: pointer;
+    background-color: rgb(231, 231, 46);
+}
+
+/* ---------------------------------------------------------FOOTER------------------------------------------------------------------- */
+
+.footer-container {
+    background-color: rgb(8, 57, 142);
+    border: 5px solid black;
+    margin-top: -5px;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 90%;
+    height: 6rem;
+    background-color: rgb(8, 57, 142);
+    color: white;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.contacto h2 {
+    font-family: 'Teko';
+    color: white;
+    text-decoration: none;
+    height: 40px;
+    padding: 3px;
+    margin-top: 20px;
+}
+
+.contacto h2:hover {
+    color: yellow;
+}
+
+.seguir {
+    height: 85px;
+}
+
+.seguir h2 {
+    font-family: 'Teko';
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+
+.seguir img {
+    width: 40px;
+    padding: 5px;
+}
+
+/* --------------------------------------------------------CONTACTO--------------------------------------------------------------- */
+
+@media screen and (min-width:1024px){
+    .grillaC a {
+        text-decoration: none;
+    }
+
+    .grillaC {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 25px;
+        height: 100vh;
+        grid-template-areas: "header header"
+            "datos datos"
+            "footer footer";
+    }
+
+    .grillaC header .headerC {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 150px;
+        background-color: rgb(0, 0, 255);
+        position: fixed;
+        border: 5px solid black;
+        grid-area: header;
+    }
+
+    .grillaC .headerC .innerHeaderC h1 {
+        color: yellow;
+        margin-top: 5px;
+        font-family: "Teko";
+        font-size: 30pt;
+        text-align: center;
+    }
+
+    .grillaC .headerC .innerHeaderC h2 {
+        color: yellow;
+        font-family: "Teko";
+        font-size: 20pt;
+        margin-top: -10px;
+        text-align: center;
+    }
+
+    .grillaC .headerC .innerHeaderC img {
+        margin: 5px 5px 5px 5px;
+        float: left;
+        width: 120px;
+        height: 130px;
+        padding: 2px;
+    }
+
+    .grillaC .headerC .menu li {
+        display: inline;
+        text-decoration: none;
+        color: blue;
+        border: 2px solid black;
+        border-radius: 7px;
+        padding: 7px;
+        margin-right: 60px;
+        margin-top: 3px;
+        background-color: yellow;
+        font-size: 16pt;
+        list-style-type: none;
+    }
+
+    .grillaC .menu li:hover {
+        background-color: rgb(160, 140, 210);
+    }
+
+    .grillaC .formulario {
+        margin-top: 130px;
+        margin-left: 5px;
+        width: 90%;
+        font-family: 'Teko';
+        grid-area: datos;
+    }
+
+    .grillaC .formulario h2 {
+        width: 30%;
+        height: 10%;
+        margin-top: 5px;
+        margin-left: 15px;
+        font-size: 35pt;
+        color: yellow;
+        font-family: 'Teko';
+    }
+
+    .grillaC .formulario h3 {
+        font-size: 28pt;
+        color: yellow;
+        margin-top: 10px;
+        margin-left: 17px;
+        width: 28%;
+    }
+
+    .grillaC fieldset {
+        font-size: 18pt;
+        text-align: left;
+        height: 600px;
+        color: yellow;
+        outline: none;
+        border: none;
+    }
+
+    .grillaC fieldset p {
+        margin: 15px;
+        width: 350px;
+    }
+
+    .grillaC fieldset p input {
+        width: 220px;
+        height: 25px;
+        font-size: 13pt;
+    }
+
+    .grillaC label {
+        margin-left: 15px;
+    }
+
+    .grillaC select {
+        margin-left: 14px;
+        font-size: 13pt;
+    }
+
+    .grillaC ::placeholder {
+        font-size: 13pt;
+    }
+
+    .grillaC .tick input {
+        margin-top: 25px;
+    }
+
+    .grillaC textarea {
+        height: 160px;
+        width: 90%;
+        margin-left: 10px
+    }
+
+    .grillaC textarea::placeholder {
+        font-size: 18pt;
+    }
+
+    .grillaC #bot {
+        width: 100px;
+        border-radius: 4px;
+        border: 2px solid black;
+        font-size: 12pt;
+        margin-right: 115px;
+        outline: none;
+    }
+
+    .grillaC #bot:hover {
+        cursor: pointer;
+        background-color: rgb(231, 231, 46);
+    }
+
+    .grillaC .footer-container {
+        background-color: rgb(8, 57, 142);
+        border: 5px solid black;
+        width: 100%;
+    }
+
+    .grillaC .footer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 90%;
+        height: 9rem;
+        background-color: rgb(8, 57, 142);
+        color: white;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    .grillaC .contacto h2 {
+        font-family: 'Teko';
+        font-size: 26pt;
+        color: white;
+        text-decoration: none;
+        height: 48px;
+        margin-top: 30px;
+        padding: 3px;
+    }
+
+    .grillaC .contacto h2:hover {
+        color: yellow;
+    }
+
+    .grillaC .seguir {
+        height: 120px;
+        margin-top: 10px;
+    }
+
+    .grillaC .seguir h2 {
+        font-family: 'Teko';
+        font-size: 26pt;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .grillaC .seguir img {
+        width: 60px;
+        padding: 5px;
+    }
+}
+
+.grillaC a{
+    text-decoration: none;
+}
+
+.grillaC{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 25px;
+    height: 100vh;
+    grid-template-areas: "header header"
+    "datos datos"
+    "footer footer";
+}
+
+.grillaC .headerC{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 0, 255);
+    position: fixed;
+    border: 5px solid black;
+    grid-area: header;
+}
+
+.grillaC .innerHeaderC h1 {
+    color: yellow;
+    margin-top: 5px;
+    font-family: "Teko";
+    font-size: 17pt;
+    text-align: center;
+}
+
+.grillaC .innerHeaderC h2 {
+    color: yellow;
+    font-family: "Teko";
+    font-size: 14pt;
+    margin-top: -2px;
+    text-align: center;
+}
+
+.grillaC .headerC img {
+    margin: 0 auto;
+    float: left;
+    width: 80px;
+    height: 88px;
+    padding: 2px;
+}
+
+.grillaC .menu li{
+    display: inline;
+    text-decoration: none;
+    float: right;
+    color: blue;
+    border: 2px solid black;
+    padding: 2px;
+    margin-top: 2.5px;
+    margin-right: 11px;
+    background-color: yellow;
+    font-size: 6pt;
+    list-style-type: none;
+}
+
+.formulario {
+    margin-top: 90px;
+    margin-left: 5px;
+    width: 90%;
+    font-family: 'Teko';
+    grid-area: datos;
+}
+
+.formulario h2{
+    width: 50%;
+    height: 10%;
+    margin-top: 5px;
+    margin-left: 15px;
+    font-size: 25pt;
+    color: yellow;
+    font-family: 'Teko';
+}
+
+.formulario h3 {
+    font-size: 18pt;
+    color: yellow;
+    margin-left: 17px;
+    width: 54%;
+}
+
+fieldset {
+    font-size: 12pt;
+    text-align: left;
+    height: 500px;
+    color: yellow;
+    outline: none;
+    border: none;
+}
+
+fieldset p {
+    margin: 15px;
+    width: 250px;
+}
+
+fieldset p input {
+    width: 220px;
+}
+
+label {
+    margin-left: 15px;
+}
+
+select {
+    margin-left: 14px;
+    font-size: 10pt;
+}
+
+::placeholder {
+    font-size: 10pt;
+}
+
+.tick{
+    display: flex;
+}
+
+.tick input{
+    margin-top: 20px;
+}
+
+textarea {
+    height: 120px;
+    width: 90%;
+    margin-left: 10px
+}
+
+textarea::placeholder {
+    font-size: 15pt;
+}
+
+#bot{
+    width: 80px;
+    border-radius: 4px;
+    border: 2px solid black;
+    float: right;
+    font-size: 10pt;
+    margin-right: 29px;
+    outline: none;
+}
+
+#bot:hover {
+    cursor: pointer;
+    background-color: rgb(231, 231, 46);
+}
+
+.footer-container {
+    background-color: rgb(8, 57, 142);
+    border: 5px solid black;
+    margin-top: -5px;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 90%;
+    height: 6.9rem;
+    background-color: rgb(8, 57, 142);
+    color: white;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.contacto h2 {
+    font-family: 'Teko';
+    color: white;
+    text-decoration: none;
+    height: 40px;
+    padding: 3px;
+    margin-top: 20px;
+}
+
+.contacto h2:hover {
+    color: yellow;
+}
+
+.seguir {
+    height: 85px;
+}
+
+.seguir h2 {
+    font-family: 'Teko';
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+
+.seguir img {
+    width: 40px;
+    padding: 5px;
+}
+
+/* -----------------------------------------------------------------HISTORIA--------------------------------------------------------- */
+
+.historia {
+    margin-top: -480px;
+}
+
+.elClub img {
+    height: 350px;
+    width: 650px;
+    padding: 5px;
+    margin-right: 15px;
+    margin-top: 5px;
+    float: right;
+}
+
+.colores img {
+    height: 350px;
+    width: 640px;
+    padding: 5px;
+    margin-right: 15px;
+    margin-top: 25px;
+    margin-left: 10px;
+    float: left;
+}
+
+.prim img {
+    height: 250px;
+    width: 600px;
+    padding: 5px;
+    margin-right: 15px;
+    margin-top: 40px;
+    float: right;
+}
+
+/* -----------------------------------------------------------------NOTICIAS--------------------------------------------------------- */
+
+
+.cor {
+    margin-top: -500px;
+    margin-bottom: 50px;
+    height: 480px;
+    padding: 5px;
+    border: 2px solid white;
+    width: 500px;
+    margin-left: 10px;
+}
+
+.cor img {
+    width: 450px;
+    height: 300px;
+    margin-left: 24px;
+    margin-top: 10px;
+}
+
+.dyj img {
+    width: 450px;
+    height: 300px;
+    margin-left: 24px;
+    margin-top: 10px;
+}
+
+.tig img {
+    width: 450px;
+    height: 300px;
+    margin-left: 24px;
+    margin-top: 10px;
+}
+
+/* -----------------------------------------------------------------PLANTILLA------------------------------------------------------- */
+
+.pla {
+    margin-top: -500px;
+    font-family: 'Teko2';
+}
+
+.phis img {
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 400px;
+    width: 600px;
+}
+
+/* -----------------------------------------------------------------TITULOS--------------------------------------------------------- */
+
+.ti {
+    margin-top: -500px;
+    font-family: 'Teko2';
+}
+
+.titan img {
+    height: 300px;
+    width: 600px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.titan iframe {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+}
+
+/* -----------------------------------------------------------------RESERVA--------------------------------------------------------- */
+
+.res {
+    margin-top: -500px;
+}
+
+.hur img {
+    margin-top: -600px;
+    margin-bottom: 20px;
+    margin-left: 500px;
+    width: 600px;
+    height: 300px;
+}
