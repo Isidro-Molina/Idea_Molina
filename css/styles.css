@@ -43,9 +43,9 @@ body {
         flex-direction: column;
         width: 100%;
         height: 150px;
-        background-color: rgb(0, 0, 255);
         position: fixed;
         border: 5px solid black;
+        background-image: linear-gradient(to bottom, rgb(0, 0, 255), rgb(170, 183, 219));
     }
 
     .grilla .innerHeader h1 {
@@ -72,6 +72,10 @@ body {
         padding: 2px;
     }
 
+    .grilla .header .libreria{
+        animation-duration: 3s;
+    }
+
     .grilla .menu li {
         display: inline;
         text-decoration: none;
@@ -85,7 +89,7 @@ body {
         list-style-type: none;
     }
 
-    .grilla .menu li a{
+    .grilla .menu li a {
         color: blue;
     }
 
@@ -118,9 +122,9 @@ body {
     }
 
     .grilla .fundacion img {
-        height: 358px;
-        width: 580px;
-        margin: -60px 3px;
+        height: 350px;
+        width: 560px;
+        margin: -52px 23px;
         float: left;
         border: 3px solid black;
     }
@@ -136,17 +140,21 @@ body {
 
     .grilla #his {
         width: 100px;
+        height: 30px;
         border-radius: 4px;
         border: 2px solid black;
+        background-color: white;
         float: right;
         font-size: 16pt;
-        margin-right: 40px;
+        margin-right: 10px;
         outline: none;
+        transition: height 1s;
     }
 
     #his:hover {
         cursor: pointer;
         background-color: rgb(231, 231, 46);
+        height: 40px;
     }
 
     /* ------------------------------------------------------------------------------------------------------------------------------ */
@@ -182,17 +190,20 @@ body {
 
     .grilla #tit {
         width: 100px;
+        height: 30px;
         border-radius: 4px;
         border: 2px solid black;
-        float: right;
+        float: left;
         font-size: 16pt;
-        margin-right: 40px;
+        margin-left: 350px;
         outline: none;
+        transition: height 1s;
     }
 
     .grilla #tit:hover {
         cursor: pointer;
         background-color: rgb(231, 231, 46);
+        height: 40px;
     }
 
     /* --------------------------------------------------------------------------------------------------------------------------- */
@@ -226,17 +237,20 @@ body {
 
     .grilla #not {
         width: 100px;
+        height: 30px;
         border-radius: 4px;
         border: 2px solid black;
         float: right;
         font-size: 16pt;
         margin-right: 40px;
         outline: none;
+        transition: height 1s;
     }
 
     .grilla #not:hover {
         cursor: pointer;
         background-color: rgb(231, 231, 46);
+        height: 40px;
     }
 
     /* ------------------------------------------------------------FOOTER------------------------------------------------------------ */
@@ -291,6 +305,11 @@ body {
     .grilla .seguir img {
         width: 60px;
         padding: 5px;
+        transition: width 1s;
+    }
+
+    .grilla .seguir img:hover{
+        width: 70px;
     }
 }
 
@@ -307,7 +326,7 @@ body {
         "footer footer";
 }
 
-.grilla a{
+.grilla a {
     text-decoration: none;
 }
 
@@ -336,7 +355,7 @@ footer {
     flex-direction: column;
     width: 100%;
     height: 100px;
-    background-color: rgb(0, 0, 255);
+    background-image: linear-gradient(to bottom, rgb(0, 0, 255), rgb(170, 183, 219));
     position: fixed;
     border: 5px solid black;
 }
@@ -365,6 +384,10 @@ footer {
     padding: 2px;
 }
 
+.libreria {
+    animation-duration: 3s;
+}
+
 .menu li {
     display: inline;
     text-decoration: none;
@@ -378,7 +401,7 @@ footer {
     list-style-type: none;
 }
 
-.menu li a{
+.menu li a {
     color: blue;
 }
 
@@ -423,6 +446,7 @@ section#club {
 
 #his {
     width: 80px;
+    margin-top: -10px;
     border-radius: 4px;
     border: 2px solid black;
     float: right;
@@ -432,7 +456,6 @@ section#club {
 }
 
 #his:hover {
-    cursor: pointer;
     background-color: rgb(231, 231, 46);
 }
 
@@ -577,7 +600,7 @@ section#club {
 
 /* --------------------------------------------------------CONTACTO--------------------------------------------------------------- */
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:1024px) {
     .grillaC a {
         text-decoration: none;
     }
@@ -785,22 +808,22 @@ section#club {
     }
 }
 
-.grillaC a{
+.grillaC a {
     text-decoration: none;
 }
 
-.grillaC{
+.grillaC {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 25px;
     height: 100vh;
     grid-template-areas: "header header"
-    "datos datos"
-    "footer footer";
+        "datos datos"
+        "footer footer";
 }
 
-.grillaC .headerC{
+.grillaC .headerC {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -835,7 +858,7 @@ section#club {
     padding: 2px;
 }
 
-.grillaC .menu li{
+.grillaC .menu li {
     display: inline;
     text-decoration: none;
     float: right;
@@ -857,7 +880,7 @@ section#club {
     grid-area: datos;
 }
 
-.formulario h2{
+.formulario h2 {
     width: 50%;
     height: 10%;
     margin-top: 5px;
@@ -905,11 +928,11 @@ select {
     font-size: 10pt;
 }
 
-.tick{
+.tick {
     display: flex;
 }
 
-.tick input{
+.tick input {
     margin-top: 20px;
 }
 
@@ -923,7 +946,7 @@ textarea::placeholder {
     font-size: 15pt;
 }
 
-#bot{
+#bot {
     width: 80px;
     border-radius: 4px;
     border: 2px solid black;
