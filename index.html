@@ -5,111 +5,193 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Boca Juniors</title>
+    <title>Testeo</title>
 </head>
 
 <body>
+
     <div class="grilla">
-        <header>
-            <div class="header">
-                <div class="innerHeader animate__animated animate__zoomIn libreria">
-                    <img src="./img/CABJ.png" alt="Escudo Boca Juniors">
-                    <h1>CLUB ATLÉTICO BOCA JUNIORS</h1>
-                    <h2>LA MITAD MÁS UNO</h2>
-                    <nav>
-                        <ul class="menu ">
-                            <li><a class="animate__zoomIn" href="./pages/reserva.html">Reserva</a></li>
-                            <li><a href="./pages/titulos.html">Títulos</a></li>
-                            <li><a href="./pages/plantilla.html">Plantilla</a></li>
-                            <li><a href="./pages/noticias.html">Noticias</a></li>
-                            <li><a href="./pages/historia.html">Historia</a></li>
-                        </ul>
-                    </nav>
+
+        <div id="header" class="div1">
+            <header>
+                <nav class="navbar-text fixed-top navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <h1 class="text-white">Club Atletico Boca Juniors</h1>
+                        <h2>La Mitad Más Uno</h2>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"><img src="./img/CABJ.png" alt="Escudo De CABJ"
+                                    class="d-inline-block align-text-top"></span>
+                        </button>
+                        <div class="menu collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav text-white">
+                                <li class="nav-item">
+                                    <a class="nav-link active pag text-white" aria-current="page" href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link pag text-white" href="./pages/historia.html">Historia</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link pag text-white" href="./pages/plantilla.html">Plantilla</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link pag text-white" href="./pages/titulos.html">Titulos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link pag text-white" href="./pages/noticias.html">Noticias</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link pag text-white" href="./pages/reserva.html">Reserva</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+        <div id="fot" class="div2">
+            <div class="p-3">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner fotos">
+                        <div class="carousel-item active">
+                            <img src="./img/1905.jpg" class="d-block w-100 fotos" alt="..." height="300">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/Boca1913.jpg" class="d-block w-100 fotos" alt="..." height="300">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/Boca2000.jpg" class="d-block w-100 fotos" alt="..." height="300">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
-        </header>
-            <section id="club" class="border">
-                    <div class="fundacion">
-                        <h2>El Club</h2>
-                        <img src="./img/1905.jpg" alt="Los Fundadores">
-                        <p>
-                            Boca Juniors nació el 3 de abril de 190, participa de la Primera
-                            División
-                            de fútbol desde
-                            1913 cuando jugó el torneo inicial. Desde entonces, disputó todas las temporadas en Primera
-                            División
-                            desde el comienzo del fútbol profesional en 1931. Se fundo en el Barrio de La Boca por
-                            adolescentes (Esteban Baglietto, Alfredo Scarpati, Santiago Sana, Tomás Movio, los hermanos
-                            Juan
-                            Antonio Farenga y José Teodoro Farenga, Luis De Harenne y otros), hijos de italianos y
-                            vecinos
-                            de La Boca, barrio de trabajadores inmigrantes y
-                            fuerte identidad
-                            genovesa. De ahi la palabra 'Xeneize'.
-                        </p>
-                        <a href="./pages/historia.html"><input id="his" type="button" value="Leer Más"></a>
-                    </div>
-            </section>
-            <section id="real" class="border">
-                    <div class="Real-Madrid">
-                        <div>
-                            <h2>La Intercontinental contra el Real Madrid</h2>
-                        </div>
-                        <iframe class="tokio" src="https://www.youtube.com/embed/3dEcaK3gC1Q"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <p>
-                            El amanecer del 28
-                            de noviembre de 2000 fue azul y amarillo. Aquel día, en Tokio, a 18.351 kilómetros de
-                            Buenos Aires,
-                            Boca alzaba la Copa Intercontinental luego de un triunfo por 2-1 ante Real Madrid que
-                            sacudió al
-                            mundo.
-                        </p>
-                        <a href="./pages/titulos.html"><input id="tit" type="button" value="Leer Más"></a>
-                    </div>
-            </section>
-            <section id="tigre" class="border">
-                    <div class="torneo">
-                    <h2>El posible rival de Boca</h2>
-                    <img src="./img/equipo.jpg" alt="">
-                    <p>
-                        Boca ya está en cuartos de la Copa de la Liga e iniciará su camino en los playoffs este
-                        martes por la noche, en condición de local. Sin embargo, el equipo de Battaglia aún no
-                        conoce a su rival. ¿Los candidatos? Newell's, Defensa, Argentinos y Gimnasia. El
-                        misterio se develará este domingo, cuando se definan el tercer y cuarto puesto de la
-                        Zona A.
-                    </p>
-                    <a href="./pages/noticias.html"><input id="not" type="button" value="Leer Más"></a>
-                    </div>
-            </section>
-        <footer class="border">
-            <div class="footer-container">
-                <div class="footer">
-                    <div class="contacto">
+        </div>
+        <div id="club" class="div3">
+            <h2>El Club</h2>
+            <p>
+                Boca Juniors nació el 3 de abril de 190, participa de la Primera
+                División
+                de fútbol desde
+                1913 cuando jugó el torneo inicial. Desde entonces, disputó todas las temporadas en Primera
+                División
+                desde el comienzo del fútbol profesional en 1931. Se fundo en el Barrio de La Boca por
+                adolescentes (Esteban Baglietto, Alfredo Scarpati, Santiago Sana, Tomás Movio, los hermanos
+                Juan
+                Antonio Farenga y José Teodoro Farenga, Luis De Harenne y otros), hijos de italianos y
+                vecinos
+                de La Boca, barrio de trabajadores inmigrantes y
+                fuerte identidad
+                genovesa. De ahi la palabra 'Xeneize'.
+            </p>
+            <a href="./pages/historia.html"><input id="his" type="button" value="Leer Más"></a>
+        </div>
+
+
+        <div id="vid" class="div5">
+            <h2>La Intercontinental contra el Real Madrid</h2>
+            <p>
+                El amanecer del 28
+                de noviembre de 2000 fue azul y amarillo. Aquel día, en Tokio, a 18.351 kilómetros de
+                Buenos Aires,
+                Boca alzaba la Copa Intercontinental luego de un triunfo por 2-1 ante Real Madrid que
+                sacudió al
+                mundo.
+            </p>
+            <a href="./pages/titulos.html"><input id="tit" type="button" value="Leer Más"></a>
+        </div>
+        <div id="rom" class="div4">
+            <iframe class="tokio" src="https://www.youtube.com/embed/3dEcaK3gC1Q" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+
+        <div id="tig" class="div6">
+            <img src="./img/equipo.jpg" alt="" width="500">
+        </div>
+        <div id="sab" class="div7">
+            <h2>El posible rival de Boca</h2>
+            <p>
+                Boca ya está en cuartos de la Copa de la Liga e iniciará su camino en los playoffs este
+                martes por la noche, en condición de local. Sin embargo, el equipo de Battaglia aún no
+                conoce a su rival. ¿Los candidatos? Newell's, Defensa, Argentinos y Gimnasia. El
+                misterio se develará este domingo, cuando se definan el tercer y cuarto puesto de la
+                Zona A.
+            </p>
+            <a href="./pages/noticias.html"><input id="not" type="button" value="Leer Más"></a>
+        </div>
+
+
+        <div id="footer" class="div8">
+            <!-- Footer -->
+            <footer class=" pie text-center text-white" style="background-color:#002f7a">
+                <!-- Grid container -->
+                <div class="container p-4">
+                    <!-- Section: Social media -->
+                    <section class="mb-4">
+                        <!-- Facebook -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998"
+                            href="https://www.facebook.com/BocaJuniors/" target="_blank" role="button"><i
+                                class="bi bi-facebook"></i></a>
+
+                        <!-- Twitter -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee"
+                            href="https://twitter.com/BocaJrsOficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                            target="_blank" role="button"><i class="bi bi-twitter"></i></a>
+
+                        <!-- Instagram -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac"
+                            href="https://www.instagram.com/bocajrsoficial/?hl=en" target="_blank" role="button">
+                            <i class="bi bi-instagram"></i></a>
+
+                        <!-- YouTube -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: red"
+                            href="https://www.youtube.com/channel/UCRtB_RAtKH72CgVAKHFgdIw" target="_blank"
+                            role="button"><i class="bi bi-youtube"></i></a>
+                    </section>
+                    <!-- Section: Social media -->
+
+                    <!-- Section: Text -->
+                    <section class="mb-2 contacto">
                         <a href="./pages/contacto.html">
                             <h2>Contactanos</h2>
                         </a>
-                    </div>
-                    <div class="seguir">
-                        <h2>Seguinos</h2>
-                        <div class="redes">
-                            <a href="https://www.instagram.com/bocajrsoficial/?hl=en" target="blank"><img
-                                    src="../Idea_Molina/svg/instagram.svg" alt="Instagram"></a>
-                            <a href="https://www.youtube.com/channel/UCRtB_RAtKH72CgVAKHFgdIw" target="blank"><img
-                                    src="./svg/youtube.svg" alt="Youtube"></a>
-                            <a href="https://twitter.com/BocaJrsOficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                                target="blank"><img src="./svg/twitter.svg" alt="Twitter"></a>
-                            <a href="https://www.facebook.com/BocaJuniors/" target="blank"><img src="./svg/facebook.svg"
-                                    alt="Facebook"></a>
-                        </div>
-                    </div>
+                    </section>
+                    <!-- Section: Text -->
                 </div>
-        </footer>
-    </div>
+            </footer>
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
