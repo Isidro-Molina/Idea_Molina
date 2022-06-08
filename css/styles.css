@@ -481,43 +481,45 @@ body {
 
 /* ################################################   HISTORIA.HTML   ########################################################## */
 
-#elClub{
+#elClub {
     grid-area: elClub;
 }
 
-#colores{
+#colores {
     grid-area: colores;
 }
 
-#primera{
+#primera {
     grid-area: primera;
 }
 
-#gira{
+#gira {
     grid-area: gira;
 }
 
 @media screen and (min-width:1024px) {
 
-    .grilla4{
+    .grilla4 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 78px repeat(3, 1fr) 100px;
         row-gap: 10px;
         grid-template-areas: "header header"
-        "elClub elClub"
-        "colores colores"
-        "primera primera"
-        "gira gira"
-        "footer footer";
+            "elClub elClub"
+            "colores colores"
+            "primera primera"
+            "gira gira"
+            "footer footer";
     }
 
-    .grilla4 .div1 nav{
+    /* ################################################   HEADER   ########################################################## */
+
+    .grilla4 .div1 nav {
         border: 5px solid black;
         background-color: rgb(0, 0, 255);
     }
 
-    .grilla4 .div1 img{
+    .grilla4 .div1 img {
         width: 90px;
         height: 100px;
         float: left;
@@ -562,17 +564,17 @@ body {
 
     /* ################################################   CONTENIDO   ######################################################## */
 
-    .grilla4 .div14{
+    .grilla4 .div14 {
         margin-top: 60px;
     }
 
-    .grilla4 .div14 .titulo h2{
+    .grilla4 .div14 .titulo h2 {
         font-size: 34pt;
         font-family: 'Teko';
         color: #ffe100;
     }
 
-    .grilla4 .div14 .elClu h3{
+    .grilla4 .div14 .elClu h3 {
         font-size: 30pt;
         text-align: left;
         margin-left: 20px;
@@ -585,7 +587,7 @@ body {
         float: right;
     }
 
-    .grilla4 .div14 .elClu p{
+    .grilla4 .div14 .elClu p {
         font-family: 'Teko2';
         font-size: 16pt;
         color: black;
@@ -594,25 +596,25 @@ body {
         border: 2px solid;
     }
 
-    .grilla4 .div15{
+    .grilla4 .div15 {
         margin-top: 60px;
     }
 
-    .grilla4 .div15 h3{
+    .grilla4 .div15 h3 {
         text-align: right;
         font-size: 30pt;
         font-family: 'Teko';
         margin-right: 20px;
     }
 
-    .grilla4 .div15 img{
+    .grilla4 .div15 img {
         width: 600px;
         margin-left: 10px;
         margin-top: 5px;
         float: left;
     }
 
-    .grilla4 .div15 p{
+    .grilla4 .div15 p {
         font-family: 'Teko2';
         font-size: 16pt;
         color: black;
@@ -621,24 +623,24 @@ body {
         border: 2px solid;
     }
 
-    .grilla4 .div16{
+    .grilla4 .div16 {
         margin-top: -60px;
     }
 
-    .grilla4 .div16 h3{
+    .grilla4 .div16 h3 {
         font-size: 30pt;
         text-align: left;
         margin-left: 20px;
     }
 
-    .grilla4 .div16 img{
+    .grilla4 .div16 img {
         width: 600px;
         margin-right: 10px;
         margin-top: 5px;
         float: right;
     }
 
-    .grilla4 .div16 p{
+    .grilla4 .div16 p {
         font-family: 'Teko2';
         font-size: 16pt;
         color: black;
@@ -647,8 +649,47 @@ body {
         border: 2px solid;
     }
 
-    .grilla4 .div17{
+    .grilla4 .div17 {
         margin-top: -200px;
+    }
+
+    /* ################################################   FOOTER   ########################################################## */
+
+    .grilla4 .div8 {
+        margin-top: -60px;
+        border-top: 2px solid black;
+    }
+
+    .grilla4 .pie section a {
+        border: none;
+        width: 50px;
+        height: 36px;
+        transition: width 1s, height 1s;
+    }
+
+    .grilla4 .pie section a:hover {
+        width: 65px;
+        height: 40px;
+    }
+
+    .grilla4 .contacto {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .grilla4 .contacto h2 {
+        font-family: 'Teko';
+        color: white;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .grilla4 .contacto a {
+        text-decoration: none;
+    }
+
+    .grilla4 .contacto h2:hover {
+        color: yellow;
     }
 }
 
@@ -688,7 +729,7 @@ body {
 
     /* ################################################   HEADER   ########################################################## */
 
-    .div1 .animacion{
+    .div1 .animacion {
         animation-duration: 3s;
     }
 
@@ -742,11 +783,11 @@ body {
 
     /* ################################################   PLANTELES   ######################################################## */
 
-    .grilla3 .div10{
+    .grilla3 .div10 {
         margin-top: -30px;
     }
 
-    .grilla3 .div10 h2{
+    .grilla3 .div10 h2 {
         font-size: 34pt;
         font-family: 'Teko';
         color: #ffe100;
@@ -757,24 +798,24 @@ body {
         color: #ffe100;
     }
 
-    .grilla3 .div10 table{
+    .grilla3 .div10 table {
         text-align: center;
         font-size: 14pt;
         color: white;
     }
 
-    .grilla3 .div11{
+    .grilla3 .div11 {
         margin-top: 20px;
     }
 
-    .grilla3 .div11 h2{
+    .grilla3 .div11 h2 {
         font-size: 34pt;
         font-family: 'Teko';
         width: fit-content;
         color: #ffe100;
     }
 
-    .grilla3 .div11 h3{
+    .grilla3 .div11 h3 {
         margin-top: 50px;
         font-size: 28pt;
         font-family: 'Teko';
@@ -782,36 +823,36 @@ body {
         color: #ffe100;
     }
 
-    .grilla3 .div11 table thead{
+    .grilla3 .div11 table thead {
         font-size: 18pt;
         color: #ffe100;
     }
 
-    .grilla3 .div11 table{
+    .grilla3 .div11 table {
         text-align: center;
         font-size: 14pt;
         color: white;
     }
 
     .grilla3 .div12 {
-        height: fit-content; 
+        height: fit-content;
         margin: 0 auto;
         margin-top: -120px;
         border: 2px solid black;
     }
 
-    .grilla3 .div12 img{
+    .grilla3 .div12 img {
         width: 96%;
         border: 2px solid white;
     }
 
-    .grilla3 .div13{
+    .grilla3 .div13 {
         border: 2px solid black;
         margin-top: -120px;
         height: 330.45px;
     }
 
-    .grilla3 .div13 p{
+    .grilla3 .div13 p {
         font-family: 'Teko2';
         font-size: 18pt;
         text-align: left;
@@ -863,22 +904,16 @@ body {
 /* ################################################   TITULOS.HTML   ########################################################## */
 
 
-@media screen and (min-width:1024px) {
-    
-}
+@media screen and (min-width:1024px) {}
 
 /* ################################################   NOTICIAS.HTML   ########################################################## */
 
-@media screen and (min-width:1024px) {
-
-}
+@media screen and (min-width:1024px) {}
 
 
 /* ################################################   RESERVA.HTML   ########################################################## */
 
-@media screen and (min-width:1024px) {
-
-}
+@media screen and (min-width:1024px) {}
 
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   MOBILE    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -894,7 +929,7 @@ body {
     background-color: rgb(0, 0, 255);
 }
 
-.div1 .bokita{
+.div1 .bokita {
     width: 55px;
     height: 55px;
     float: right;
@@ -1221,7 +1256,7 @@ body {
     border: 2px solid;
 }
 
-.div13{
+.div13 {
     border: 2px solid;
     margin-top: 15px;
 }
@@ -1246,14 +1281,14 @@ body {
     margin-top: 100px;
 }
 
-.div14 .titulo h2{
+.div14 .titulo h2 {
     font-size: 24pt;
     font-family: 'Teko';
     color: #ffe100;
     margin-left: 5px;
 }
 
-.div14 .elClu h3{
+.div14 .elClu h3 {
     font-size: 22pt;
     font-family: 'Teko';
     color: #ffe100;
@@ -1268,7 +1303,7 @@ body {
     border: 2px solid;
 }
 
-.div14 .elClu p{
+.div14 .elClu p {
     font-family: 'Teko2';
     font-size: 14pt;
     color: black;
@@ -1277,13 +1312,13 @@ body {
     margin-top: 5px;
     border: 2px solid;
     width: 99%;
-    }
+}
 
-.div15{
+.div15 {
     margin-top: 50px;
 }
 
-.div15 h3{
+.div15 h3 {
     font-size: 22pt;
     font-family: 'Teko';
     color: #ffe100;
@@ -1297,7 +1332,7 @@ body {
     border: 2px solid;
 }
 
-.div15 p{
+.div15 p {
     font-family: 'Teko2';
     font-size: 14pt;
     color: black;
@@ -1308,11 +1343,11 @@ body {
     width: 99%;
 }
 
-.div16{
+.div16 {
     margin-top: 50px;
 }
 
-.div16 h3{
+.div16 h3 {
     font-size: 22pt;
     font-family: 'Teko';
     color: #ffe100;
@@ -1326,7 +1361,7 @@ body {
     border: 2px solid;
 }
 
-.div16 p{
+.div16 p {
     font-family: 'Teko2';
     font-size: 14pt;
     color: black;
@@ -1337,11 +1372,11 @@ body {
     width: 99%;
 }
 
-.div17{
+.div17 {
     margin-top: 50px;
 }
 
-.div17 h3{
+.div17 h3 {
     font-size: 22pt;
     font-family: 'Teko';
     color: #ffe100;
