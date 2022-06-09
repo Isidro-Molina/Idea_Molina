@@ -11,18 +11,17 @@ body {
 
 body {
     position: relative;
-    background-color: rgb(40, 78, 181);
-
+    background-color: #284eb5;
 }
 
 @font-face {
     font-family: "Teko";
-    src: url('../fonts/Teko-Bold.ttf');
+    src: url("../fonts/Teko-Bold.ttf");
 }
 
 @font-face {
     font-family: "Teko2";
-    src: url('../fonts/Teko-Regular.ttf');
+    src: url("../fonts/Teko-Regular.ttf");
 }
 
 #header {
@@ -34,9 +33,7 @@ body {
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   MEDIA QUERIES    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
 /* ################################################   INDEX.HTML   ########################################################## */
-
 #fot {
     grid-area: fot;
 }
@@ -53,26 +50,21 @@ body {
     grid-area: sab;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
 
     /* ################################################   HEADER   ########################################################## */
-
     .grilla {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 78px repeat(3, 1fr) 100px;
         column-gap: 0px;
         row-gap: 15px;
-        grid-template-areas: "header header"
-            "fot club"
-            "rom vid"
-            "tig sab"
-            "footer footer";
+        grid-template-areas: "header header""fot club""rom vid""tig sab""footer footer";
     }
 
     .grilla .div1 nav {
         border: 5px solid black;
-        background-color: rgb(0, 0, 255);
+        background-color: blue;
     }
 
     .grilla .div1 img {
@@ -119,15 +111,13 @@ body {
     }
 
     /* ################################################   INDEX   ########################################################## */
-
     /* --------------------------------------------------------CLUB--------------------------------------------------------------*/
-
     .grilla .div2 {
         margin-top: 50px;
         width: 102%;
         height: 360px;
         border: 2px solid black;
-        background-image: url('../img/diario.jpg');
+        background-image: url("../img/diario.jpg");
     }
 
     .grilla .div2 .fotos {
@@ -137,7 +127,7 @@ body {
     }
 
     .grilla .div3 {
-        background-image: url('../img/diario.jpg');
+        background-image: url("../img/diario.jpg");
         border: 2px solid black;
         height: 360px;
         margin-top: 50px;
@@ -171,12 +161,11 @@ body {
     }
 
     .grilla #his:hover {
-        background-color: rgb(231, 231, 46);
+        background-color: #e7e72e;
         height: 35px;
     }
 
     /* -----------------------------------------------------REAL-MADRID--------------------------------------------------------------*/
-
     .grilla .div4 {
         margin-top: 10px;
         border: 2px solid black;
@@ -227,12 +216,11 @@ body {
     }
 
     .grilla #tit:hover {
-        background-color: rgb(231, 231, 46);
+        background-color: #e7e72e;
         height: 35px;
     }
 
     /* --------------------------------------------------------TIGRE--------------------------------------------------------------*/
-
     .grilla .div6 {
         margin-top: -30px;
         border: 2px solid black;
@@ -281,12 +269,11 @@ body {
     }
 
     .grilla #not:hover {
-        background-color: rgb(231, 231, 46);
+        background-color: #e7e72e;
         height: 35px;
     }
 
     /* ################################################   FOOTER   ########################################################## */
-
     .grilla .div8 {
         margin-top: -60px;
         border-top: 2px solid black;
@@ -323,7 +310,6 @@ body {
     .grilla .contacto h2:hover {
         color: yellow;
     }
-
 }
 
 /* ################################################   CONTACTO.HTML   ########################################################## */
@@ -331,24 +317,20 @@ body {
     grid-area: for;
 }
 
-@media screen and (min-width:1024px) {
-
+@media screen and (min-width: 1024px) {
     .grilla2 {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 78px 1fr 100px;
         column-gap: 0px;
         row-gap: 10px;
-        grid-template-areas: "header"
-            "for"
-            "footer";
+        grid-template-areas: "header""for""footer";
     }
 
     /* ################################################   HEADER   ########################################################## */
-
     .grilla2 .div1 nav {
         border: 5px solid black;
-        background-color: rgb(0, 0, 255);
+        background-color: blue;
     }
 
     .grilla2 .div1 img {
@@ -395,7 +377,6 @@ body {
     }
 
     /* ################################################   FORMULARIO   ######################################################## */
-
     .grilla2 .formu {
         margin-top: 50px;
         font-family: 'Teko2';
@@ -440,7 +421,6 @@ body {
     }
 
     /* ################################################   FOOTER   ########################################################## */
-
     .grilla2 .div8 {
         margin-top: -60px;
         border-top: 2px solid black;
@@ -480,7 +460,6 @@ body {
 }
 
 /* ################################################   HISTORIA.HTML   ########################################################## */
-
 #elClub {
     grid-area: elClub;
 }
@@ -497,26 +476,19 @@ body {
     grid-area: gira;
 }
 
-@media screen and (min-width:1024px) {
-
+@media screen and (min-width: 1024px) {
     .grilla4 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 78px repeat(3, 1fr) 100px;
         row-gap: 10px;
-        grid-template-areas: "header header"
-            "elClub elClub"
-            "colores colores"
-            "primera primera"
-            "gira gira"
-            "footer footer";
+        grid-template-areas: "header header""elClub elClub""colores colores""primera primera""gira gira""footer footer";
     }
 
     /* ################################################   HEADER   ########################################################## */
-
     .grilla4 .div1 nav {
         border: 5px solid black;
-        background-color: rgb(0, 0, 255);
+        background-color: blue;
     }
 
     .grilla4 .div1 img {
@@ -563,7 +535,6 @@ body {
     }
 
     /* ################################################   CONTENIDO   ######################################################## */
-
     .grilla4 .div14 {
         margin-top: 60px;
     }
@@ -654,7 +625,6 @@ body {
     }
 
     /* ################################################   FOOTER   ########################################################## */
-
     .grilla4 .div8 {
         margin-top: -60px;
         border-top: 2px solid black;
@@ -693,9 +663,7 @@ body {
     }
 }
 
-
 /* ################################################   PLANTILLA.HTML   ########################################################## */
-
 #plantel {
     grid-area: plantel;
 }
@@ -712,30 +680,24 @@ body {
     grid-area: gremioT;
 }
 
-@media screen and (min-width:1024px) {
-
+@media screen and (min-width: 1024px) {
     .grilla3 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 78px repeat(2, 1fr) 100px;
         column-gap: 0px;
         row-gap: 10px;
-        grid-template-areas: "header header"
-            "plantel plantel"
-            "plantelG plantelG"
-            "gremio gremioT"
-            "footer footer";
+        grid-template-areas: "header header""plantel plantel""plantelG plantelG""gremio gremioT""footer footer";
     }
 
     /* ################################################   HEADER   ########################################################## */
-
     .div1 .animacion {
         animation-duration: 3s;
     }
 
     .grilla3 .div1 nav {
         border: 5px solid black;
-        background-color: rgb(0, 0, 255);
+        background-color: blue;
     }
 
     .grilla3 .div1 img {
@@ -782,7 +744,6 @@ body {
     }
 
     /* ################################################   PLANTELES   ######################################################## */
-
     .grilla3 .div10 {
         margin-top: -30px;
     }
@@ -861,9 +822,7 @@ body {
         width: 99%;
     }
 
-
     /* ################################################   FOOTER   ########################################################## */
-
     .grilla3 .div8 {
         margin-top: 130px;
     }
@@ -902,31 +861,14 @@ body {
 }
 
 /* ################################################   TITULOS.HTML   ########################################################## */
-
-
-@media screen and (min-width:1024px) {}
-
 /* ################################################   NOTICIAS.HTML   ########################################################## */
-
-@media screen and (min-width:1024px) {}
-
-
 /* ################################################   RESERVA.HTML   ########################################################## */
-
-@media screen and (min-width:1024px) {}
-
-
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   MOBILE    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-
 /* ################################################   INDEX.HTML   ########################################################## */
-
-
 /* ----------------------------------------------------   HEADER   ---------------------------------------------------- */
-
 .div1 nav {
     border: 5px solid black;
-    background-color: rgb(0, 0, 255);
+    background-color: blue;
 }
 
 .div1 .bokita {
@@ -974,13 +916,11 @@ body {
     width: fit-content;
 }
 
-
 /* -----------------------------------------------------------CLUB--------------------------------------------------------------*/
-
 .div2 {
     margin-top: 100px;
     border: 2px solid black;
-    background-image: url('../img/diario.jpg');
+    background-image: url("../img/diario.jpg");
 }
 
 .div2 .fotos {
@@ -990,7 +930,7 @@ body {
 }
 
 .div3 {
-    background-image: url('../img/diario.jpg');
+    background-image: url("../img/diario.jpg");
     border: 2px solid black;
     height: 260px;
 }
@@ -1020,11 +960,10 @@ body {
 }
 
 #his:hover {
-    background-color: rgb(231, 231, 46);
+    background-color: #e7e72e;
 }
 
 /* ------------------------------------------------  REAL-MADRID  ----------------------------------------------------------*/
-
 .div4 {
     margin-top: 0px;
     border: 2px solid black;
@@ -1068,11 +1007,10 @@ body {
 }
 
 #tit:hover {
-    background-color: rgb(231, 231, 46);
+    background-color: #e7e72e;
 }
 
 /* ------------------------------------------------   TIGRE   ----------------------------------------------------------*/
-
 .div6 {
     margin-top: 20px;
     border: 2px solid black;
@@ -1113,11 +1051,10 @@ body {
 }
 
 #not:hover {
-    background-color: rgb(231, 231, 46);
+    background-color: #e7e72e;
 }
 
 /* ----------------------------------------------------   FOOTER  ---------------------------------------------------- */
-
 .div8 {
     margin-top: 10px;
     border-top: 2px solid black;
@@ -1145,9 +1082,7 @@ body {
     text-decoration: none;
 }
 
-
 /* ################################################   CONTACTO.HTML   ########################################################## */
-
 .formu {
     margin-top: 120px;
     font-family: 'Teko2';
@@ -1192,7 +1127,6 @@ body {
 }
 
 /* ################################################   PLANTILLA.HTML   ########################################################## */
-
 .grilla3 {
     margin-top: 100px;
 }
@@ -1270,7 +1204,6 @@ body {
 }
 
 /* ################################################   HISTORIA.HTML   ######################################################## */
-
 .grilla4 .div1 .menu .pag {
     margin-top: 5px;
     color: white;
@@ -1384,8 +1317,6 @@ body {
 }
 
 /* ################################################   TITULOS.HTML   ########################################################## */
-
-
 .ti {
     margin-top: 200px;
     font-family: 'Teko2';
@@ -1407,7 +1338,6 @@ body {
 }
 
 /* ################################################   NOTICIAS.HTML   ########################################################## */
-
 .cor {
     margin-top: 200px;
     margin-bottom: 50px;
@@ -1440,7 +1370,6 @@ body {
 }
 
 /* ################################################   RESERVA.HTML   ########################################################## */
-
 .res {
     margin-top: 200px;
 }
