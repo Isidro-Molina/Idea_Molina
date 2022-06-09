@@ -32,8 +32,8 @@ body {
     grid-area: footer;
 }
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   MEDIA QUERIES    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* ################################################   INDEX.HTML   ########################################################## */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MEDIA QUERIES !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ###################################### INDEX.html ########################################### */
 #fot {
     grid-area: fot;
 }
@@ -52,7 +52,7 @@ body {
 
 @media screen and (min-width: 1024px) {
 
-    /* ################################################   HEADER   ########################################################## */
+    /* ####################################### HEADER ########################################## */
     .grilla {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -99,7 +99,7 @@ body {
         border-radius: 6px;
         float: right;
         margin-top: -40px;
-        margin-right: -8px;
+        margin-right: -5px;
     }
 
     .grilla .div1 .menu .pag {
@@ -110,8 +110,8 @@ body {
         color: #ffc107;
     }
 
-    /* ################################################   INDEX   ########################################################## */
-    /* --------------------------------------------------------CLUB--------------------------------------------------------------*/
+    /* ########################################## INDEX ############################################## */
+    /* ------------------------------------- CLUB -------------------------------------------------*/
     .grilla .div2 {
         margin-top: 50px;
         width: 102%;
@@ -147,7 +147,7 @@ body {
         margin-left: 6px;
     }
 
-    .grilla #his {
+    .grilla .div3 #his {
         width: 80px;
         height: 30px;
         margin-top: 5px;
@@ -160,12 +160,12 @@ body {
         transition: height 1s;
     }
 
-    .grilla #his:hover {
+    .grilla .div3 #his:hover {
         background-color: #e7e72e;
         height: 35px;
     }
 
-    /* -----------------------------------------------------REAL-MADRID--------------------------------------------------------------*/
+    /* -------------------------------------- REAL MADRID ------------------------------------------*/
     .grilla .div4 {
         margin-top: 10px;
         border: 2px solid black;
@@ -202,7 +202,7 @@ body {
         color: black;
     }
 
-    .grilla #tit {
+    .grilla .div5 #tit {
         width: 80px;
         height: 30px;
         margin-top: -5px;
@@ -215,12 +215,12 @@ body {
         transition: height 1s;
     }
 
-    .grilla #tit:hover {
+    .grilla .div5 #tit:hover {
         background-color: #e7e72e;
         height: 35px;
     }
 
-    /* --------------------------------------------------------TIGRE--------------------------------------------------------------*/
+    /* ----------------------------------------- TIGRE -----------------------------------------------*/
     .grilla .div6 {
         margin-top: -30px;
         border: 2px solid black;
@@ -255,7 +255,7 @@ body {
         margin-left: 6px;
     }
 
-    .grilla #not {
+    .grilla .div7 #not {
         width: 80px;
         height: 30px;
         margin-top: -5px;
@@ -268,51 +268,48 @@ body {
         transition: height 1s;
     }
 
-    .grilla #not:hover {
+    .grilla .div7 #not:hover {
         background-color: #e7e72e;
         height: 35px;
     }
 
-    /* ################################################   FOOTER   ########################################################## */
+    /* ###################################### FOOTER ########################################## */
     .grilla .div8 {
         margin-top: -60px;
         border-top: 2px solid black;
     }
 
-    .grilla .pie section a {
+    .grilla .div8 .pie section a {
         border: none;
         width: 50px;
         height: 36px;
         transition: width 1s, height 1s;
     }
 
-    .grilla .pie section a:hover {
+    .grilla .div8 .pie section a:hover {
         width: 65px;
         height: 40px;
     }
 
-    .grilla .contacto {
+    .grilla .div8 .contacto {
         width: fit-content;
         margin: 0 auto;
     }
 
-    .contacto h2 {
+    .grilla .div8 .contacto h2 {
         font-family: 'Teko';
+        text-decoration: none;
         color: white;
         width: fit-content;
         margin: 0 auto;
     }
 
-    .grilla .contacto a {
-        text-decoration: none;
-    }
-
-    .grilla .contacto h2:hover {
+    .grilla .div8 .contacto h2:hover {
         color: yellow;
     }
 }
 
-/* ################################################   CONTACTO.HTML   ########################################################## */
+/* ################################ CONTACTO.html ######################################## */
 #for {
     grid-area: for;
 }

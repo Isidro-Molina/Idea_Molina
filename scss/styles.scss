@@ -1,3 +1,5 @@
+@import 'variables';
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +14,6 @@ body {
 body {
     position: relative;
     background-color: rgb(40, 78, 181);
-
 }
 
 @font-face {
@@ -33,9 +34,11 @@ body {
     grid-area: footer;
 }
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   MEDIA QUERIES    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MEDIA QUERIES !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-/* ################################################   INDEX.HTML   ########################################################## */
+
+
+/* ###################################### INDEX.html ########################################### */
 
 #fot {
     grid-area: fot;
@@ -53,9 +56,9 @@ body {
     grid-area: sab;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:#{$laptop}) {
 
-    /* ################################################   HEADER   ########################################################## */
+    /* ####################################### HEADER ########################################## */
 
     .grilla {
         display: grid;
@@ -68,270 +71,286 @@ body {
             "rom vid"
             "tig sab"
             "footer footer";
+
+        .div1 {
+            nav {
+                border: 5px solid black;
+                background-color: rgb(0, 0, 255);
+            }
+
+            img {
+                width: 90px;
+                height: 100px;
+                float: left;
+                margin-left: -10px;
+                visibility: visible;
+            }
+
+            h1 {
+                font-family: 'Teko';
+                font-size: 30pt;
+                color: #ffe100;
+                width: 430px;
+                margin-left: 90px;
+            }
+
+            h2 {
+                font-family: 'Teko';
+                font-size: 22pt;
+                color: #ffe100;
+                width: 220px;
+                margin-left: 90px;
+                margin-top: -7px;
+            }
+
+            .menu {
+                font-size: 15pt;
+                width: fit-content;
+                border: 2px solid $color-titulos;
+                border-radius: 6px;
+                float: right;
+                margin-top: -40px;
+                margin-right: -5px;
+
+                .pag {
+                    color: white;
+
+                    &:hover {
+                        color: $color-titulos;
+                    }
+                }
+            }
+        }
     }
 
-    .grilla .div1 nav {
-        border: 5px solid black;
-        background-color: rgb(0, 0, 255);
+    /* ########################################## INDEX ############################################## */
+
+
+    /* ------------------------------------- CLUB -------------------------------------------------*/
+
+    .grilla {
+        .div2 {
+            margin-top: 50px;
+            width: 102%;
+            height: 360px;
+            border: 2px solid black;
+            background-image: url('../img/diario.jpg');
+
+            .fotos {
+                width: 480px;
+                height: 320px;
+                margin-left: -6px;
+            }
+        }
+
+        .div3 {
+            background-image: url('../img/diario.jpg');
+            border: 2px solid black;
+            height: 360px;
+            margin-top: 50px;
+
+            h2 {
+                margin-top: 20px;
+                font-family: 'Teko';
+                font-size: 24pt;
+                text-align: center;
+            }
+
+            p {
+                font-size: 14pt;
+                font-family: 'Teko2';
+                text-align: left;
+                margin-left: 6px;
+            }
+
+            #his {
+                width: 80px;
+                height: 30px;
+                margin-top: 5px;
+                border-radius: 4px;
+                border: 2px solid black;
+                float: right;
+                font-size: 12pt;
+                margin-right: 20px;
+                outline: none;
+                transition: height 1s;
+
+                &:hover {
+                    background-color: rgb(231, 231, 46);
+                    height: 35px;
+                }
+            }
+        }
     }
 
-    .grilla .div1 img {
-        width: 90px;
-        height: 100px;
-        float: left;
-        margin-left: -10px;
-        visibility: visible;
+    /* -------------------------------------- REAL MADRID ------------------------------------------*/
+
+
+    .grilla {
+        .div4 {
+            margin-top: 10px;
+            border: 2px solid black;
+            height: 360px;
+
+            iframe {
+                margin-top: 15px;
+                width: 98%;
+                height: 320px;
+                margin-left: 5px;
+                border: 2px solid white;
+            }
+        }
+
+        .div5 {
+            border: 2px solid black;
+            margin-top: 10px;
+            height: 360px;
+
+            h2 {
+                margin-top: 20px;
+                color: black;
+                font-family: 'Teko';
+                font-size: 30pt;
+                text-align: center;
+            }
+
+            p {
+                font-size: 18pt;
+                font-family: 'Teko2';
+                text-align: left;
+                margin-left: 4px;
+                color: black;
+            }
+
+            #tit {
+                width: 80px;
+                height: 30px;
+                margin-top: -5px;
+                border-radius: 4px;
+                border: 2px solid black;
+                float: right;
+                font-size: 12pt;
+                margin-right: 20px;
+                outline: none;
+                transition: height 1s;
+
+                &:hover {
+                    background-color: rgb(231, 231, 46);
+                    height: 35px;
+                }
+            }
+        }
     }
 
-    .grilla .div1 h1 {
-        font-family: 'Teko';
-        font-size: 30pt;
-        color: #ffe100;
-        width: 430px;
-        margin-left: 90px;
+    /* ----------------------------------------- TIGRE -----------------------------------------------*/
+
+
+    .grilla {
+        .div6 {
+            margin-top: -30px;
+            border: 2px solid black;
+            height: 360px;
+
+            img {
+                margin-top: 15px;
+                width: 98%;
+                height: 320px;
+                margin-left: 5px;
+                border: 2px solid white;
+            }
+        }
+
+        .div7 {
+            margin-top: -30px;
+            border: 2px solid black;
+            height: 360px;
+
+            h2 {
+                margin-top: 20px;
+                font-family: 'Teko';
+                font-size: 24pt;
+                text-align: center;
+            }
+
+            p {
+                font-size: 16pt;
+                font-family: 'Teko2';
+                text-align: left;
+                margin-left: 6px;
+            }
+
+            #not {
+                width: 80px;
+                height: 30px;
+                margin-top: -5px;
+                border-radius: 4px;
+                border: 2px solid black;
+                float: right;
+                font-size: 12pt;
+                margin-right: 20px;
+                outline: none;
+                transition: height 1s;
+
+                &:hover {
+                    background-color: rgb(231, 231, 46);
+                    height: 35px;
+                }
+            }
+        }
     }
 
-    .grilla .div1 h2 {
-        font-family: 'Teko';
-        font-size: 22pt;
-        color: #ffe100;
-        width: 220px;
-        margin-left: 90px;
-        margin-top: -7px;
-    }
+    /* ###################################### FOOTER ########################################## */
 
-    .grilla .div1 .menu {
-        font-size: 15pt;
-        width: fit-content;
-        border: 2px solid #ffc107;
-        border-radius: 6px;
-        float: right;
-        margin-top: -40px;
-        margin-right: -8px;
-    }
+    .grilla {
+        .div8 {
+            margin-top: -60px;
+            border-top: 2px solid black;
 
-    .grilla .div1 .menu .pag {
-        color: white;
-    }
+            .pie {
+                section {
+                    a {
+                        border: none;
+                        width: 50px;
+                        height: 36px;
+                        transition: width 1s,
+                            height 1s;
 
-    .grilla .div1 .menu .pag:hover {
-        color: #ffc107;
-    }
+                        &:hover {
+                            width: 65px;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
 
-    /* ################################################   INDEX   ########################################################## */
+            .contacto {
+                width: fit-content;
+                margin: 0 auto;
 
-    /* --------------------------------------------------------CLUB--------------------------------------------------------------*/
+                h2 {
+                    font-family: 'Teko';
+                    text-decoration: none;
+                    color: white;
+                    width: fit-content;
+                    margin: 0 auto;
 
-    .grilla .div2 {
-        margin-top: 50px;
-        width: 102%;
-        height: 360px;
-        border: 2px solid black;
-        background-image: url('../img/diario.jpg');
-    }
-
-    .grilla .div2 .fotos {
-        width: 480px;
-        height: 320px;
-        margin-left: -6px;
-    }
-
-    .grilla .div3 {
-        background-image: url('../img/diario.jpg');
-        border: 2px solid black;
-        height: 360px;
-        margin-top: 50px;
-    }
-
-    .grilla .div3 h2 {
-        margin-top: 20px;
-        font-family: 'Teko';
-        font-size: 24pt;
-        text-align: center;
-    }
-
-    .grilla .div3 p {
-        font-size: 14pt;
-        font-family: 'Teko2';
-        text-align: left;
-        margin-left: 6px;
-    }
-
-    .grilla #his {
-        width: 80px;
-        height: 30px;
-        margin-top: 5px;
-        border-radius: 4px;
-        border: 2px solid black;
-        float: right;
-        font-size: 12pt;
-        margin-right: 20px;
-        outline: none;
-        transition: height 1s;
-    }
-
-    .grilla #his:hover {
-        background-color: rgb(231, 231, 46);
-        height: 35px;
-    }
-
-    /* -----------------------------------------------------REAL-MADRID--------------------------------------------------------------*/
-
-    .grilla .div4 {
-        margin-top: 10px;
-        border: 2px solid black;
-        height: 360px;
-    }
-
-    .grilla .div4 iframe {
-        margin-top: 15px;
-        width: 98%;
-        height: 320px;
-        margin-left: 5px;
-        border: 2px solid white;
-    }
-
-    .grilla .div5 {
-        border: 2px solid black;
-        margin-top: 10px;
-        height: 360px;
-    }
-
-    .grilla .div5 h2 {
-        margin-top: 20px;
-        color: black;
-        font-family: 'Teko';
-        font-size: 30pt;
-        text-align: center;
-    }
-
-    .grilla .div5 p {
-        font-size: 18pt;
-        font-family: 'Teko2';
-        text-align: left;
-        margin-left: 4px;
-        color: black;
-    }
-
-    .grilla #tit {
-        width: 80px;
-        height: 30px;
-        margin-top: -5px;
-        border-radius: 4px;
-        border: 2px solid black;
-        float: right;
-        font-size: 12pt;
-        margin-right: 20px;
-        outline: none;
-        transition: height 1s;
-    }
-
-    .grilla #tit:hover {
-        background-color: rgb(231, 231, 46);
-        height: 35px;
-    }
-
-    /* --------------------------------------------------------TIGRE--------------------------------------------------------------*/
-
-    .grilla .div6 {
-        margin-top: -30px;
-        border: 2px solid black;
-        height: 360px;
-    }
-
-    .grilla .div6 img {
-        margin-top: 15px;
-        width: 98%;
-        height: 320px;
-        margin-left: 5px;
-        border: 2px solid white;
-    }
-
-    .grilla .div7 {
-        margin-top: -30px;
-        border: 2px solid black;
-        height: 360px;
-    }
-
-    .grilla .div7 h2 {
-        margin-top: 20px;
-        font-family: 'Teko';
-        font-size: 24pt;
-        text-align: center;
-    }
-
-    .grilla .div7 p {
-        font-size: 16pt;
-        font-family: 'Teko2';
-        text-align: left;
-        margin-left: 6px;
-    }
-
-    .grilla #not {
-        width: 80px;
-        height: 30px;
-        margin-top: -5px;
-        border-radius: 4px;
-        border: 2px solid black;
-        float: right;
-        font-size: 12pt;
-        margin-right: 20px;
-        outline: none;
-        transition: height 1s;
-    }
-
-    .grilla #not:hover {
-        background-color: rgb(231, 231, 46);
-        height: 35px;
-    }
-
-    /* ################################################   FOOTER   ########################################################## */
-
-    .grilla .div8 {
-        margin-top: -60px;
-        border-top: 2px solid black;
-    }
-
-    .grilla .pie section a {
-        border: none;
-        width: 50px;
-        height: 36px;
-        transition: width 1s, height 1s;
-    }
-
-    .grilla .pie section a:hover {
-        width: 65px;
-        height: 40px;
-    }
-
-    .grilla .contacto {
-        width: fit-content;
-        margin: 0 auto;
-    }
-
-    .contacto h2 {
-        font-family: 'Teko';
-        color: white;
-        width: fit-content;
-        margin: 0 auto;
-    }
-
-    .grilla .contacto a {
-        text-decoration: none;
-    }
-
-    .grilla .contacto h2:hover {
-        color: yellow;
+                    &:hover {
+                        color: yellow;
+                    }
+                }
+            }
+        }
     }
 
 }
 
-/* ################################################   CONTACTO.HTML   ########################################################## */
+/* ################################ CONTACTO.html ######################################## */
+
 #for {
     grid-area: for;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:#{$laptop}) {
 
     .grilla2 {
         display: grid;
@@ -379,7 +398,7 @@ body {
     .grilla2 .div1 .menu {
         font-size: 15pt;
         width: fit-content;
-        border: 2px solid #ffc107;
+        border: 2px solid $color-titulos;
         border-radius: 6px;
         float: right;
         margin-top: -40px;
@@ -391,7 +410,7 @@ body {
     }
 
     .grilla2 .div1 .menu .pag:hover {
-        color: #ffc107;
+        color: $color-titulos;
     }
 
     /* ################################################   FORMULARIO   ######################################################## */
@@ -497,7 +516,7 @@ body {
     grid-area: gira;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:#{$laptop}) {
 
     .grilla4 {
         display: grid;
@@ -547,7 +566,7 @@ body {
     .grilla4 .div1 .menu {
         font-size: 15pt;
         width: fit-content;
-        border: 2px solid #ffc107;
+        border: 2px solid $color-titulos;
         border-radius: 6px;
         float: right;
         margin-top: -40px;
@@ -559,7 +578,7 @@ body {
     }
 
     .grilla4 .div1 .menu .pag:hover {
-        color: #ffc107;
+        color: $color-titulos;
     }
 
     /* ################################################   CONTENIDO   ######################################################## */
@@ -712,7 +731,7 @@ body {
     grid-area: gremioT;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:#{$laptop}) {
 
     .grilla3 {
         display: grid;
@@ -766,7 +785,7 @@ body {
     .grilla3 .div1 .menu {
         font-size: 15pt;
         width: fit-content;
-        border: 2px solid #ffc107;
+        border: 2px solid $color-titulos;
         border-radius: 6px;
         float: right;
         margin-top: -40px;
@@ -778,7 +797,7 @@ body {
     }
 
     .grilla3 .div1 .menu .pag:hover {
-        color: #ffc107;
+        color: $color-titulos;
     }
 
     /* ################################################   PLANTELES   ######################################################## */
@@ -904,16 +923,16 @@ body {
 /* ################################################   TITULOS.HTML   ########################################################## */
 
 
-@media screen and (min-width:1024px) {}
+@media screen and (min-width:#{$laptop}) {}
 
 /* ################################################   NOTICIAS.HTML   ########################################################## */
 
-@media screen and (min-width:1024px) {}
+@media screen and (min-width:#{$laptop}) {}
 
 
 /* ################################################   RESERVA.HTML   ########################################################## */
 
-@media screen and (min-width:1024px) {}
+@media screen and (min-width:#{$laptop}) {}
 
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   MOBILE    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
