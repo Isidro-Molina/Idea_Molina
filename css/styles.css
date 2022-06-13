@@ -485,7 +485,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 78px repeat(2, 1fr) 100px;
-    column-gap: 0px;
     row-gap: 10px;
     grid-template-areas: "header header" "plantel plantel" "plantelG plantelG" "gremio gremioT" "footer footer"; }
   /* ::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::: */
@@ -599,8 +598,311 @@ body {
           color: yellow; } }
 
 /* ####################################### TITULOS.html ########################################## */
+#trofeos {
+  grid-area: trofeos; }
+
+#palermo {
+  grid-area: palermo; }
+
+@media screen and (min-width: 1024px) {
+  .grilla5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 78px repeat(2, 1fr) 100px;
+    row-gap: 0px;
+    grid-template-areas: "header header" "trofeos trofeos" "palermo palermo" "footer footer"; }
+  /* ::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::: */
+  .grilla5 .div1 nav {
+    border: 5px solid black;
+    background-color: blue; }
+  .grilla5 .div1 img {
+    width: 90px;
+    height: 100px;
+    float: left;
+    margin-left: -10px;
+    visibility: visible; }
+  .grilla5 .div1 h1 {
+    font-family: 'Teko';
+    font-size: 30pt;
+    color: #ffe100;
+    width: 430px;
+    margin-left: 90px; }
+  .grilla5 .div1 h2 {
+    font-family: 'Teko';
+    font-size: 22pt;
+    color: #ffe100;
+    width: 220px;
+    margin-left: 90px;
+    margin-top: -7px; }
+  .grilla5 .div1 .menu {
+    font-size: 15pt;
+    width: fit-content;
+    border: 2px solid #ffc107;
+    border-radius: 6px;
+    float: right;
+    margin-top: -40px;
+    margin-right: -8px; }
+    .grilla5 .div1 .menu .pag {
+      color: white; }
+      .grilla5 .div1 .menu .pag:hover {
+        color: #ffc107; }
+  /* ------------------------------------- TROFEOS ----------------------------------------------  */
+  .grilla5 .div18 {
+    margin-top: 80px; }
+    .grilla5 .div18 h2 {
+      font-size: 34pt;
+      font-family: 'Teko';
+      color: #ffe100; }
+    .grilla5 .div18 table {
+      text-align: center;
+      font-size: 14pt;
+      color: white; }
+      .grilla5 .div18 table thead {
+        font-size: 18pt;
+        color: #ffe100; }
+  .grilla5 .div19 {
+    margin-top: 20px; }
+    .grilla5 .div19 h2 {
+      font-size: 34pt;
+      font-family: 'Teko';
+      width: fit-content;
+      color: #ffe100; }
+    .grilla5 .div19 iframe {
+      width: 500px;
+      height: 280px;
+      margin-left: 5px; }
+    .grilla5 .div19 img {
+      width: 500px;
+      height: 280px;
+      float: right;
+      margin-right: 5px; }
+    .grilla5 .div19 p {
+      font-family: 'Teko2';
+      font-size: 18pt;
+      text-align: left;
+      margin: 0 auto;
+      margin-top: 15px;
+      width: 99%; }
+  /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  .grilla5 .div8 {
+    margin-top: 130px; }
+    .grilla5 .div8 .pie section a {
+      border: none;
+      width: 50px;
+      height: 36px;
+      transition: width 1s, height 1s; }
+      .grilla5 .div8 .pie section a:hover {
+        width: 65px;
+        height: 40px; }
+    .grilla5 .div8 .contacto {
+      width: fit-content;
+      margin: 0 auto; }
+      .grilla5 .div8 .contacto h2 {
+        font-family: 'Teko';
+        color: white;
+        width: fit-content;
+        margin: 0 auto; }
+        .grilla5 .div8 .contacto h2:hover {
+          color: yellow; } }
+
 /* ####################################### NOTICIAS.html ########################################## */
+#cor {
+  grid-area: cor; }
+
+#dyj {
+  grid-area: dyj; }
+
+#tig {
+  grid-area: tig; }
+
+@media screen and (min-width: 1024px) {
+  .grilla6 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 78px repeat(2, 1fr) 100px;
+    row-gap: 10px;
+    grid-template-areas: "header header" "cor dyj" "tig tig" "footer footer"; }
+  /* ::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::: */
+  .grilla6 .div1 nav {
+    border: 5px solid black;
+    background-color: blue; }
+  .grilla6 .div1 img {
+    width: 90px;
+    height: 100px;
+    float: left;
+    margin-left: -10px;
+    visibility: visible; }
+  .grilla6 .div1 h1 {
+    font-family: 'Teko';
+    font-size: 30pt;
+    color: #ffe100;
+    width: 430px;
+    margin-left: 90px; }
+  .grilla6 .div1 h2 {
+    font-family: 'Teko';
+    font-size: 22pt;
+    color: #ffe100;
+    width: 220px;
+    margin-left: 90px;
+    margin-top: -7px; }
+  .grilla6 .div1 .menu {
+    font-size: 15pt;
+    width: fit-content;
+    border: 2px solid #ffc107;
+    border-radius: 6px;
+    float: right;
+    margin-top: -40px;
+    margin-right: -8px; }
+    .grilla6 .div1 .menu .pag {
+      color: white; }
+      .grilla6 .div1 .menu .pag:hover {
+        color: #ffc107; }
+  /* ------------------------------------- NOTICIAS ----------------------------------------------  */
+  .grilla6 .div20 {
+    margin-top: 80px;
+    height: 520px; }
+  .grilla6 .div21 {
+    margin-top: 80px; }
+    .grilla6 .div21 img {
+      width: 500px; }
+  .grilla6 .div22 {
+    margin-top: -50px;
+    height: 430px; }
+    .grilla6 .div22 img {
+      width: 500px; }
+  /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  .grilla6 .div8 {
+    margin-top: -60px;
+    border-top: 2px solid black; }
+    .grilla6 .div8 .pie section a {
+      border: none;
+      width: 50px;
+      height: 36px;
+      transition: width 1s, height 1s; }
+      .grilla6 .div8 .pie section a:hover {
+        width: 65px;
+        height: 40px; }
+    .grilla6 .div8 .contacto {
+      width: fit-content;
+      margin: 0 auto; }
+      .grilla6 .div8 .contacto h2 {
+        font-family: 'Teko';
+        text-decoration: none;
+        color: white;
+        width: fit-content;
+        margin: 0 auto; }
+        .grilla6 .div8 .contacto h2:hover {
+          color: yellow; } }
+
 /* ####################################### RESERVA.html ########################################## */
+#tabla {
+  grid-area: tabla; }
+
+#barr {
+  grid-area: barr; }
+
+#prox {
+  grid-area: prox; }
+
+#pibes {
+  grid-area: pibes; }
+
+#hur {
+  grid-area: hur; }
+
+@media screen and (min-width: 1024px) {
+  .grilla7 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 78px repeat(3, 1fr) 100px;
+    row-gap: 15px;
+    grid-template-areas: "header header" "tabla barr" "prox hur" "pibes pibes" "footer footer"; }
+  /* ::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::: */
+  .grilla7 .div1 nav {
+    border: 5px solid black;
+    background-color: blue; }
+  .grilla7 .div1 img {
+    width: 90px;
+    height: 100px;
+    float: left;
+    margin-left: -10px;
+    visibility: visible; }
+  .grilla7 .div1 h1 {
+    font-family: 'Teko';
+    font-size: 30pt;
+    color: #ffe100;
+    width: 430px;
+    margin-left: 90px; }
+  .grilla7 .div1 h2 {
+    font-family: 'Teko';
+    font-size: 22pt;
+    color: #ffe100;
+    width: 220px;
+    margin-left: 90px;
+    margin-top: -7px; }
+  .grilla7 .div1 .menu {
+    font-size: 15pt;
+    width: fit-content;
+    border: 2px solid #ffc107;
+    border-radius: 6px;
+    float: right;
+    margin-top: -40px;
+    margin-right: -5px; }
+    .grilla7 .div1 .menu .pag {
+      color: white; }
+      .grilla7 .div1 .menu .pag:hover {
+        color: #ffc107; }
+  /* ------------------------------------- RESERVA ----------------------------------------------- */
+  .grilla7 .div23 {
+    margin-top: -150px; }
+    .grilla7 .div23 .res h2 {
+      font-size: 40pt;
+      font-family: 'Teko';
+      color: #ffe100; }
+    .grilla7 .div23 h2 {
+      font-size: 34pt;
+      font-family: 'Teko';
+      color: #ffe100; }
+    .grilla7 .div23 table {
+      text-align: center;
+      font-size: 12pt;
+      color: white; }
+      .grilla7 .div23 table thead {
+        font-size: 11pt;
+        color: #ffe100; }
+  .grilla7 .div24 {
+    margin-top: 60px;
+    margin-left: 10px;
+    height: 640px; }
+    .grilla7 .div24 img {
+      width: 494px;
+      height: 250px; }
+  .grilla7 .div27 img {
+    width: 300px; }
+  /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  .grilla7 .div8 {
+    margin-top: 60px;
+    border-top: 2px solid black; }
+    .grilla7 .div8 .pie section a {
+      border: none;
+      width: 50px;
+      height: 36px;
+      transition: width 1s, height 1s; }
+      .grilla7 .div8 .pie section a:hover {
+        width: 65px;
+        height: 40px; }
+    .grilla7 .div8 .contacto {
+      width: fit-content;
+      margin: 0 auto; }
+      .grilla7 .div8 .contacto h2 {
+        font-family: 'Teko';
+        text-decoration: none;
+        color: white;
+        width: fit-content;
+        margin: 0 auto; }
+        .grilla7 .div8 .contacto h2:hover {
+          color: yellow; } }
+
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MOBILE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /* ####################################### INDEX.html ########################################## */
 /* ::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::: */
