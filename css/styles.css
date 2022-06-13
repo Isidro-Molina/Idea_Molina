@@ -814,9 +814,9 @@ body {
   .grilla7 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 78px repeat(3, 1fr) 100px;
+    grid-template-rows: 78px repeat(2, 1fr) 100px;
     row-gap: 15px;
-    grid-template-areas: "header header" "tabla barr" "prox hur" "pibes pibes" "footer footer"; }
+    grid-template-areas: "header header" "tabla barr" "prox prox" "pibes pibes" "hur hur" "footer footer"; }
   /* ::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::: */
   .grilla7 .div1 nav {
     border: 5px solid black;
@@ -865,7 +865,7 @@ body {
       color: #ffe100; }
     .grilla7 .div23 table {
       text-align: center;
-      font-size: 12pt;
+      font-size: 10pt;
       color: white; }
       .grilla7 .div23 table thead {
         font-size: 11pt;
@@ -875,10 +875,38 @@ body {
     margin-left: 10px;
     height: 640px; }
     .grilla7 .div24 img {
-      width: 494px;
+      width: 498px;
       height: 250px; }
-  .grilla7 .div27 img {
-    width: 300px; }
+  .grilla7 .div25 h2 {
+    font-size: 34pt;
+    font-family: 'Teko';
+    color: #ffe100; }
+  .grilla7 .div25 table {
+    text-align: center;
+    font-size: 14pt;
+    color: white; }
+    .grilla7 .div25 table thead {
+      font-size: 18pt;
+      color: #ffe100; }
+  .grilla7 .div26 {
+    margin-top: -500px; }
+    .grilla7 .div26 h2 {
+      font-size: 34pt;
+      font-family: 'Teko';
+      color: #ffe100; }
+    .grilla7 .div26 table {
+      text-align: center;
+      font-size: 14pt;
+      color: white; }
+      .grilla7 .div26 table thead {
+        font-size: 18pt;
+        color: #ffe100; }
+  .grilla7 .div27 {
+    margin-top: 50px; }
+    .grilla7 .div27 img {
+      margin-left: 100px;
+      width: 800px;
+      height: 400px; }
   /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
   .grilla7 .div8 {
     margin-top: 60px;
