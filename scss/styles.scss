@@ -62,8 +62,6 @@ body {
 
 @media screen and (min-width:#{$laptop}) {
 
-    /* ::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::: */
-
     .grilla {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -75,14 +73,18 @@ body {
             "rom vid"
             "tig sab"
             "footer footer";
+    }
 
+    /* ::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::: */
+
+    .grilla {
         .div1 {
             nav {
                 border: 5px solid black;
                 background-color: rgb(0, 0, 255);
             }
 
-            img {
+            .bokita {
                 width: 90px;
                 height: 100px;
                 float: left;
@@ -373,7 +375,7 @@ body {
                 background-color: rgb(0, 0, 255);
             }
 
-            img {
+            .bokita {
                 width: 90px;
                 height: 100px;
                 float: left;
@@ -532,6 +534,7 @@ body {
 @media screen and (min-width:#{$laptop}) {
 
     .grilla4 {
+        margin-top: -40px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 78px repeat(3, 1fr) 100px;
@@ -544,6 +547,7 @@ body {
             "footer footer";
     }
 
+
     /* ::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::: */
 
     .grilla4 {
@@ -553,7 +557,7 @@ body {
                 background-color: rgb(0, 0, 255);
             }
 
-            img {
+            .bokita {
                 width: 90px;
                 height: 100px;
                 float: left;
@@ -602,12 +606,12 @@ body {
 
     .grilla4 {
         .div14 {
-            margin-top: 60px;
-
-            h2 {
-                font-size: 34pt;
-                font-family: 'Teko';
-                color: #ffe100;
+            .titulo {
+                h2 {
+                    font-size: 34pt;
+                    font-family: 'Teko';
+                    color: #ffe100;
+                }
             }
 
             .elClu {
@@ -636,8 +640,6 @@ body {
         }
 
         .div15 {
-            margin-top: 60px;
-
             h3 {
                 text-align: right;
                 font-size: 30pt;
@@ -663,7 +665,7 @@ body {
         }
 
         .div16 {
-            margin-top: -60px;
+            margin-top: -100px;
 
             h3 {
                 font-size: 30pt;
@@ -689,7 +691,14 @@ body {
         }
 
         .div17 {
-            margin-top: -200px;
+            margin-top: -250px;
+
+            h3 {
+                text-align: right;
+                font-size: 30pt;
+                font-family: 'Teko';
+                margin-right: 20px;
+            }
         }
     }
 
@@ -736,6 +745,7 @@ body {
     }
 }
 
+
 /* ####################################### PLANTILLA.html ########################################## */
 
 #plantel {
@@ -777,7 +787,7 @@ body {
                 background-color: rgb(0, 0, 255);
             }
 
-            img {
+            .bokita {
                 width: 90px;
                 height: 100px;
                 float: left;
@@ -826,7 +836,7 @@ body {
 
     .grilla3 {
         .div10 {
-            margin-top: -30px;
+            margin-top: 80px;
 
             h2 {
                 font-size: 34pt;
@@ -880,9 +890,9 @@ body {
             height: fit-content;
             margin: 0 auto;
             margin-top: -120px;
-            border: 2px solid black;
 
             img {
+                margin-left: 10px;
                 width: 96%;
                 border: 2px solid white;
             }
@@ -977,7 +987,7 @@ body {
                 background-color: rgb(0, 0, 255);
             }
 
-            img {
+            .bokita {
                 width: 90px;
                 height: 100px;
                 float: left;
@@ -1032,6 +1042,7 @@ body {
                 font-size: 34pt;
                 font-family: 'Teko';
                 color: #ffe100;
+                margin-left: 15px;
             }
 
             table {
@@ -1054,22 +1065,24 @@ body {
                 font-family: 'Teko';
                 width: fit-content;
                 color: #ffe100;
+                margin-left: 15px;
             }
 
-            iframe{
+            iframe {
                 width: 500px;
                 height: 280px;
                 margin-left: 5px;
             }
 
-            img{
+            img {
+                margin-top: 20px;
                 width: 500px;
                 height: 280px;
                 float: right;
                 margin-right: 5px;
             }
 
-            p{
+            p {
                 font-family: 'Teko2';
                 font-size: 18pt;
                 text-align: left;
@@ -1080,9 +1093,9 @@ body {
         }
     }
 
-     /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-    .grilla5{
+    .grilla5 {
         .div8 {
             margin-top: 130px;
 
@@ -1135,29 +1148,33 @@ body {
     grid-area: tig;
 }
 
+#asa {
+    grid-area: asa;
+}
+
 @media screen and (min-width:#{$laptop}) {
 
-    .grilla6{
+    .grilla6 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 78px repeat(2, 1fr) 100px;
-        row-gap: 10px;
+        gap: 24px;
         grid-template-areas: "header header"
-        "cor dyj"
-        "tig tig"
-        "footer footer";
+            "cor dyj"
+            "tig asa"
+            "footer footer";
     }
 
-     /* ::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::: */
+    /* ::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::: */
 
-    .grilla6{
+    .grilla6 {
         .div1 {
             nav {
                 border: 5px solid black;
                 background-color: rgb(0, 0, 255);
             }
 
-            img {
+            .bokita {
                 width: 90px;
                 height: 100px;
                 float: left;
@@ -1204,33 +1221,93 @@ body {
 
     /* ------------------------------------- NOTICIAS ----------------------------------------------  */
 
-    .grilla6{
-        .div20{
-            margin-top: 80px;
-            height: 520px;
+    .grilla6 {
+        .noti {
+            font-size: 34pt;
+            font-family: 'Teko';
+            color: #ffe100;
+            margin-left: 15px;
+            margin-top: 60px;
         }
 
-        .div21{
-            margin-top: 80px;
+        .div20 {
+            height: 480px;
+            margin-left: 10px;
 
-            img{
-                width: 500px;
+            img {
+                width: 476px;
+            }
+
+            h2 {
+                font-size: 22pt;
+            }
+
+            p {
+                font-size: 16pt;
             }
         }
 
-        .div22{
-            margin-top: -50px;
-            height: 430px;
+        .div21 {
+            margin-top: 135px;
+            margin-right: 10px;
+            float: right;
 
-            img{
-                width: 500px;
+            img {
+                height: 280.2px;
+                width: 476px;
+            }
+
+            h2 {
+                font-size: 16.5pt;
+            }
+
+            p {
+                font-size: 12pt;
+            }
+        }
+
+        .div22 {
+            height: 480px;
+            margin-left: 10px;
+
+            img {
+                height: 280.2px;
+                width: 476px;
+            }
+
+            h2 {
+                font-size: 22pt;
+            }
+
+            p {
+                font-size: 16pt;
+            }
+        }
+
+        .div30 {
+            margin-top: 20px;
+            margin-right: 10px;
+            height: 480px;
+            float: right;
+
+            img {
+                height: 280.2px;
+                width: 476px;
+            }
+
+            h2 {
+                font-size: 16.5pt;
+            }
+
+            p {
+                font-size: 12pt;
             }
         }
     }
 
-     /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-    .grilla6{
+    .grilla6 {
         .div8 {
             margin-top: -60px;
             border-top: 2px solid black;
@@ -1272,55 +1349,54 @@ body {
     }
 }
 
-
 /* ####################################### RESERVA.html ########################################## */
 
-#tabla{
+#tabla {
     grid-area: tabla;
 }
 
-#barr{
+#barr {
     grid-area: barr;
 }
 
-#prox{
+#prox {
     grid-area: prox;
 }
 
-#pibes{
+#pibes {
     grid-area: pibes;
 }
 
-#hur{
+#hur {
     grid-area: hur;
 }
 
 @media screen and (min-width:#{$laptop}) {
 
-    .grilla7{
+    .grilla7 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 78px repeat(2, 1fr) 100px;
-        row-gap: 15px;
+        grid-template-rows: 78px repeat(4, 1fr) 100px;
+        gap: 15px;
         grid-template-areas: "header header"
-        "tabla barr"
-        "prox prox"
-        "pibes pibes"
-        "hur hur"
-        "footer footer";
-    
+            "tabla barr"
+            "tabla prox"
+            "pibes pibes"
+            "hur hur"
+            "footer footer";
+
     }
 
     /* ::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::: */
 
-    .grilla7{
+    .grilla7 {
         .div1 {
             nav {
                 border: 5px solid black;
                 background-color: rgb(0, 0, 255);
             }
 
-            img {
+            .bokita {
                 width: 90px;
                 height: 100px;
                 float: left;
@@ -1367,54 +1443,61 @@ body {
 
     /* ------------------------------------- RESERVA ----------------------------------------------- */
 
-    .grilla7{
-        .div23{
-            margin-top: -150px;
-            .res{
-                h2{
+    .grilla7 {
+        .div23 {
+            margin-top: 80px;
+
+            .res {
+                h2 {
                     font-size: 40pt;
                     font-family: 'Teko';
                     color: #ffe100;
                 }
             }
 
-            h2{
+            h2 {
                 font-size: 34pt;
                 font-family: 'Teko';
                 color: #ffe100;
+                margin-left: 10px;
             }
 
             table {
+                margin-left: 10px;
                 text-align: center;
-                font-size: 10pt;
+                font-size: 14pt;
                 color: white;
 
                 thead {
-                    font-size: 11pt;
+                    font-size: 14pt;
                     color: #ffe100;
                 }
             }
         }
 
-        .div24{
-            margin-top: 60px;
-            margin-left: 10px;
-            height: 640px;
+        .div24 {
+            margin-top: 80px;
+            margin-left: 15px;
+            height: 520px;
+            width: 480px;
 
-            img{
-                width: 498px;
+            img {
+                width: 466px;
                 height: 250px;
             }
         }
 
-        .div25{
-            h2{
+        .div25 {
+            h2 {
                 font-size: 34pt;
                 font-family: 'Teko';
                 color: #ffe100;
+                text-align: center;
             }
 
             table {
+                margin: 0 auto;
+                width: 430px;
                 text-align: center;
                 font-size: 14pt;
                 color: white;
@@ -1426,8 +1509,8 @@ body {
             }
         }
 
-        .div26{
-            margin-top: -500px;
+        .div26 {
+            margin-top: -280px;
 
             h2 {
                 font-size: 34pt;
@@ -1447,10 +1530,10 @@ body {
             }
         }
 
-        .div27{
-            margin-top: 50px;
+        .div27 {
+            margin-top: -150px;
 
-            img{
+            img {
                 margin-left: 100px;
                 width: 800px;
                 height: 400px;
@@ -1460,9 +1543,9 @@ body {
 
     /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-    .grilla7{
+    .grilla7 {
         .div8 {
-            margin-top: 60px;
+            margin-top: -60px;
             border-top: 2px solid black;
 
             .pie {
@@ -1511,103 +1594,103 @@ body {
 
 /* ::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::: */
 
-.div1 nav {
-    border: 5px solid black;
-    background-color: rgb(0, 0, 255);
+.div1 {
+    nav {
+        border: 5px solid black;
+        background-color: rgb(0, 0, 255);
+
+        .bokita {
+            width: 55px;
+            height: 55px;
+            float: right;
+            visibility: hidden;
+        }
+
+        h1 {
+            font-family: 'Teko';
+            font-size: 20pt;
+            color: #ffe100;
+            margin-left: -6px;
+        }
+
+        h2 {
+            font-family: 'Teko';
+            font-size: 14pt;
+            color: #ffe100;
+            margin-left: -6px;
+            margin-bottom: -5px;
+        }
+
+        .navbar-toggler {
+            margin-top: -45px;
+            float: right;
+
+            .navbar-toggler-icon {
+                width: 7px;
+                height: 15px;
+
+                img {
+                    margin-left: -24px;
+                    margin-top: -19px;
+                    width: 55px;
+                    height: 55px;
+                }
+            }
+        }
+
+        .menu {
+            .pag {
+                margin-top: 5px;
+                color: white;
+                width: fit-content;
+            }
+        }
+    }
 }
 
-.div1 .bokita {
-    width: 55px;
-    height: 55px;
-    float: right;
-    visibility: hidden;
-}
 
-.div1 h1 {
-    font-family: 'Teko';
-    font-size: 20pt;
-    color: #ffe100;
-    margin-left: -6px;
-}
-
-.div1 h2 {
-    font-family: 'Teko';
-    font-size: 14pt;
-    color: #ffe100;
-    margin-left: -6px;
-    margin-bottom: -5px;
-}
-
-.div1 span img {
-    margin-left: -24px;
-    margin-top: -19px;
-    width: 55px;
-    height: 55px;
-}
-
-.navbar-toggler-icon {
-    width: 7px;
-    height: 15px;
-}
-
-.navbar-toggler {
-    margin-top: -45px;
-    float: right;
-}
-
-.grilla .div1 .menu .pag {
-    margin-top: 5px;
-    color: white;
-    width: fit-content;
-}
-
-
-/* -----------------------------------------------------------CLUB--------------------------------------------------------------*/
+/* ------------------------------------- CLUB ----------------------------------------------  */
 
 .div2 {
     margin-top: 100px;
     border: 2px solid black;
     background-image: url('../img/diario.jpg');
-}
 
-.div2 .fotos {
-    width: 100%;
-    margin: 0 auto;
-    height: 250px;
+    .fotos {
+        width: 100%;
+        margin: 0 auto;
+        height: 250px;
+    }
 }
 
 .div3 {
     background-image: url('../img/diario.jpg');
     border: 2px solid black;
     height: 260px;
-}
 
-.div3 h2 {
-    margin-top: 20px;
-    font-family: 'Teko';
-    text-align: center;
-}
+    h2 {
+        margin-top: 20px;
+        font-family: 'Teko';
+        text-align: center;
+    }
 
-.div3 p {
-    font-size: 11pt;
-    font-family: 'Teko2';
-    text-align: left;
-    margin-left: 4px;
-}
+    p {
+        font-size: 11pt;
+        font-family: 'Teko2';
+        text-align: left;
+        margin-left: 4px;
+    }
 
-#his {
-    width: 80px;
-    margin-top: -30px;
-    border-radius: 4px;
-    border: 2px solid black;
-    float: right;
-    font-size: 10pt;
-    margin-right: 20px;
-    outline: none;
-}
-
-#his:hover {
-    background-color: rgb(231, 231, 46);
+    #his {
+        width: 80px;
+        margin-top: -30px;
+        border-radius: 4px;
+        border: 2px solid black;
+        float: right;
+        font-size: 10pt;
+        margin-right: 20px;
+        outline: none;
+    }
 }
 
 /* ------------------------------------- REAL MADRID -------------------------------------------------*/
@@ -1616,46 +1699,42 @@ body {
     margin-top: 0px;
     border: 2px solid black;
     height: 220px;
-}
 
-.div4 iframe {
-    width: 100%;
-    height: 215px;
+    iframe {
+        width: 100%;
+        height: 215px;
+    }
 }
 
 .div5 {
     border: 2px solid black;
     margin-top: 20px;
-}
 
-.div5 h2 {
-    margin-top: 20px;
-    color: black;
-    font-family: 'Teko';
-    text-align: center;
-}
+    h2 {
+        margin-top: 20px;
+        color: black;
+        font-family: 'Teko';
+        text-align: center;
+    }
 
-.div5 p {
-    font-size: 14pt;
-    font-family: 'Teko2';
-    text-align: left;
-    margin-left: 4px;
-    color: black;
-}
+    p {
+        font-size: 14pt;
+        font-family: 'Teko2';
+        text-align: left;
+        margin-left: 4px;
+        color: black;
+    }
 
-#tit {
-    width: 80px;
-    margin-top: -30px;
-    border-radius: 4px;
-    border: 2px solid black;
-    float: right;
-    font-size: 10pt;
-    margin-right: 20px;
-    outline: none;
-}
-
-#tit:hover {
-    background-color: rgb(231, 231, 46);
+    #tit {
+        width: 80px;
+        margin-top: -30px;
+        border-radius: 4px;
+        border: 2px solid black;
+        float: right;
+        font-size: 10pt;
+        margin-right: 20px;
+        outline: none;
+    }
 }
 
 /* ------------------------------------------------   TIGRE   ----------------------------------------------------------*/
@@ -1663,44 +1742,40 @@ body {
 .div6 {
     margin-top: 20px;
     border: 2px solid black;
-}
 
-.div6 img {
-    width: 100%;
+    img {
+        width: 100%;
+    }
 }
 
 .div7 {
     border: 2px solid black;
-}
 
-.div7 h2 {
-    margin-top: 20px;
-    color: black;
-    font-family: 'Teko';
-    text-align: center;
-}
+    h2 {
+        margin-top: 20px;
+        color: black;
+        font-family: 'Teko';
+        text-align: center;
+    }
 
-.div7 p {
-    font-size: 13pt;
-    font-family: 'Teko2';
-    text-align: left;
-    margin-left: 4px;
-    color: black;
-}
+    p {
+        font-size: 13pt;
+        font-family: 'Teko2';
+        text-align: left;
+        margin-left: 4px;
+        color: black;
+    }
 
-#not {
-    width: 80px;
-    margin-top: -30px;
-    border-radius: 4px;
-    border: 2px solid black;
-    float: right;
-    font-size: 10pt;
-    margin-right: 20px;
-    outline: none;
-}
-
-#not:hover {
-    background-color: rgb(231, 231, 46);
+    #not {
+        width: 80px;
+        margin-top: -30px;
+        border-radius: 4px;
+        border: 2px solid black;
+        float: right;
+        font-size: 10pt;
+        margin-right: 20px;
+        outline: none;
+    }
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -1708,28 +1783,32 @@ body {
 .div8 {
     margin-top: 10px;
     border-top: 2px solid black;
-}
 
-.pie section a {
-    border: none;
-    width: 50px;
-    height: 36px;
-}
+    .pie {
+        section {
+            a {
+                border: none;
+                width: 50px;
+                height: 36px;
+            }
+        }
 
-.contacto {
-    width: fit-content;
-    margin: 0 auto;
-}
+        .contacto {
+            width: fit-content;
+            margin: 0 auto;
 
-.contacto h2 {
-    font-family: 'Teko';
-    color: white;
-    width: fit-content;
-    margin: 0 auto;
-}
+            a {
+                text-decoration: none;
 
-.contacto a {
-    text-decoration: none;
+                h2 {
+                    font-family: 'Teko';
+                    color: white;
+                    width: fit-content;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
 }
 
 /* ####################################### CONTACTO.html ########################################## */
@@ -1741,299 +1820,516 @@ body {
     width: 80%;
     margin-left: 15px;
     margin-bottom: 20px;
-}
 
-.formu h2 {
-    font-family: 'Teko';
-    color: yellow;
-    font-size: 24pt;
-    width: fit-content;
-    margin: 0 auto;
-}
+    h2 {
+        font-family: 'Teko';
+        color: yellow;
+        font-size: 24pt;
+        width: fit-content;
+        margin: 0 auto;
+    }
 
-.grilla2 .div1 .menu .pag {
-    margin-top: 5px;
-    color: white;
-    width: fit-content;
-}
+    .datos {
+        .ape {
+            margin-top: 20px;
+        }
 
-.grilla2 .datos .ape {
-    margin-top: 20px;
-}
+        .mail {
+            margin-top: 20px;
+        }
 
-.grilla2 .datos .mail {
-    margin-top: 20px;
-}
+        .tick {
+            margin-top: 20px;
+        }
 
-.grilla2 .datos .tick {
-    margin-top: 20px;
-}
+        .opt {
+            margin-top: 20px;
+        }
 
-.grilla2 .datos .opt {
-    margin-top: 20px;
-}
-
-.grilla2 .datos .cont {
-    margin-top: 20px;
+        .cont {
+            margin-top: 20px;
+        }
+    }
 }
 
 /* ####################################### PLANTILLA.html ########################################## */
 
-.grilla3 {
-    margin-top: 100px;
-}
+.div10 {
+    margin-top: 120px;
 
-.grilla3 .div1 .menu .pag {
-    margin-top: 5px;
-    color: white;
-    width: fit-content;
-}
+    h2 {
+        font-size: 20pt;
+        font-family: 'Teko';
+        color: #ffe100;
+    }
 
-.div10 h2 {
-    font-size: 20pt;
-    font-family: 'Teko';
-    color: #ffe100;
-}
+    table {
+        font-size: 10pt;
+        font-family: 'Teko2';
+        color: white;
+        text-align: center;
 
-.div10 table thead {
-    font-family: 'Teko';
-    font-size: 12pt;
-    color: #ffe100;
-}
-
-.div10 table {
-    font-size: 10pt;
-    font-family: 'Teko2';
-    color: white;
-    text-align: center;
+        thead {
+            font-family: 'Teko';
+            font-size: 12pt;
+            color: #ffe100;
+        }
+    }
 }
 
 .div11 {
-    margin-top: 50px;
+    margin-top: 40px;
+
+    h2 {
+        font-size: 20pt;
+        font-family: 'Teko';
+        color: #ffe100;
+    }
+
+    h3 {
+        font-size: 18pt;
+        font-family: 'Teko';
+        color: #ffe100;
+    }
+
+    table {
+        font-size: 10pt;
+        font-family: 'Teko2';
+        color: white;
+
+        thead {
+            font-family: 'Teko';
+            font-size: 12pt;
+            color: #ffe100;
+        }
+    }
 }
 
-.div11 h2 {
-    font-size: 20pt;
-    font-family: 'Teko';
-    color: #ffe100;
-}
-
-.div11 h3 {
-    font-size: 18pt;
-    font-family: 'Teko';
-    color: #ffe100;
-}
-
-.div11 table thead {
-    font-family: 'Teko';
-    font-size: 12pt;
-    color: #ffe100;
-}
-
-.div11 table {
-    font-size: 10pt;
-    font-family: 'Teko2';
-    color: white;
-}
-
-.div12 img {
-    width: 350px;
-    margin-left: 7px;
-    border: 2px solid;
+.div12 {
+    img {
+        width: 350px;
+        margin-left: 7px;
+        border: 2px solid;
+    }
 }
 
 .div13 {
     border: 2px solid;
     margin-top: 15px;
+    margin-left: 4px;
+    width: 98%;
+
+    p {
+        font-family: 'Teko2';
+        font-size: 14pt;
+        color: black;
+        text-align: left;
+        margin: 0 auto;
+        width: 99%;
+    }
 }
 
-.div13 p {
-    font-family: 'Teko2';
-    font-size: 14pt;
-    text-align: left;
-    margin: 0 auto;
-    width: 99%;
-}
+
 
 /* ####################################### HISTORIA.html ########################################## */
 
-.grilla4 .div1 .menu .pag {
-    margin-top: 5px;
-    color: white;
-    width: fit-content;
-}
-
 .div14 {
     margin-top: 100px;
+
+    .titulo {
+        h2 {
+            font-size: 24pt;
+            font-family: 'Teko';
+            color: #ffe100;
+            margin-left: 5px;
+        }
+    }
+
+    .elClu {
+        h3 {
+            font-size: 22pt;
+            font-family: 'Teko';
+            color: #ffe100;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        img {
+            height: 350px;
+            width: 98%;
+            margin-left: 4px;
+            border: 2px solid;
+        }
+
+        p {
+            font-family: 'Teko2';
+            font-size: 14pt;
+            color: black;
+            text-align: left;
+            margin: 0 auto;
+            margin-top: 5px;
+            border: 2px solid;
+            width: 99%;
+        }
+    }
 }
 
-.div14 .titulo h2 {
+.div15 {
+    margin-top: 50px;
+
+    h3 {
+        font-size: 22pt;
+        font-family: 'Teko';
+        color: #ffe100;
+        text-align: center;
+    }
+
+    img {
+        height: 350px;
+        width: 98%;
+        margin-left: 4px;
+        border: 2px solid;
+    }
+
+    p {
+        font-family: 'Teko2';
+        font-size: 14pt;
+        color: black;
+        text-align: left;
+        margin: 0 auto;
+        margin-top: 5px;
+        border: 2px solid;
+        width: 99%;
+    }
+}
+
+.div16 {
+    margin-top: 50px;
+
+    h3 {
+        font-size: 22pt;
+        font-family: 'Teko';
+        color: #ffe100;
+        text-align: center;
+    }
+
+    img {
+        height: 350px;
+        width: 98%;
+        margin-left: 4px;
+        border: 2px solid;
+    }
+
+    p {
+        font-family: 'Teko2';
+        font-size: 14pt;
+        color: black;
+        text-align: left;
+        margin: 0 auto;
+        margin-top: 5px;
+        border: 2px solid;
+        width: 99%;
+    }
+}
+
+.div17 {
+    margin-top: 50px;
+
+    h3 {
+        font-size: 22pt;
+        font-family: 'Teko';
+        color: #ffe100;
+        text-align: center;
+    }
+}
+
+
+/* ####################################### TITULOS.html ########################################## */
+
+.div18 {
+    margin-top: 120px;
+
+    h2 {
+        font-size: 24pt;
+        font-family: 'Teko';
+        color: #ffe100;
+        margin-left: 5px;
+    }
+
+    table {
+        font-size: 6pt;
+        font-family: 'Teko2';
+        color: white;
+        text-align: center;
+
+        thead {
+            font-family: 'Teko';
+            font-size: 10pt;
+            color: #ffe100;
+        }
+    }
+}
+
+.div19 {
+    margin-top: 20px;
+
+    h2 {
+        font-size: 24pt;
+        font-family: 'Teko';
+        color: #ffe100;
+        margin-left: 5px;
+    }
+
+    iframe {
+        margin-top: 20px;
+        margin-left: 2px;
+        width: 99%;
+        height: 200px;
+    }
+
+    img {
+        margin-top: 5px;
+        margin-left: 1.5px;
+        width: 99%;
+        height: 200px;
+    }
+
+    p {
+        font-size: 14pt;
+        font-family: 'Teko2';
+        color: black;
+        text-align: center;
+        border: 2px solid;
+        width: 98%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}
+
+
+/* ####################################### NOTICIAS.html ########################################## */
+
+.noti {
+    margin-top: 110px;
     font-size: 24pt;
     font-family: 'Teko';
     color: #ffe100;
     margin-left: 5px;
 }
 
-.div14 .elClu h3 {
-    font-size: 22pt;
-    font-family: 'Teko';
-    color: #ffe100;
-    margin-top: 40px;
-    text-align: center;
-}
-
-.div14 .elClu img {
-    height: 350px;
-    width: 98%;
-    margin-left: 4px;
-    border: 2px solid;
-}
-
-.div14 .elClu p {
-    font-family: 'Teko2';
-    font-size: 14pt;
-    color: black;
-    text-align: left;
-    margin: 0 auto;
-    margin-top: 5px;
-    border: 2px solid;
-    width: 99%;
-}
-
-.div15 {
-    margin-top: 50px;
-}
-
-.div15 h3 {
-    font-size: 22pt;
-    font-family: 'Teko';
-    color: #ffe100;
-    text-align: center;
-}
-
-.div15 img {
-    height: 350px;
-    width: 98%;
-    margin-left: 4px;
-    border: 2px solid;
-}
-
-.div15 p {
-    font-family: 'Teko2';
-    font-size: 14pt;
-    color: black;
-    text-align: left;
-    margin: 0 auto;
-    margin-top: 5px;
-    border: 2px solid;
-    width: 99%;
-}
-
-.div16 {
-    margin-top: 50px;
-}
-
-.div16 h3 {
-    font-size: 22pt;
-    font-family: 'Teko';
-    color: #ffe100;
-    text-align: center;
-}
-
-.div16 img {
-    height: 350px;
-    width: 98%;
-    margin-left: 4px;
-    border: 2px solid;
-}
-
-.div16 p {
-    font-family: 'Teko2';
-    font-size: 14pt;
-    color: black;
-    text-align: left;
-    margin: 0 auto;
-    margin-top: 5px;
-    border: 2px solid;
-    width: 99%;
-}
-
-.div17 {
-    margin-top: 50px;
-}
-
-.div17 h3 {
-    font-size: 22pt;
-    font-family: 'Teko';
-    color: #ffe100;
-    text-align: center;
-}
-
-/* ####################################### TITULOS.html ########################################## */
-
-.ti {
-    margin-top: 200px;
-    font-family: 'Teko2';
-}
-
-.titan img {
-    height: 300px;
-    width: 600px;
-    margin-right: 30px;
+.div20 {
     margin-top: 20px;
-    margin-left: 20px;
-}
-
-.titan iframe {
-    margin-left: 20px;
-    margin-top: 20px;
-    width: 600px;
-    height: 300px;
-}
-
-/* ####################################### NOTICIAS.html ########################################## */
-
-.cor {
-    margin-top: 200px;
-    margin-bottom: 50px;
     height: 480px;
-    padding: 5px;
-    border: 2px solid white;
-    width: 500px;
-    margin-left: 10px;
+    width: fit-content;
+    border: 5px solid;
+
+    img {
+        width: 352px;
+        height: 280px;
+        margin-left: 2px;
+        margin-top: 2px;
+        border: 2px solid;
+    }
+
+    h2 {
+        font-family: 'Teko';
+        font-size: 16.5pt;
+        text-align: center;
+    }
+
+    p {
+        font-family: 'Teko2';
+        font-size: 14pt;
+    }
 }
 
-.cor img {
-    width: 450px;
-    height: 300px;
-    margin-left: 24px;
-    margin-top: 10px;
+.div21 {
+    margin-top: 20px;
+    height: 480px;
+    width: fit-content;
+    border: 5px solid;
+
+    img {
+        width: 352px;
+        height: 280px;
+        margin-left: 2px;
+        margin-top: 2px;
+        border: 2px solid;
+    }
+
+    h2 {
+        font-family: 'Teko';
+        font-size: 16.5pt;
+        text-align: center;
+    }
+
+    p {
+        font-family: 'Teko2';
+        font-size: 14pt;
+    }
 }
 
-.dyj img {
-    width: 450px;
-    height: 300px;
-    margin-left: 24px;
-    margin-top: 10px;
+.div22 {
+    margin-top: 20px;
+    height: 480px;
+    width: fit-content;
+    border: 5px solid;
+
+    img {
+        width: 352px;
+        height: 280px;
+        margin-left: 2px;
+        margin-top: 2px;
+        border: 2px solid;
+    }
+
+    h2 {
+        font-family: 'Teko';
+        font-size: 16.5pt;
+        text-align: center;
+    }
+
+    p {
+        font-family: 'Teko2';
+        font-size: 14pt;
+    }
 }
 
-.tig img {
-    width: 450px;
-    height: 300px;
-    margin-left: 24px;
-    margin-top: 10px;
+.div30 {
+    margin-top: 20px;
+    height: 480px;
+    width: fit-content;
+    border: 5px solid;
+
+    img {
+        width: 352px;
+        height: 280px;
+        margin-left: 2px;
+        margin-top: 2px;
+        border: 2px solid;
+    }
+
+    h2 {
+        font-family: 'Teko';
+        font-size: 16.5pt;
+        text-align: center;
+    }
+
+    p {
+        font-family: 'Teko2';
+        font-size: 14pt;
+    }
 }
+
 
 /* ####################################### RESERVA.html ########################################## */
 
-.res {
-    margin-top: 200px;
+.div23 {
+    margin-top: 110px;
+
+    .res {
+        h2 {
+            font-size: 24pt;
+            font-family: 'Teko';
+            color: #ffe100;
+        }
+    }
+
+    h2 {
+        font-size: 20pt;
+        font-family: 'Teko';
+        color: #ffe100;
+    }
+
+    table {
+        font-size: 8pt;
+        font-family: 'Teko2';
+        color: white;
+        text-align: center;
+
+        thead {
+            font-family: 'Teko';
+            font-size: 8pt;
+            color: #ffe100;
+        }
+    }
 }
 
-.hur img {
-    margin-top: -600px;
-    margin-bottom: 20px;
-    margin-left: 500px;
-    width: 600px;
-    height: 300px;
+.div24 {
+    height: 610px;
+    width: fit-content;
+    border: 5px solid;
+
+    img {
+        width: 352px;
+        height: 280px;
+        margin-left: 2px;
+        margin-top: 2px;
+        border: 2px solid;
+    }
+
+    h2 {
+        font-family: 'Teko';
+        font-size: 16.5pt;
+        text-align: center;
+    }
+
+    p {
+        font-family: 'Teko2';
+        font-size: 12pt;
+    }
+}
+
+.div25 {
+    margin-top: 20px;
+
+    h2 {
+        font-size: 24pt;
+        font-family: 'Teko';
+        color: #ffe100;
+    }
+
+    table {
+        font-size: 14pt;
+        font-family: 'Teko2';
+        color: white;
+
+        thead {
+            font-family: 'Teko';
+            font-size: 16pt;
+            color: #ffe100;
+        }
+    }
+}
+
+.div26 {
+    margin-top: 20px;
+
+    h2 {
+        font-size: 24pt;
+        font-family: 'Teko';
+        color: #ffe100;
+    }
+
+    table {
+        font-size: 12pt;
+        font-family: 'Teko2';
+        color: white;
+
+        thead {
+            font-family: 'Teko';
+            font-size: 14pt;
+            color: #ffe100;
+        }
+    }
+}
+
+.div27 {
+    img {
+        width: 352px;
+        height: 280px;
+        margin-left: 6px;
+        margin-top: 2px;
+        border: 2px solid;
+    }
 }
