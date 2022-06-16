@@ -1,4 +1,6 @@
 @import 'variables';
+@import 'colores';
+@import 'mixins';
 
 * {
     margin: 0;
@@ -13,7 +15,7 @@ body {
 
 body {
     position: relative;
-    background-color: rgb(40, 78, 181);
+    background-color: map-get($colores, color-fondo);
 }
 
 @font-face {
@@ -66,7 +68,6 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 78px repeat(3, 1fr) 100px;
-        column-gap: 0px;
         row-gap: 15px;
         grid-template-areas: "header header"
             "fot club"
@@ -81,7 +82,7 @@ body {
         .div1 {
             nav {
                 border: 5px solid black;
-                background-color: rgb(0, 0, 255);
+                background-image: map-get($colores, color-header);
             }
 
             .bokita {
@@ -95,7 +96,7 @@ body {
             h1 {
                 font-family: 'Teko';
                 font-size: 30pt;
-                color: #ffe100;
+                color: map-get($colores, color-titulos);
                 width: 430px;
                 margin-left: 90px;
             }
@@ -103,7 +104,7 @@ body {
             h2 {
                 font-family: 'Teko';
                 font-size: 22pt;
-                color: #ffe100;
+                color: map-get($colores, color-titulos);
                 width: 220px;
                 margin-left: 90px;
                 margin-top: -7px;
@@ -112,17 +113,17 @@ body {
             .menu {
                 font-size: 15pt;
                 width: fit-content;
-                border: 2px solid $color-titulos;
+                border: 2px solid #ffc107;
                 border-radius: 6px;
                 float: right;
                 margin-top: -40px;
                 margin-right: -5px;
 
                 .pag {
-                    color: white;
+                    color: map-get($colores, color-texto-secundario);
 
                     &:hover {
-                        color: $color-titulos;
+                        color: map-get($colores, color-hover-header);
                     }
                 }
             }
@@ -130,6 +131,19 @@ body {
     }
 
     /* ------------------------------------- CLUB -------------------------------------------------*/
+
+.bot2{
+    width: 80px;
+    height: 30px;
+    margin-top: -5px;
+    border-radius: 4px;
+    border: 2px solid black;
+    float: right;
+    font-size: 12pt;
+    margin-right: 20px;
+    outline: none;
+    transition: height 1s;
+}
 
     .grilla {
         .div2 {
@@ -139,10 +153,9 @@ body {
             border: 2px solid black;
             background-image: url('../img/diario.jpg');
 
-            .fotos {
-                width: 480px;
-                height: 320px;
-                margin-left: -6px;
+            .fotos{
+                @include sizes(480px, 320px);
+                margin-left: -10px;
             }
         }
 
@@ -167,19 +180,10 @@ body {
             }
 
             #his {
-                width: 80px;
-                height: 30px;
-                margin-top: 5px;
-                border-radius: 4px;
-                border: 2px solid black;
-                float: right;
-                font-size: 12pt;
-                margin-right: 20px;
-                outline: none;
-                transition: height 1s;
+                @extend .bot2;
 
                 &:hover {
-                    background-color: rgb(231, 231, 46);
+                    background-color: map-get($colores, color-hover);
                     height: 35px;
                 }
             }
@@ -196,9 +200,8 @@ body {
             height: 360px;
 
             iframe {
+                @include sizes(98%, 320px);
                 margin-top: 15px;
-                width: 98%;
-                height: 320px;
                 margin-left: 5px;
                 border: 2px solid white;
             }
@@ -211,7 +214,6 @@ body {
 
             h2 {
                 margin-top: 20px;
-                color: black;
                 font-family: 'Teko';
                 font-size: 30pt;
                 text-align: center;
@@ -222,23 +224,13 @@ body {
                 font-family: 'Teko2';
                 text-align: left;
                 margin-left: 4px;
-                color: black;
             }
 
             #tit {
-                width: 80px;
-                height: 30px;
-                margin-top: -5px;
-                border-radius: 4px;
-                border: 2px solid black;
-                float: right;
-                font-size: 12pt;
-                margin-right: 20px;
-                outline: none;
-                transition: height 1s;
+                @extend .bot2;
 
                 &:hover {
-                    background-color: rgb(231, 231, 46);
+                    background-color: map-get($colores, color-hover);
                     height: 35px;
                 }
             }
@@ -255,9 +247,8 @@ body {
             height: 360px;
 
             img {
+                @include sizes (98%, 320px);
                 margin-top: 15px;
-                width: 98%;
-                height: 320px;
                 margin-left: 5px;
                 border: 2px solid white;
             }
@@ -283,19 +274,10 @@ body {
             }
 
             #not {
-                width: 80px;
-                height: 30px;
-                margin-top: -5px;
-                border-radius: 4px;
-                border: 2px solid black;
-                float: right;
-                font-size: 12pt;
-                margin-right: 20px;
-                outline: none;
-                transition: height 1s;
+                @extend .bot2;
 
                 &:hover {
-                    background-color: rgb(231, 231, 46);
+                    background-color: map-get($colores, color-hover);
                     height: 35px;
                 }
             }
@@ -333,12 +315,11 @@ body {
                 h2 {
                     font-family: 'Teko';
                     text-decoration: none;
-                    color: white;
                     width: fit-content;
                     margin: 0 auto;
 
                     &:hover {
-                        color: yellow;
+                        color: map-get($colores, color-hover);
                     }
                 }
             }
@@ -372,7 +353,6 @@ body {
         .div1 {
             nav {
                 border: 5px solid black;
-                background-color: rgb(0, 0, 255);
             }
 
             .bokita {
@@ -386,7 +366,6 @@ body {
             h1 {
                 font-family: 'Teko';
                 font-size: 30pt;
-                color: #ffe100;
                 width: 430px;
                 margin-left: 90px;
             }
@@ -394,7 +373,6 @@ body {
             h2 {
                 font-family: 'Teko';
                 font-size: 22pt;
-                color: #ffe100;
                 width: 220px;
                 margin-left: 90px;
                 margin-top: -7px;
@@ -403,17 +381,17 @@ body {
             .menu {
                 font-size: 15pt;
                 width: fit-content;
-                border: 2px solid $color-titulos;
+                border: 2px solid #ffc107;
                 border-radius: 6px;
                 float: right;
                 margin-top: -40px;
                 margin-right: -8px;
 
                 .pag {
-                    color: white;
+                    color: map-get($colores, color-texto-secundario);
 
                     &:hover {
-                        color: $color-titulos;
+                        color: map-get($colores, color-hover-header);
                     }
                 }
             }
@@ -435,7 +413,6 @@ body {
 
                 h2 {
                     font-family: 'Teko';
-                    color: yellow;
                     font-size: 34pt;
                     height: fit-content;
                     width: fit-content;
@@ -498,12 +475,11 @@ body {
 
                 h2 {
                     font-family: 'Teko';
-                    color: white;
                     width: fit-content;
                     margin: 0 auto;
 
                     &:hover {
-                        color: yellow;
+                        color: map-get($colores, color-hover);
                     }
                 }
             }
@@ -554,12 +530,10 @@ body {
         .div1 {
             nav {
                 border: 5px solid black;
-                background-color: rgb(0, 0, 255);
             }
 
             .bokita {
-                width: 90px;
-                height: 100px;
+                @include sizes (90px, 100px);
                 float: left;
                 margin-left: -10px;
                 visibility: visible;
@@ -568,7 +542,6 @@ body {
             h1 {
                 font-family: 'Teko';
                 font-size: 30pt;
-                color: #ffe100;
                 width: 430px;
                 margin-left: 90px;
             }
@@ -576,7 +549,6 @@ body {
             h2 {
                 font-family: 'Teko';
                 font-size: 22pt;
-                color: #ffe100;
                 width: 220px;
                 margin-left: 90px;
                 margin-top: -7px;
@@ -585,17 +557,17 @@ body {
             .menu {
                 font-size: 15pt;
                 width: fit-content;
-                border: 2px solid $color-titulos;
+                border: 2px solid #ffc107;
                 border-radius: 6px;
                 float: right;
                 margin-top: -40px;
                 margin-right: -8px;
 
                 .pag {
-                    color: white;
+                    color: map-get($colores, color-texto-secundario);
 
                     &:hover {
-                        color: $color-titulos;
+                        color: map-get($colores, color-hover-header);
                     }
                 }
             }
@@ -610,7 +582,6 @@ body {
                 h2 {
                     font-size: 34pt;
                     font-family: 'Teko';
-                    color: #ffe100;
                 }
             }
 
@@ -631,7 +602,6 @@ body {
                 p {
                     font-family: 'Teko2';
                     font-size: 16pt;
-                    color: black;
                     text-align: left;
                     padding: 8px;
                     border: 2px solid;
@@ -657,7 +627,6 @@ body {
             p {
                 font-family: 'Teko2';
                 font-size: 16pt;
-                color: black;
                 text-align: right;
                 padding: 8px;
                 border: 2px solid;
@@ -683,7 +652,6 @@ body {
             p {
                 font-family: 'Teko2';
                 font-size: 16pt;
-                color: black;
                 text-align: left;
                 padding: 8px;
                 border: 2px solid;
@@ -732,12 +700,11 @@ body {
 
                 h2 {
                     font-family: 'Teko';
-                    color: white;
                     width: fit-content;
                     margin: 0 auto;
 
                     &:hover {
-                        color: yellow;
+                        color: map-get($colores, color-hover);
                     }
                 }
             }
@@ -784,12 +751,10 @@ body {
         .div1 {
             nav {
                 border: 5px solid black;
-                background-color: rgb(0, 0, 255);
             }
 
             .bokita {
-                width: 90px;
-                height: 100px;
+                @include sizes (90px, 100px);
                 float: left;
                 margin-left: -10px;
                 visibility: visible;
@@ -798,7 +763,6 @@ body {
             h1 {
                 font-family: 'Teko';
                 font-size: 30pt;
-                color: #ffe100;
                 width: 430px;
                 margin-left: 90px;
             }
@@ -806,7 +770,6 @@ body {
             h2 {
                 font-family: 'Teko';
                 font-size: 22pt;
-                color: #ffe100;
                 width: 220px;
                 margin-left: 90px;
                 margin-top: -7px;
@@ -815,17 +778,17 @@ body {
             .menu {
                 font-size: 15pt;
                 width: fit-content;
-                border: 2px solid $color-titulos;
+                border: 2px solid #ffc107;
                 border-radius: 6px;
                 float: right;
                 margin-top: -40px;
                 margin-right: -8px;
 
                 .pag {
-                    color: white;
+                    color: map-get($colores, color-texto-secundario);
 
                     &:hover {
-                        color: $color-titulos;
+                        color: map-get($colores, color-hover-header);
                     }
                 }
             }
@@ -841,17 +804,14 @@ body {
             h2 {
                 font-size: 34pt;
                 font-family: 'Teko';
-                color: #ffe100;
             }
 
             table {
                 text-align: center;
                 font-size: 14pt;
-                color: white;
 
                 thead {
                     font-size: 18pt;
-                    color: #ffe100;
                 }
             }
         }
@@ -863,7 +823,6 @@ body {
                 font-size: 34pt;
                 font-family: 'Teko';
                 width: fit-content;
-                color: #ffe100;
             }
 
             h3 {
@@ -871,17 +830,14 @@ body {
                 font-size: 28pt;
                 font-family: 'Teko';
                 width: fit-content;
-                color: #ffe100;
             }
 
             table {
                 text-align: center;
                 font-size: 14pt;
-                color: white;
 
                 thead {
                     font-size: 18pt;
-                    color: #ffe100;
                 }
             }
         }
@@ -942,12 +898,11 @@ body {
 
                 h2 {
                     font-family: 'Teko';
-                    color: white;
                     width: fit-content;
                     margin: 0 auto;
 
                     &:hover {
-                        color: yellow;
+                        color: map-get($colores, color-hover);
                     }
                 }
             }
@@ -984,12 +939,10 @@ body {
         .div1 {
             nav {
                 border: 5px solid black;
-                background-color: rgb(0, 0, 255);
             }
 
             .bokita {
-                width: 90px;
-                height: 100px;
+                @include sizes (90px, 100px);
                 float: left;
                 margin-left: -10px;
                 visibility: visible;
@@ -998,7 +951,6 @@ body {
             h1 {
                 font-family: 'Teko';
                 font-size: 30pt;
-                color: #ffe100;
                 width: 430px;
                 margin-left: 90px;
             }
@@ -1006,7 +958,6 @@ body {
             h2 {
                 font-family: 'Teko';
                 font-size: 22pt;
-                color: #ffe100;
                 width: 220px;
                 margin-left: 90px;
                 margin-top: -7px;
@@ -1015,17 +966,17 @@ body {
             .menu {
                 font-size: 15pt;
                 width: fit-content;
-                border: 2px solid $color-titulos;
+                border: 2px solid #ffc107;
                 border-radius: 6px;
                 float: right;
                 margin-top: -40px;
                 margin-right: -8px;
 
                 .pag {
-                    color: white;
+                    color: map-get($colores, color-texto-secundario);
 
                     &:hover {
-                        color: $color-titulos;
+                        color: map-get($colores, color-hover-header);
                     }
                 }
             }
@@ -1041,18 +992,15 @@ body {
             h2 {
                 font-size: 34pt;
                 font-family: 'Teko';
-                color: #ffe100;
                 margin-left: 15px;
             }
 
             table {
                 text-align: center;
                 font-size: 14pt;
-                color: white;
 
                 thead {
                     font-size: 18pt;
-                    color: #ffe100;
                 }
             }
         }
@@ -1064,7 +1012,6 @@ body {
                 font-size: 34pt;
                 font-family: 'Teko';
                 width: fit-content;
-                color: #ffe100;
                 margin-left: 15px;
             }
 
@@ -1075,9 +1022,8 @@ body {
             }
 
             img {
+                @include sizes (500px, 280px);
                 margin-top: 20px;
-                width: 500px;
-                height: 280px;
                 float: right;
                 margin-right: 5px;
             }
@@ -1121,12 +1067,11 @@ body {
 
                 h2 {
                     font-family: 'Teko';
-                    color: white;
                     width: fit-content;
                     margin: 0 auto;
 
                     &:hover {
-                        color: yellow;
+                        color: map-get($colores, color-hover);
                     }
                 }
             }
@@ -1175,8 +1120,7 @@ body {
             }
 
             .bokita {
-                width: 90px;
-                height: 100px;
+                @include sizes (90px, 100px);
                 float: left;
                 margin-left: -10px;
                 visibility: visible;
@@ -1185,7 +1129,6 @@ body {
             h1 {
                 font-family: 'Teko';
                 font-size: 30pt;
-                color: #ffe100;
                 width: 430px;
                 margin-left: 90px;
             }
@@ -1193,7 +1136,6 @@ body {
             h2 {
                 font-family: 'Teko';
                 font-size: 22pt;
-                color: #ffe100;
                 width: 220px;
                 margin-left: 90px;
                 margin-top: -7px;
@@ -1202,17 +1144,17 @@ body {
             .menu {
                 font-size: 15pt;
                 width: fit-content;
-                border: 2px solid $color-titulos;
+                border: 2px solid #ffc107;
                 border-radius: 6px;
                 float: right;
                 margin-top: -40px;
                 margin-right: -8px;
 
                 .pag {
-                    color: white;
+                    color: map-get($colores, color-texto-secundario);
 
                     &:hover {
-                        color: $color-titulos;
+                        color: map-get($colores, color-hover-header);
                     }
                 }
             }
@@ -1225,7 +1167,6 @@ body {
         .noti {
             font-size: 34pt;
             font-family: 'Teko';
-            color: #ffe100;
             margin-left: 15px;
             margin-top: 60px;
         }
@@ -1253,8 +1194,7 @@ body {
             float: right;
 
             img {
-                height: 280.2px;
-                width: 476px;
+                @include sizes (476px, 280.2px);
             }
 
             h2 {
@@ -1271,8 +1211,7 @@ body {
             margin-left: 10px;
 
             img {
-                height: 280.2px;
-                width: 476px;
+                @include sizes (476px, 280.2px);
             }
 
             h2 {
@@ -1291,8 +1230,7 @@ body {
             float: right;
 
             img {
-                height: 280.2px;
-                width: 476px;
+                @include sizes (476px, 280.2px);
             }
 
             h2 {
@@ -1336,12 +1274,11 @@ body {
                 h2 {
                     font-family: 'Teko';
                     text-decoration: none;
-                    color: white;
                     width: fit-content;
                     margin: 0 auto;
 
                     &:hover {
-                        color: yellow;
+                        color: map-get($colores, color-hover);
                     }
                 }
             }
@@ -1393,12 +1330,10 @@ body {
         .div1 {
             nav {
                 border: 5px solid black;
-                background-color: rgb(0, 0, 255);
             }
 
             .bokita {
-                width: 90px;
-                height: 100px;
+                @include sizes (90px, 100px);
                 float: left;
                 margin-left: -10px;
                 visibility: visible;
@@ -1407,7 +1342,6 @@ body {
             h1 {
                 font-family: 'Teko';
                 font-size: 30pt;
-                color: #ffe100;
                 width: 430px;
                 margin-left: 90px;
             }
@@ -1415,7 +1349,6 @@ body {
             h2 {
                 font-family: 'Teko';
                 font-size: 22pt;
-                color: #ffe100;
                 width: 220px;
                 margin-left: 90px;
                 margin-top: -7px;
@@ -1424,17 +1357,17 @@ body {
             .menu {
                 font-size: 15pt;
                 width: fit-content;
-                border: 2px solid $color-titulos;
+                border: 2px solid #ffc107;
                 border-radius: 6px;
                 float: right;
                 margin-top: -40px;
                 margin-right: -5px;
 
                 .pag {
-                    color: white;
+                    color: map-get($colores, color-texto-secundario);
 
                     &:hover {
-                        color: $color-titulos;
+                        color: map-get($colores, color-hover-header);
                     }
                 }
             }
@@ -1451,14 +1384,12 @@ body {
                 h2 {
                     font-size: 40pt;
                     font-family: 'Teko';
-                    color: #ffe100;
                 }
             }
 
             h2 {
                 font-size: 34pt;
                 font-family: 'Teko';
-                color: #ffe100;
                 margin-left: 10px;
             }
 
@@ -1466,11 +1397,9 @@ body {
                 margin-left: 10px;
                 text-align: center;
                 font-size: 14pt;
-                color: white;
 
                 thead {
                     font-size: 14pt;
-                    color: #ffe100;
                 }
             }
         }
@@ -1482,8 +1411,7 @@ body {
             width: 480px;
 
             img {
-                width: 466px;
-                height: 250px;
+                @include sizes (466px, 250px);
             }
         }
 
@@ -1491,7 +1419,6 @@ body {
             h2 {
                 font-size: 34pt;
                 font-family: 'Teko';
-                color: #ffe100;
                 text-align: center;
             }
 
@@ -1500,11 +1427,9 @@ body {
                 width: 430px;
                 text-align: center;
                 font-size: 14pt;
-                color: white;
 
                 thead {
                     font-size: 18pt;
-                    color: #ffe100;
                 }
             }
         }
@@ -1515,17 +1440,14 @@ body {
             h2 {
                 font-size: 34pt;
                 font-family: 'Teko';
-                color: #ffe100;
             }
 
             table {
                 text-align: center;
                 font-size: 14pt;
-                color: white;
 
                 thead {
                     font-size: 18pt;
-                    color: #ffe100;
                 }
             }
         }
@@ -1534,9 +1456,8 @@ body {
             margin-top: -150px;
 
             img {
+                @include sizes (800px, 400px);
                 margin-left: 100px;
-                width: 800px;
-                height: 400px;
             }
         }
     }
@@ -1572,12 +1493,11 @@ body {
                 h2 {
                     font-family: 'Teko';
                     text-decoration: none;
-                    color: white;
                     width: fit-content;
                     margin: 0 auto;
 
                     &:hover {
-                        color: yellow;
+                        color: map-get($colores, color-hover);
                     }
                 }
             }
@@ -1597,7 +1517,7 @@ body {
 .div1 {
     nav {
         border: 5px solid black;
-        background-color: rgb(0, 0, 255);
+        background-image: map-get($colores, color-header);
 
         .bokita {
             width: 55px;
@@ -1609,14 +1529,14 @@ body {
         h1 {
             font-family: 'Teko';
             font-size: 20pt;
-            color: #ffe100;
+            color: map-get($colores, color-titulos);
             margin-left: -6px;
         }
 
         h2 {
             font-family: 'Teko';
             font-size: 14pt;
-            color: #ffe100;
+            color: map-get($colores, color-titulos);
             margin-left: -6px;
             margin-bottom: -5px;
         }
@@ -1641,15 +1561,25 @@ body {
         .menu {
             .pag {
                 margin-top: 5px;
-                color: white;
+                color: map-get($colores, color-texto-secundario);
                 width: fit-content;
             }
         }
     }
 }
 
-
 /* ------------------------------------- CLUB ----------------------------------------------  */
+
+.bot {
+    width: 80px;
+    margin-top: -30px;
+    border-radius: 4px;
+    border: 2px solid black;
+    float: right;
+    font-size: 10pt;
+    margin-right: 20px;
+    outline: none;
+}
 
 .div2 {
     margin-top: 100px;
@@ -1671,6 +1601,7 @@ body {
     h2 {
         margin-top: 20px;
         font-family: 'Teko';
+        color: map-get($colores, color-texto-primario);
         text-align: center;
     }
 
@@ -1679,17 +1610,11 @@ body {
         font-family: 'Teko2';
         text-align: left;
         margin-left: 4px;
+        color: map-get($colores, color-texto-primario);
     }
 
-    #his {
-        width: 80px;
-        margin-top: -30px;
-        border-radius: 4px;
-        border: 2px solid black;
-        float: right;
-        font-size: 10pt;
-        margin-right: 20px;
-        outline: none;
+    #his{
+        @extend .bot;
     }
 }
 
@@ -1712,7 +1637,7 @@ body {
 
     h2 {
         margin-top: 20px;
-        color: black;
+        color: map-get($colores, color-texto-primario);
         font-family: 'Teko';
         text-align: center;
     }
@@ -1722,18 +1647,11 @@ body {
         font-family: 'Teko2';
         text-align: left;
         margin-left: 4px;
-        color: black;
+        color: map-get($colores, color-texto-primario);
     }
 
     #tit {
-        width: 80px;
-        margin-top: -30px;
-        border-radius: 4px;
-        border: 2px solid black;
-        float: right;
-        font-size: 10pt;
-        margin-right: 20px;
-        outline: none;
+        @extend .bot;
     }
 }
 
@@ -1753,7 +1671,7 @@ body {
 
     h2 {
         margin-top: 20px;
-        color: black;
+        color: map-get($colores, color-texto-primario);
         font-family: 'Teko';
         text-align: center;
     }
@@ -1763,18 +1681,11 @@ body {
         font-family: 'Teko2';
         text-align: left;
         margin-left: 4px;
-        color: black;
+        color: map-get($colores, color-texto-primario);
     }
 
     #not {
-        width: 80px;
-        margin-top: -30px;
-        border-radius: 4px;
-        border: 2px solid black;
-        float: right;
-        font-size: 10pt;
-        margin-right: 20px;
-        outline: none;
+        @extend .bot;
     }
 }
 
@@ -1802,7 +1713,7 @@ body {
 
                 h2 {
                     font-family: 'Teko';
-                    color: white;
+                    color: map-get($colores, color-texto-secundario);
                     width: fit-content;
                     margin: 0 auto;
                 }
@@ -1823,13 +1734,15 @@ body {
 
     h2 {
         font-family: 'Teko';
-        color: yellow;
+        color: map-get($colores, color-titulos);
         font-size: 24pt;
         width: fit-content;
         margin: 0 auto;
     }
 
     .datos {
+        color: map-get($colores, color-texto-primario);
+
         .ape {
             margin-top: 20px;
         }
@@ -1860,19 +1773,19 @@ body {
     h2 {
         font-size: 20pt;
         font-family: 'Teko';
-        color: #ffe100;
+        color: map-get($colores, color-titulos);
     }
 
     table {
         font-size: 10pt;
         font-family: 'Teko2';
-        color: white;
+        color: map-get($colores, color-texto-secundario);
         text-align: center;
 
         thead {
             font-family: 'Teko';
             font-size: 12pt;
-            color: #ffe100;
+            color: map-get($colores, color-titulos);
         }
     }
 }
@@ -1883,24 +1796,24 @@ body {
     h2 {
         font-size: 20pt;
         font-family: 'Teko';
-        color: #ffe100;
+        color: map-get($colores, color-titulos);
     }
 
     h3 {
         font-size: 18pt;
         font-family: 'Teko';
-        color: #ffe100;
+        color: map-get($colores, color-titulos);
     }
 
     table {
         font-size: 10pt;
         font-family: 'Teko2';
-        color: white;
+        color: map-get($colores, color-texto-secundario);
 
         thead {
             font-family: 'Teko';
             font-size: 12pt;
-            color: #ffe100;
+            color: map-get($colores, color-titulos);
         }
     }
 }
@@ -1922,14 +1835,12 @@ body {
     p {
         font-family: 'Teko2';
         font-size: 14pt;
-        color: black;
+        color: map-get($colores, color-texto-primario);
         text-align: left;
         margin: 0 auto;
         width: 99%;
     }
 }
-
-
 
 /* ####################################### HISTORIA.html ########################################## */
 
@@ -1940,7 +1851,7 @@ body {
         h2 {
             font-size: 24pt;
             font-family: 'Teko';
-            color: #ffe100;
+            color: map-get($colores, color-titulos);
             margin-left: 5px;
         }
     }
@@ -1949,7 +1860,7 @@ body {
         h3 {
             font-size: 22pt;
             font-family: 'Teko';
-            color: #ffe100;
+            color: map-get($colores, color-titulos);
             margin-top: 40px;
             text-align: center;
         }
@@ -1964,7 +1875,7 @@ body {
         p {
             font-family: 'Teko2';
             font-size: 14pt;
-            color: black;
+            color: map-get($colores, color-texto-primario);
             text-align: left;
             margin: 0 auto;
             margin-top: 5px;
@@ -1980,7 +1891,7 @@ body {
     h3 {
         font-size: 22pt;
         font-family: 'Teko';
-        color: #ffe100;
+        color: map-get($colores, color-titulos);
         text-align: center;
     }
 
@@ -1994,7 +1905,7 @@ body {
     p {
         font-family: 'Teko2';
         font-size: 14pt;
-        color: black;
+        color: map-get($colores, color-texto-primario);
         text-align: left;
         margin: 0 auto;
         margin-top: 5px;
@@ -2009,7 +1920,7 @@ body {
     h3 {
         font-size: 22pt;
         font-family: 'Teko';
-        color: #ffe100;
+        color: map-get($colores, color-titulos);
         text-align: center;
     }
 
@@ -2023,7 +1934,7 @@ body {
     p {
         font-family: 'Teko2';
         font-size: 14pt;
-        color: black;
+        color: map-get($colores, color-texto-primario);
         text-align: left;
         margin: 0 auto;
         margin-top: 5px;
@@ -2038,11 +1949,10 @@ body {
     h3 {
         font-size: 22pt;
         font-family: 'Teko';
-        color: #ffe100;
+        color: map-get($colores, color-titulos);
         text-align: center;
     }
 }
-
 
 /* ####################################### TITULOS.html ########################################## */
 
@@ -2052,20 +1962,20 @@ body {
     h2 {
         font-size: 24pt;
         font-family: 'Teko';
-        color: #ffe100;
+        color: map-get($colores, color-titulos);
         margin-left: 5px;
     }
 
     table {
         font-size: 6pt;
         font-family: 'Teko2';
-        color: white;
+        color: map-get($colores, color-texto-secundario);
         text-align: center;
 
         thead {
             font-family: 'Teko';
             font-size: 10pt;
-            color: #ffe100;
+            color: map-get($colores, color-titulos);
         }
     }
 }
@@ -2076,7 +1986,7 @@ body {
     h2 {
         font-size: 24pt;
         font-family: 'Teko';
-        color: #ffe100;
+        color: map-get($colores, color-titulos);
         margin-left: 5px;
     }
 
@@ -2097,7 +2007,7 @@ body {
     p {
         font-size: 14pt;
         font-family: 'Teko2';
-        color: black;
+        color: map-get($colores, color-texto-primario);
         text-align: center;
         border: 2px solid;
         width: 98%;
@@ -2106,14 +2016,13 @@ body {
     }
 }
 
-
 /* ####################################### NOTICIAS.html ########################################## */
 
 .noti {
     margin-top: 110px;
     font-size: 24pt;
     font-family: 'Teko';
-    color: #ffe100;
+    color: map-get($colores, color-titulos);
     margin-left: 5px;
 }
 
@@ -2135,11 +2044,13 @@ body {
         font-family: 'Teko';
         font-size: 16.5pt;
         text-align: center;
+        color: map-get($colores, color-texto-primario);
     }
 
     p {
         font-family: 'Teko2';
         font-size: 14pt;
+        color: map-get($colores, color-texto-primario);
     }
 }
 
@@ -2161,11 +2072,13 @@ body {
         font-family: 'Teko';
         font-size: 16.5pt;
         text-align: center;
+        color: map-get($colores, color-texto-primario);
     }
 
     p {
         font-family: 'Teko2';
         font-size: 14pt;
+        color: map-get($colores, color-texto-primario);
     }
 }
 
@@ -2187,11 +2100,13 @@ body {
         font-family: 'Teko';
         font-size: 16.5pt;
         text-align: center;
+        color: map-get($colores, color-texto-primario);
     }
 
     p {
         font-family: 'Teko2';
         font-size: 14pt;
+        color: map-get($colores, color-texto-primario);
     }
 }
 
@@ -2213,14 +2128,15 @@ body {
         font-family: 'Teko';
         font-size: 16.5pt;
         text-align: center;
+        color: map-get($colores, color-texto-primario);
     }
 
     p {
         font-family: 'Teko2';
         font-size: 14pt;
+        color: map-get($colores, color-texto-primario);
     }
 }
-
 
 /* ####################################### RESERVA.html ########################################## */
 
@@ -2231,26 +2147,26 @@ body {
         h2 {
             font-size: 24pt;
             font-family: 'Teko';
-            color: #ffe100;
+            color: map-get($colores, color-titulos);
         }
     }
 
     h2 {
         font-size: 20pt;
         font-family: 'Teko';
-        color: #ffe100;
+        color: map-get($colores, color-titulos);
     }
 
     table {
         font-size: 8pt;
         font-family: 'Teko2';
-        color: white;
+        color: map-get($colores, color-texto-secundario);
         text-align: center;
 
         thead {
             font-family: 'Teko';
             font-size: 8pt;
-            color: #ffe100;
+            color: map-get($colores, color-titulos);
         }
     }
 }
@@ -2272,11 +2188,13 @@ body {
         font-family: 'Teko';
         font-size: 16.5pt;
         text-align: center;
+        color: map-get($colores, color-texto-primario);
     }
 
     p {
         font-family: 'Teko2';
         font-size: 12pt;
+        color: map-get($colores, color-texto-primario);
     }
 }
 
@@ -2286,18 +2204,18 @@ body {
     h2 {
         font-size: 24pt;
         font-family: 'Teko';
-        color: #ffe100;
+        color: map-get($colores, color-titulos);
     }
 
     table {
         font-size: 14pt;
         font-family: 'Teko2';
-        color: white;
+        color: map-get($colores, color-texto-secundario);
 
         thead {
             font-family: 'Teko';
             font-size: 16pt;
-            color: #ffe100;
+            color: map-get($colores, color-titulos);
         }
     }
 }
@@ -2308,18 +2226,18 @@ body {
     h2 {
         font-size: 24pt;
         font-family: 'Teko';
-        color: #ffe100;
+        color: map-get($colores, color-titulos);
     }
 
     table {
         font-size: 12pt;
         font-family: 'Teko2';
-        color: white;
+        color: map-get($colores, color-texto-secundario);
 
         thead {
             font-family: 'Teko';
             font-size: 14pt;
-            color: #ffe100;
+            color: map-get($colores, color-titulos);
         }
     }
 }
