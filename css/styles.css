@@ -946,27 +946,36 @@ body {
 /* ------------------------------------- CLUB ----------------------------------------------  */
 .bot, .div3 #his, .div5 #tit, .div7 #not {
   width: 80px;
-  margin-top: -30px;
-  border-radius: 4px;
-  border: 2px solid black;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 2px;
   float: right;
+  font-family: 'Helvetica';
   font-size: 10pt;
-  margin-right: 20px;
-  outline: none; }
+  background-color: #dcdbdb;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  border: 2px solid black;
+  border-radius: 4px; }
 
 .div2 {
+  width: 98%;
+  margin: 0 auto;
   margin-top: 100px;
   border: 2px solid black;
   background-image: url("../img/diario.jpg"); }
   .div2 .fotos {
     width: 100%;
-    margin: 0 auto;
-    height: 250px; }
+    height: 250px;
+    margin: 0 auto; }
 
 .div3 {
+  width: 98%;
+  height: 260px;
+  margin: 0 auto;
   background-image: url("../img/diario.jpg");
-  border: 2px solid black;
-  height: 260px; }
+  border: 2px solid black; }
   .div3 h2 {
     margin-top: 20px;
     font-family: 'Teko';
@@ -976,21 +985,26 @@ body {
     font-size: 11pt;
     font-family: 'Teko2';
     text-align: left;
+    width: 98%;
     margin-left: 4px;
     color: black; }
 
 /* ------------------------------------- REAL MADRID -------------------------------------------------*/
 .div4 {
+  width: 98%;
+  height: 220px;
+  margin: 0 auto;
   margin-top: 0px;
-  border: 2px solid black;
-  height: 220px; }
+  border: 2px solid black; }
   .div4 iframe {
     width: 100%;
     height: 215px; }
 
 .div5 {
-  border: 2px solid black;
-  margin-top: 20px; }
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 98%;
+  border: 2px solid black; }
   .div5 h2 {
     margin-top: 20px;
     color: black;
@@ -1005,14 +1019,20 @@ body {
 
 /* ------------------------------------------------   TIGRE   ----------------------------------------------------------*/
 .div6 {
+  margin: 0 auto;
   margin-top: 20px;
+  width: 98%;
   border: 2px solid black; }
   .div6 img {
     width: 100%; }
 
 .div7 {
+  width: 98%;
+  height: 240px;
+  margin: 0 auto;
   border: 2px solid black; }
   .div7 h2 {
+    font-size: 20pt;
     margin-top: 20px;
     color: black;
     font-family: 'Teko';
@@ -1045,18 +1065,22 @@ body {
 
 /* ####################################### CONTACTO.html ########################################## */
 .formu {
+  width: 90%;
+  height: 700px;
+  margin: 0 auto;
   margin-top: 120px;
   font-family: 'Teko2';
   font-size: 14pt;
-  width: 80%;
-  margin-left: 15px;
   margin-bottom: 20px; }
   .formu h2 {
+    width: fit-content;
+    height: fit-content;
     font-family: 'Teko';
     color: #ffe100;
     font-size: 24pt;
-    width: fit-content;
-    margin: 0 auto; }
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px; }
   .formu .datos {
     color: black; }
     .formu .datos .ape {
@@ -1075,41 +1099,50 @@ body {
   margin-top: 120px; }
   .div10 h2 {
     font-size: 20pt;
+    margin-left: 5px;
     font-family: 'Teko';
     color: #ffe100; }
   .div10 table {
-    font-size: 10pt;
+    font-size: 11pt;
+    width: 98%;
+    margin: 0 auto;
     font-family: 'Teko2';
     color: white;
     text-align: center; }
     .div10 table thead {
       font-family: 'Teko';
-      font-size: 12pt;
+      font-size: 9pt;
       color: #ffe100; }
 
 .div11 {
   margin-top: 40px; }
   .div11 h2 {
     font-size: 20pt;
+    margin-left: 5px;
     font-family: 'Teko';
     color: #ffe100; }
   .div11 h3 {
     font-size: 18pt;
+    margin-left: 5px;
     font-family: 'Teko';
     color: #ffe100; }
   .div11 table {
-    font-size: 10pt;
+    font-size: 11pt;
+    width: 98%;
+    margin: 0 auto;
     font-family: 'Teko2';
     color: white; }
     .div11 table thead {
       font-family: 'Teko';
-      font-size: 12pt;
+      font-size: 9pt;
       color: #ffe100; }
 
 .div12 img {
-  width: 350px;
-  margin-left: 7px;
-  border: 2px solid; }
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-left: 4px;
+  border: 2px solid white; }
 
 .div13 {
   border: 2px solid;
@@ -1214,32 +1247,38 @@ body {
     color: #ffe100;
     margin-left: 5px; }
   .div18 table {
-    font-size: 6pt;
+    font-size: 9pt;
+    width: 98%;
+    margin: 0 auto;
     font-family: 'Teko2';
     color: white;
     text-align: center; }
     .div18 table thead {
       font-family: 'Teko';
-      font-size: 10pt;
+      font-size: 6pt;
       color: #ffe100; }
 
 .div19 {
-  margin-top: 20px; }
+  margin-top: 40px; }
   .div19 h2 {
     font-size: 24pt;
     font-family: 'Teko';
     color: #ffe100;
-    margin-left: 5px; }
+    text-align: center; }
   .div19 iframe {
-    margin-top: 20px;
-    margin-left: 2px;
-    width: 99%;
-    height: 200px; }
-  .div19 img {
+    width: 98%;
+    height: 250px;
+    margin: 0 auto;
+    margin-left: 4px;
     margin-top: 5px;
-    margin-left: 1.5px;
-    width: 99%;
-    height: 200px; }
+    border: 2px solid white; }
+  .div19 img {
+    width: 98%;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-left: 4px;
+    border: 2px solid white; }
   .div19 p {
     font-size: 14pt;
     font-family: 'Teko2';
@@ -1259,14 +1298,15 @@ body {
   margin-left: 5px; }
 
 .div20 {
+  width: 98%;
+  height: fit-content;
+  margin: 0 auto;
   margin-top: 20px;
-  height: 480px;
-  width: fit-content;
   border: 5px solid; }
   .div20 img {
-    width: 352px;
-    height: 280px;
-    margin-left: 2px;
+    width: 98%;
+    height: 350px;
+    margin: 0 auto;
     margin-top: 2px;
     border: 2px solid; }
   .div20 h2 {
@@ -1280,14 +1320,15 @@ body {
     color: black; }
 
 .div21 {
+  width: 98%;
+  height: fit-content;
+  margin: 0 auto;
   margin-top: 20px;
-  height: 480px;
-  width: fit-content;
   border: 5px solid; }
   .div21 img {
-    width: 352px;
-    height: 280px;
-    margin-left: 2px;
+    width: 98%;
+    height: 350px;
+    margin: 0 auto;
     margin-top: 2px;
     border: 2px solid; }
   .div21 h2 {
@@ -1301,14 +1342,15 @@ body {
     color: black; }
 
 .div22 {
+  width: 98%;
+  height: fit-content;
+  margin: 0 auto;
   margin-top: 20px;
-  height: 480px;
-  width: fit-content;
   border: 5px solid; }
   .div22 img {
-    width: 352px;
-    height: 280px;
-    margin-left: 2px;
+    width: 98%;
+    height: 350px;
+    margin: 0 auto;
     margin-top: 2px;
     border: 2px solid; }
   .div22 h2 {
@@ -1322,14 +1364,15 @@ body {
     color: black; }
 
 .div30 {
+  width: 98%;
+  height: fit-content;
+  margin: 0 auto;
   margin-top: 20px;
-  height: 480px;
-  width: fit-content;
   border: 5px solid; }
   .div30 img {
-    width: 352px;
-    height: 280px;
-    margin-left: 2px;
+    width: 98%;
+    height: 350px;
+    margin: 0 auto;
     margin-top: 2px;
     border: 2px solid; }
   .div30 h2 {
@@ -1347,14 +1390,18 @@ body {
   margin-top: 110px; }
   .div23 .res h2 {
     font-size: 24pt;
+    margin-left: 5px;
     font-family: 'Teko';
     color: #ffe100; }
   .div23 h2 {
     font-size: 20pt;
+    margin-left: 5px;
     font-family: 'Teko';
     color: #ffe100; }
   .div23 table {
-    font-size: 8pt;
+    font-size: 9pt;
+    width: 98%;
+    margin: 0 auto;
     font-family: 'Teko2';
     color: white;
     text-align: center; }
@@ -1364,13 +1411,15 @@ body {
       color: #ffe100; }
 
 .div24 {
-  height: 610px;
-  width: fit-content;
-  border: 5px solid; }
+  width: 98%;
+  height: fit-content;
+  border: 5px solid;
+  margin: 0 auto;
+  margin-top: 20px; }
   .div24 img {
-    width: 352px;
-    height: 280px;
-    margin-left: 2px;
+    width: 98%;
+    height: 350px;
+    margin: 0 auto;
     margin-top: 2px;
     border: 2px solid; }
   .div24 h2 {
@@ -1387,10 +1436,13 @@ body {
   margin-top: 20px; }
   .div25 h2 {
     font-size: 24pt;
+    margin-left: 5px;
     font-family: 'Teko';
     color: #ffe100; }
   .div25 table {
     font-size: 14pt;
+    width: 98%;
+    margin: 0 auto;
     font-family: 'Teko2';
     color: white; }
     .div25 table thead {
@@ -1402,10 +1454,13 @@ body {
   margin-top: 20px; }
   .div26 h2 {
     font-size: 24pt;
+    margin-left: 5px;
     font-family: 'Teko';
     color: #ffe100; }
   .div26 table {
     font-size: 12pt;
+    width: 98%;
+    margin: 0 auto;
     font-family: 'Teko2';
     color: white; }
     .div26 table thead {
@@ -1413,9 +1468,11 @@ body {
       font-size: 14pt;
       color: #ffe100; }
 
-.div27 img {
-  width: 352px;
-  height: 280px;
-  margin-left: 6px;
-  margin-top: 2px;
-  border: 2px solid; }
+.div27 {
+  margin-top: 20px; }
+  .div27 img {
+    width: 98%;
+    height: 280px;
+    margin-left: 6px;
+    margin-top: 2px;
+    border: 2px solid; }
