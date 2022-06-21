@@ -1,0 +1,101 @@
+.div8 {
+    margin-top: 10px;
+    border-top: 2px solid black;
+
+    .pie {
+        section {
+            a {
+                border: none;
+                width: 50px;
+                height: 36px;
+            }
+        }
+
+        .contacto {
+            width: fit-content;
+            margin: 0 auto;
+
+            a {
+                text-decoration: none;
+
+                h2 {
+                    font-family: 'Teko';
+                    color: map-get($colores, color-texto-secundario);
+                    width: fit-content;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:#{$laptop}) {
+
+    .footer {
+        .div8 {
+            margin-top: -60px;
+            border-top: 2px solid black;
+
+            .pie {
+                section {
+                    a {
+                        border: none;
+                        width: 50px;
+                        height: 36px;
+                        transition: width 1s,
+                            height 1s;
+
+                        &:hover {
+                            width: 65px;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+
+            .contacto {
+                width: fit-content;
+                margin: 0 auto;
+
+                h2 {
+                    font-family: 'Teko';
+                    text-decoration: none;
+                    width: fit-content;
+                    margin: 0 auto;
+
+                    &:hover {
+                        color: map-get($colores, color-hover);
+                    }
+                }
+            }
+        }
+    }
+
+    .grilla {
+        @extend .footer;
+    }
+
+    .grilla2 {
+        @extend .footer;
+    }
+
+    .grilla3 {
+        @extend .footer;
+    }
+
+    .grilla4 {
+        @extend .footer;
+    }
+
+    .grilla5 {
+        @extend .footer;
+    }
+
+    .grilla6 {
+        @extend .footer;
+    }
+
+    .grilla7 {
+        @extend .footer;
+    }
+}

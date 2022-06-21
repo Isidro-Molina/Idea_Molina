@@ -1,6 +1,8 @@
 @import 'variables';
 @import 'colores';
 @import 'mixins';
+@import 'header';
+@import 'footer';
 
 * {
     margin: 0;
@@ -42,8 +44,6 @@ body {
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MEDIA QUERIES !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-
-
 /* ###################################### INDEX.html ########################################### */
 
 #fot {
@@ -52,6 +52,14 @@ body {
 
 #club {
     grid-area: club;
+}
+
+#vid {
+    grid-area: vid;
+}
+
+#rom {
+    grid-area: rom;
 }
 
 #tig {
@@ -64,6 +72,19 @@ body {
 
 @media screen and (min-width:#{$laptop}) {
 
+    .bot2 {
+        @include sizes (80px, 30px);
+        margin-top: 55px;
+        margin-right: 20px;
+        border-radius: 4px;
+        border: 2px solid black;
+        float: right;
+        font-size: 12pt;
+        text-align: center;
+        outline: none;
+        transition: width 1s, height 1s;
+    }
+
     .grilla {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -74,258 +95,157 @@ body {
             "rom vid"
             "tig sab"
             "footer footer";
-    }
 
-    /* ::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::: */
-
-    .grilla {
-        .div1 {
-            nav {
-                border: 5px solid black;
-                background-image: map-get($colores, color-header);
-            }
-
-            .bokita {
-                width: 90px;
-                height: 100px;
-                float: left;
-                margin-left: -10px;
-                visibility: visible;
-            }
-
-            h1 {
-                font-family: 'Teko';
-                font-size: 30pt;
-                color: map-get($colores, color-titulos);
-                width: 430px;
-                margin-left: 90px;
-            }
-
-            h2 {
-                font-family: 'Teko';
-                font-size: 22pt;
-                color: map-get($colores, color-titulos);
-                width: 220px;
-                margin-left: 90px;
-                margin-top: -7px;
-            }
-
-            .menu {
-                font-size: 15pt;
-                width: fit-content;
-                border: 2px solid #ffc107;
-                border-radius: 6px;
-                float: right;
-                margin-top: -40px;
-                margin-right: -5px;
-
-                .pag {
-                    color: map-get($colores, color-texto-secundario);
-
-                    &:hover {
-                        color: map-get($colores, color-hover-header);
-                    }
-                }
-            }
-        }
-    }
-
-    /* ------------------------------------- CLUB -------------------------------------------------*/
-
-    .bot2 {
-        width: 80px;
-        height: 30px;
-        margin-top: -5px;
-        border-radius: 4px;
-        border: 2px solid black;
-        float: right;
-        font-size: 12pt;
-        margin-right: 20px;
-        outline: none;
-        transition: height 1s;
-    }
-
-    .grilla {
-        .div2 {
-            margin-top: 50px;
-            width: 102%;
-            height: 360px;
-            border: 2px solid black;
-            background-image: url('../img/diario.jpg');
-
-            .fotos {
-                @include sizes(480px, 320px);
-                margin-left: -10px;
-            }
-        }
-
-        .div3 {
-            background-image: url('../img/diario.jpg');
-            border: 2px solid black;
-            height: 360px;
-            margin-top: 50px;
-
-            h2 {
-                margin-top: 20px;
-                font-family: 'Teko';
-                font-size: 24pt;
-                text-align: center;
-            }
-
-            p {
-                font-size: 14pt;
-                font-family: 'Teko2';
-                text-align: left;
-                margin-left: 6px;
-            }
-
-            #his {
-                @extend .bot2;
-
-                &:hover {
-                    background-color: map-get($colores, color-hover);
-                    height: 35px;
-                }
-            }
-        }
-    }
-
-    /* -------------------------------------- REAL MADRID ------------------------------------------*/
-
-
-    .grilla {
-        .div4 {
-            margin-top: 10px;
-            border: 2px solid black;
-            height: 360px;
-
-            iframe {
-                @include sizes(98%, 320px);
-                margin-top: 15px;
-                margin-left: 5px;
-                border: 2px solid white;
-            }
-        }
-
-        .div5 {
-            border: 2px solid black;
-            margin-top: 10px;
-            height: 360px;
-
-            h2 {
-                margin-top: 20px;
-                font-family: 'Teko';
-                font-size: 30pt;
-                text-align: center;
-            }
-
-            p {
-                font-size: 18pt;
-                font-family: 'Teko2';
-                text-align: left;
-                margin-left: 4px;
-            }
-
-            #tit {
-                @extend .bot2;
-
-                &:hover {
-                    background-color: map-get($colores, color-hover);
-                    height: 35px;
-                }
-            }
-        }
-    }
-
-    /* ----------------------------------------- TIGRE -----------------------------------------------*/
-
-
-    .grilla {
-        .div6 {
-            margin-top: -30px;
-            border: 2px solid black;
-            height: 360px;
-
-            img {
-                @include sizes (98%, 320px);
-                margin-top: 15px;
-                margin-left: 5px;
-                border: 2px solid white;
-            }
-        }
-
-        .div7 {
-            margin-top: -30px;
-            border: 2px solid black;
-            height: 360px;
-
-            h2 {
-                margin-top: 20px;
-                font-family: 'Teko';
-                font-size: 24pt;
-                text-align: center;
-            }
-
-            p {
-                font-size: 16pt;
-                font-family: 'Teko2';
-                text-align: left;
-                margin-left: 6px;
-            }
-
-            #not {
-                @extend .bot2;
-
-                &:hover {
-                    background-color: map-get($colores, color-hover);
-                    height: 35px;
-                }
-            }
-        }
-    }
-
-    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-    .grilla {
-        .div8 {
-            margin-top: -60px;
-            border-top: 2px solid black;
-
-            .pie {
-                section {
-                    a {
-                        border: none;
-                        width: 50px;
-                        height: 36px;
-                        transition: width 1s,
-                            height 1s;
-
-                        &:hover {
-                            width: 65px;
-                            height: 40px;
-                        }
-                    }
-                }
-            }
-
-            .contacto {
-                width: fit-content;
+            .div2 {
+                @include sizes (99%, 360px);
                 margin: 0 auto;
+                margin-top: 50px;
+                margin-left: 12px;
+                border: 2px solid black;
+                background-image: url('../img/diario.jpg');
+
+                .fotos {
+                    @include sizes(480px, 320px);
+                    margin: 0 auto;
+                }
+            }
+
+            .div3 {
+                @include sizes (99%, 360px);
+                margin: 0 auto;
+                margin-top: 50px;
+                margin-right: 12px;
+                background-image: url('../img/diario.jpg');
+                border: 2px solid black;
 
                 h2 {
+                    margin-top: 20px;
                     font-family: 'Teko';
-                    text-decoration: none;
-                    width: fit-content;
+                    font-size: 28pt;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: 14pt;
+                    width: 98%;
                     margin: 0 auto;
+                    font-family: 'Teko2';
+                    text-align: left;
+                }
+
+                #his {
+                    @extend .bot2;
 
                     &:hover {
-                        color: map-get($colores, color-hover);
+                        background-color: map-get($colores, color-hover);
+                        @include sizes (85px, 32px);
                     }
                 }
             }
-        }
-    }
 
+            .div4 {
+                @include sizes (99%, 360px);
+                margin: 0 auto;
+                margin-top: 10px;
+                margin-right: 12px;
+                border: 2px solid black;
+
+                iframe {
+                    @include sizes(95%, 320px);
+                    margin: 0 auto;
+                    margin-top: 16px;
+                    margin-left: 20px;
+                    border: 2px solid white;
+                }
+            }
+
+            .div5 {
+                @include sizes (99%, 360px);
+                border: 2px solid black;
+                border-right: none;
+                margin: 0 auto;
+                margin-top: 10px;
+                margin-left: 12px;
+
+                h2 {
+                    width: 97%;
+                    margin: 0 auto;
+                    margin-top: 20px;
+                    font-family: 'Teko';
+                    font-size: 28pt;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: 18pt;
+                    width: 97%;
+                    margin: 0 auto;
+                    margin-top: 10px;
+                    font-family: 'Teko2';
+                    text-align: left;
+                }
+
+                #tit {
+                    @extend .bot2;
+
+                    &:hover {
+                        background-color: map-get($colores, color-hover);
+                        @include sizes (85px, 32px);
+                    }
+                }
+            }
+
+            .div6 {
+                @include sizes (99%, 360px);
+                margin: 0 auto;
+                margin-left: 12px;
+                margin-top: -30px;
+                border: 2px solid black;
+                border-right: none;
+
+                img {
+                    @include sizes (96%, 320px);
+                    margin-top: 15px;
+                    margin-left: 13px;
+                    border: 2px solid white;
+                }
+            }
+
+            .div7 {
+                @include sizes (99%, 360px);
+                margin: 0 auto;
+                margin-right: 12px;
+                margin-top: -30px;
+                border: 2px solid black;
+
+                h2 {
+                    margin: 0 auto;
+                    margin-top: 20px;
+                    width: 97%;
+                    font-family: 'Teko';
+                    font-size: 24pt;
+                    text-align: center;
+                }
+
+                p {
+                    margin: 0 auto;
+                    margin-top: 10px;
+                    width: 97%;
+                    font-size: 16pt;
+                    font-family: 'Teko2';
+                    text-align: left;
+                }
+
+                #not {
+                    @extend .bot2;
+
+                    &:hover {
+                        background-color: map-get($colores, color-hover);
+                        @include sizes (85px, 32px);
+                    }
+                }
+            }
+    }
 }
 
 /* ################################ CONTACTO.html ######################################## */
@@ -345,145 +265,57 @@ body {
         grid-template-areas: "header"
             "for"
             "footer";
-    }
 
-    /* ::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::: */
+            .div9 {
+                .formu {
+                    @include sizes (80%, fit-content);
+                    margin: 70px 0px 100px 15px;
+                    font-family: 'Teko2';
+                    font-size: 14pt;
 
-    .grilla2 {
-        .div1 {
-            nav {
-                border: 5px solid black;
-            }
-
-            .bokita {
-                width: 90px;
-                height: 100px;
-                float: left;
-                margin-left: -10px;
-                visibility: visible;
-            }
-
-            h1 {
-                font-family: 'Teko';
-                font-size: 30pt;
-                width: 430px;
-                margin-left: 90px;
-            }
-
-            h2 {
-                font-family: 'Teko';
-                font-size: 22pt;
-                width: 220px;
-                margin-left: 90px;
-                margin-top: -7px;
-            }
-
-            .menu {
-                font-size: 15pt;
-                width: fit-content;
-                border: 2px solid #ffc107;
-                border-radius: 6px;
-                float: right;
-                margin-top: -40px;
-                margin-right: -8px;
-
-                .pag {
-                    color: map-get($colores, color-texto-secundario);
-
-                    &:hover {
-                        color: map-get($colores, color-hover-header);
-                    }
-                }
-            }
-        }
-    }
-
-    /* ####################################### FORMULARIO ########################################## */
-
-    .grilla2 {
-        .div9 {
-            .formu {
-                margin-top: 50px;
-                font-family: 'Teko2';
-                font-size: 14pt;
-                width: 80%;
-                height: 650px;
-                margin-left: 15px;
-                margin-bottom: 100px;
-
-                h2 {
-                    font-family: 'Teko';
-                    font-size: 34pt;
-                    height: fit-content;
-                    width: fit-content;
-                }
-
-                .datos {
-                    float: left;
-                    margin-top: -10px;
-
-                    .ape {
-                        margin-top: 20px;
+                    h2 {
+                        font-family: 'Teko';
+                        font-size: 34pt;
+                        width: 98%;
+                        text-align: left;
                     }
 
-                    .mail {
-                        margin-top: 20px;
-                    }
+                    .datos {
+                        float: left;
+                        width: 98%;
+                        margin: 0 auto;
 
-                    .tick {
-                        margin-top: 20px;
-                    }
+                        .nom {
+                            margin-top: 20px;
+                        }
 
-                    .opt {
-                        margin-top: 20px;
-                    }
+                        .ape {
+                            margin-top: 30px;
+                        }
 
-                    .cont {
-                        margin-top: 20px;
-                    }
-                }
-            }
-        }
-    }
+                        .mail {
+                            margin-top: 30px;
+                        }
 
-    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+                        .tick {
+                            margin-top: 30px;
+                        }
 
-    .grilla2 {
-        .div8 {
-            margin-top: -60px;
-            border-top: 2px solid black;
+                        .opt {
+                            margin-top: 30px;
+                        }
 
-            .pie {
-                section {
-                    a {
-                        border: none;
-                        width: 50px;
-                        height: 36px;
-                        transition: width 1s, height 1s;
+                        .cont {
+                            margin-top: 30px;
+                        }
 
-                        &:hover {
-                            width: 65px;
-                            height: 40px;
+                        .env {
+                            margin-top: 40px;
+                            margin-bottom: 20px;
                         }
                     }
                 }
             }
-
-            .contacto {
-                width: fit-content;
-                margin: 0 auto;
-
-                h2 {
-                    font-family: 'Teko';
-                    width: fit-content;
-                    margin: 0 auto;
-
-                    &:hover {
-                        color: map-get($colores, color-hover);
-                    }
-                }
-            }
-        }
     }
 }
 
@@ -510,7 +342,6 @@ body {
 @media screen and (min-width:#{$laptop}) {
 
     .grilla4 {
-        margin-top: -40px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 78px repeat(3, 1fr) 100px;
@@ -521,145 +352,109 @@ body {
             "primera primera"
             "gira gira"
             "footer footer";
-    }
 
-
-    /* ::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::: */
-
-    .grilla4 {
-        .div1 {
-            nav {
-                border: 5px solid black;
-            }
-
-            .bokita {
-                @include sizes (90px, 100px);
-                float: left;
-                margin-left: -10px;
-                visibility: visible;
-            }
-
-            h1 {
-                font-family: 'Teko';
-                font-size: 30pt;
-                width: 430px;
-                margin-left: 90px;
-            }
+        .div14 {
+            @include sizes (98%, fit-content);
+            margin: 0 auto;
+            margin-top: 80px;
 
             h2 {
-                font-family: 'Teko';
-                font-size: 22pt;
-                width: 220px;
-                margin-left: 90px;
-                margin-top: -7px;
+                font-size: 34pt;
+                margin: 0 auto;
+                margin-left: 20px;
             }
 
-            .menu {
-                font-size: 15pt;
-                width: fit-content;
-                border: 2px solid #ffc107;
-                border-radius: 6px;
+            h4 {
+                margin-top: -60px;
+                margin: 0 auto;
+                margin-right: 20px;
+                font-size: 34pt;
                 float: right;
-                margin-top: -40px;
-                margin-right: -8px;
-
-                .pag {
-                    color: map-get($colores, color-texto-secundario);
-
-                    &:hover {
-                        color: map-get($colores, color-hover-header);
-                    }
-                }
-            }
-        }
-    }
-
-    /* ------------------------------------- CONTENIDO -------------------------------------------------*/
-
-    .grilla4 {
-        .div14 {
-            .titulo {
-                h2 {
-                    font-size: 34pt;
-                    font-family: 'Teko';
-                }
             }
 
             .elClu {
+                margin: 0 auto;
+
                 h3 {
-                    font-size: 30pt;
+                    font-size: 34pt;
+                    width: fit-content;
                     text-align: left;
                     margin-left: 20px;
                 }
 
                 img {
-                    width: 600px;
+                    @include sizes (600px, 350px);
                     margin-right: 10px;
-                    margin-top: 5px;
                     float: right;
                 }
 
                 p {
-                    font-family: 'Teko2';
-                    font-size: 16pt;
-                    text-align: left;
-                    padding: 8px;
-                    border: 2px solid;
+                    font-size: 18pt;
+                    width: 99%;
+                    margin: 0 auto;
+                    padding: 4px;
                 }
             }
         }
 
         .div15 {
+            @include sizes (98%, fit-content);
+            margin: 0 auto;
+            margin-top: 25px;
+
             h3 {
                 text-align: right;
-                font-size: 30pt;
-                font-family: 'Teko';
+                font-size: 34pt;
                 margin-right: 20px;
             }
 
             img {
-                width: 600px;
-                margin-left: 10px;
-                margin-top: 5px;
+                @include sizes (600px, 350px);
+                margin-left: 8px;
                 float: left;
             }
 
             p {
-                font-family: 'Teko2';
-                font-size: 16pt;
+                font-size: 18pt;
                 text-align: right;
-                padding: 8px;
-                border: 2px solid;
+                width: 99%;
+                padding: 4px;
+                margin: 0 auto;
+                margin-right: -2px;
             }
         }
 
         .div16 {
-            margin-top: -100px;
+            @include sizes (98%, fit-content);
+            margin: 0 auto;
+            margin-top: -90px;
 
             h3 {
-                font-size: 30pt;
+                font-size: 34pt;
+                width: fit-content;
                 text-align: left;
                 margin-left: 20px;
             }
 
             img {
-                width: 600px;
+                @include sizes (600px, 350px);
                 margin-right: 10px;
-                margin-top: 5px;
                 float: right;
             }
 
             p {
-                font-family: 'Teko2';
-                font-size: 16pt;
-                text-align: left;
-                padding: 8px;
-                border: 2px solid;
+                font-size: 18pt;
+                width: 99%;
+                margin: 0 auto;
+                padding: 5px;
+                margin-left: 5px;
             }
         }
 
         .div17 {
-            margin-top: -250px;
+            @include sizes (98%, fit-content);
+            margin: 0 auto;
+            margin-top: -210px;
 
             h3 {
                 text-align: right;
@@ -669,49 +464,7 @@ body {
             }
         }
     }
-
-    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-    .grilla4 {
-        .div8 {
-            margin-top: -60px;
-            border-top: 2px solid black;
-
-            .pie {
-                section {
-                    a {
-                        border: none;
-                        width: 50px;
-                        height: 36px;
-                        transition: width 1s,
-                            height 1s;
-
-                        &:hover {
-                            width: 65px;
-                            height: 40px;
-                        }
-                    }
-                }
-            }
-
-            .contacto {
-                width: fit-content;
-                margin: 0 auto;
-
-                h2 {
-                    font-family: 'Teko';
-                    width: fit-content;
-                    margin: 0 auto;
-
-                    &:hover {
-                        color: map-get($colores, color-hover);
-                    }
-                }
-            }
-        }
-    }
 }
-
 
 /* ####################################### PLANTILLA.html ########################################## */
 
@@ -743,92 +496,45 @@ body {
             "plantelG plantelG"
             "gremio gremioT"
             "footer footer";
-    }
 
-    /* ::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::: */
+            .div10 {
+                @include sizes (98%, fit-content);
+                margin: 0 auto;
+                margin-top: 80px;
 
-    .grilla3 {
-        .div1 {
-            nav {
-                border: 5px solid black;
-            }
+                h2 {
+                    font-size: 34pt;
+                    font-family: 'Teko';
+                }
 
-            .bokita {
-                @include sizes (90px, 100px);
-                float: left;
-                margin-left: -10px;
-                visibility: visible;
-            }
+                table {
+                    text-align: center;
+                    font-size: 14pt;
 
-            h1 {
-                font-family: 'Teko';
-                font-size: 30pt;
-                width: 430px;
-                margin-left: 90px;
-            }
-
-            h2 {
-                font-family: 'Teko';
-                font-size: 22pt;
-                width: 220px;
-                margin-left: 90px;
-                margin-top: -7px;
-            }
-
-            .menu {
-                font-size: 15pt;
-                width: fit-content;
-                border: 2px solid #ffc107;
-                border-radius: 6px;
-                float: right;
-                margin-top: -40px;
-                margin-right: -8px;
-
-                .pag {
-                    color: map-get($colores, color-texto-secundario);
-
-                    &:hover {
-                        color: map-get($colores, color-hover-header);
+                    thead {
+                        font-size: 18pt;
                     }
                 }
             }
-        }
     }
 
     /* ------------------------------------- PLANTELES -------------------------------------------------*/
 
     .grilla3 {
-        .div10 {
-            margin-top: 80px;
-
-            h2 {
-                font-size: 34pt;
-                font-family: 'Teko';
-            }
-
-            table {
-                text-align: center;
-                font-size: 14pt;
-
-                thead {
-                    font-size: 18pt;
-                }
-            }
-        }
-
+        
         .div11 {
-            margin-top: 20px;
+            @include sizes (98%, fit-content);
+            margin: 0 auto;
+            margin-top: 40px;
 
             h2 {
                 font-size: 34pt;
-                font-family: 'Teko';
                 width: fit-content;
             }
 
             h3 {
                 margin-top: 50px;
                 font-size: 28pt;
-                font-family: 'Teko';
                 width: fit-content;
             }
 
@@ -845,66 +551,26 @@ body {
         .div12 {
             height: fit-content;
             margin: 0 auto;
-            margin-top: -120px;
+            margin-top: -680px;
 
             img {
-                margin-left: 10px;
-                width: 96%;
+                width: 98%;
                 border: 2px solid white;
             }
         }
 
         .div13 {
             border: 2px solid black;
-            margin-top: -120px;
+            margin-top: -620px;
+            top: 0%;
             height: 330.45px;
 
             p {
-                font-family: 'Teko2';
                 font-size: 18pt;
                 text-align: left;
                 margin: 0 auto;
                 margin-top: 15px;
                 width: 99%;
-            }
-        }
-    }
-
-    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-    .grilla3 {
-        .div8 {
-            margin-top: 130px;
-
-            .pie {
-                section {
-                    a {
-                        border: none;
-                        width: 50px;
-                        height: 36px;
-                        transition: width 1s, height 1s;
-
-                        &:hover {
-                            width: 65px;
-                            height: 40px;
-                        }
-                    }
-                }
-            }
-
-            .contacto {
-                width: fit-content;
-                margin: 0 auto;
-
-                h2 {
-                    font-family: 'Teko';
-                    width: fit-content;
-                    margin: 0 auto;
-
-                    &:hover {
-                        color: map-get($colores, color-hover);
-                    }
-                }
             }
         }
     }
@@ -931,56 +597,6 @@ body {
             "trofeos trofeos"
             "palermo palermo"
             "footer footer";
-    }
-
-    /* ::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::: */
-
-    .grilla5 {
-        .div1 {
-            nav {
-                border: 5px solid black;
-            }
-
-            .bokita {
-                @include sizes (90px, 100px);
-                float: left;
-                margin-left: -10px;
-                visibility: visible;
-            }
-
-            h1 {
-                font-family: 'Teko';
-                font-size: 30pt;
-                width: 430px;
-                margin-left: 90px;
-            }
-
-            h2 {
-                font-family: 'Teko';
-                font-size: 22pt;
-                width: 220px;
-                margin-left: 90px;
-                margin-top: -7px;
-            }
-
-            .menu {
-                font-size: 15pt;
-                width: fit-content;
-                border: 2px solid #ffc107;
-                border-radius: 6px;
-                float: right;
-                margin-top: -40px;
-                margin-right: -8px;
-
-                .pag {
-                    color: map-get($colores, color-texto-secundario);
-
-                    &:hover {
-                        color: map-get($colores, color-hover-header);
-                    }
-                }
-            }
-        }
     }
 
     /* ------------------------------------- TROFEOS ----------------------------------------------  */
@@ -1038,45 +654,6 @@ body {
             }
         }
     }
-
-    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-    .grilla5 {
-        .div8 {
-            margin-top: 130px;
-
-            .pie {
-                section {
-                    a {
-                        border: none;
-                        width: 50px;
-                        height: 36px;
-                        transition: width 1s, height 1s;
-
-                        &:hover {
-                            width: 65px;
-                            height: 40px;
-                        }
-                    }
-                }
-            }
-
-            .contacto {
-                width: fit-content;
-                margin: 0 auto;
-
-                h2 {
-                    font-family: 'Teko';
-                    width: fit-content;
-                    margin: 0 auto;
-
-                    &:hover {
-                        color: map-get($colores, color-hover);
-                    }
-                }
-            }
-        }
-    }
 }
 
 /* ####################################### NOTICIAS.html ########################################## */
@@ -1108,57 +685,6 @@ body {
             "cor dyj"
             "tig asa"
             "footer footer";
-    }
-
-    /* ::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::: */
-
-    .grilla6 {
-        .div1 {
-            nav {
-                border: 5px solid black;
-                background-color: rgb(0, 0, 255);
-            }
-
-            .bokita {
-                @include sizes (90px, 100px);
-                float: left;
-                margin-left: -10px;
-                visibility: visible;
-            }
-
-            h1 {
-                font-family: 'Teko';
-                font-size: 30pt;
-                width: 430px;
-                margin-left: 90px;
-            }
-
-            h2 {
-                font-family: 'Teko';
-                font-size: 22pt;
-                width: 220px;
-                margin-left: 90px;
-                margin-top: -7px;
-            }
-
-            .menu {
-                font-size: 15pt;
-                width: fit-content;
-                border: 2px solid #ffc107;
-                border-radius: 6px;
-                float: right;
-                margin-top: -40px;
-                margin-right: -8px;
-
-                .pag {
-                    color: map-get($colores, color-texto-secundario);
-
-                    &:hover {
-                        color: map-get($colores, color-hover-header);
-                    }
-                }
-            }
-        }
     }
 
     /* ------------------------------------- NOTICIAS ----------------------------------------------  */
@@ -1242,48 +768,6 @@ body {
             }
         }
     }
-
-    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-    .grilla6 {
-        .div8 {
-            margin-top: -60px;
-            border-top: 2px solid black;
-
-            .pie {
-                section {
-                    a {
-                        border: none;
-                        width: 50px;
-                        height: 36px;
-                        transition: width 1s,
-                            height 1s;
-
-                        &:hover {
-                            width: 65px;
-                            height: 40px;
-                        }
-                    }
-                }
-            }
-
-            .contacto {
-                width: fit-content;
-                margin: 0 auto;
-
-                h2 {
-                    font-family: 'Teko';
-                    text-decoration: none;
-                    width: fit-content;
-                    margin: 0 auto;
-
-                    &:hover {
-                        color: map-get($colores, color-hover);
-                    }
-                }
-            }
-        }
-    }
 }
 
 /* ####################################### RESERVA.html ########################################## */
@@ -1321,57 +805,6 @@ body {
             "pibes pibes"
             "hur hur"
             "footer footer";
-
-    }
-
-    /* ::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::: */
-
-    .grilla7 {
-        .div1 {
-            nav {
-                border: 5px solid black;
-            }
-
-            .bokita {
-                @include sizes (90px, 100px);
-                float: left;
-                margin-left: -10px;
-                visibility: visible;
-            }
-
-            h1 {
-                font-family: 'Teko';
-                font-size: 30pt;
-                width: 430px;
-                margin-left: 90px;
-            }
-
-            h2 {
-                font-family: 'Teko';
-                font-size: 22pt;
-                width: 220px;
-                margin-left: 90px;
-                margin-top: -7px;
-            }
-
-            .menu {
-                font-size: 15pt;
-                width: fit-content;
-                border: 2px solid #ffc107;
-                border-radius: 6px;
-                float: right;
-                margin-top: -40px;
-                margin-right: -5px;
-
-                .pag {
-                    color: map-get($colores, color-texto-secundario);
-
-                    &:hover {
-                        color: map-get($colores, color-hover-header);
-                    }
-                }
-            }
-        }
     }
 
     /* ------------------------------------- RESERVA ----------------------------------------------- */
@@ -1461,112 +894,11 @@ body {
             }
         }
     }
-
-    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-    .grilla7 {
-        .div8 {
-            margin-top: -60px;
-            border-top: 2px solid black;
-
-            .pie {
-                section {
-                    a {
-                        border: none;
-                        width: 50px;
-                        height: 36px;
-                        transition: width 1s,
-                            height 1s;
-
-                        &:hover {
-                            width: 65px;
-                            height: 40px;
-                        }
-                    }
-                }
-            }
-
-            .contacto {
-                width: fit-content;
-                margin: 0 auto;
-
-                h2 {
-                    font-family: 'Teko';
-                    text-decoration: none;
-                    width: fit-content;
-                    margin: 0 auto;
-
-                    &:hover {
-                        color: map-get($colores, color-hover);
-                    }
-                }
-            }
-        }
-    }
 }
-
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MOBILE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-
 /* ####################################### INDEX.html ########################################## */
-
-
-/* ::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::: */
-
-.div1 {
-    nav {
-        border: 5px solid black;
-        background-image: map-get($colores, color-header);
-
-        .bokita {
-            width: 55px;
-            height: 55px;
-            float: right;
-            visibility: hidden;
-        }
-
-        h1 {
-            font-family: 'Teko';
-            font-size: 20pt;
-            color: map-get($colores, color-titulos);
-            margin-left: -6px;
-        }
-
-        h2 {
-            font-family: 'Teko';
-            font-size: 14pt;
-            color: map-get($colores, color-titulos);
-            margin-left: -6px;
-            margin-bottom: -5px;
-        }
-
-        .navbar-toggler {
-            margin-top: -45px;
-            float: right;
-
-            .navbar-toggler-icon {
-                width: 7px;
-                height: 15px;
-
-                img {
-                    margin-left: -24px;
-                    margin-top: -19px;
-                    width: 55px;
-                    height: 55px;
-                }
-            }
-        }
-
-        .menu {
-            .pag {
-                margin-top: 5px;
-                color: map-get($colores, color-texto-secundario);
-                width: fit-content;
-            }
-        }
-    }
-}
 
 /* ------------------------------------- CLUB ----------------------------------------------  */
 
@@ -1705,39 +1037,6 @@ body {
     }
 }
 
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-.div8 {
-    margin-top: 10px;
-    border-top: 2px solid black;
-
-    .pie {
-        section {
-            a {
-                border: none;
-                width: 50px;
-                height: 36px;
-            }
-        }
-
-        .contacto {
-            width: fit-content;
-            margin: 0 auto;
-
-            a {
-                text-decoration: none;
-
-                h2 {
-                    font-family: 'Teko';
-                    color: map-get($colores, color-texto-secundario);
-                    width: fit-content;
-                    margin: 0 auto;
-                }
-            }
-        }
-    }
-}
-
 /* ####################################### CONTACTO.html ########################################## */
 
 .formu {
@@ -1871,114 +1170,64 @@ body {
 
 /* ####################################### HISTORIA.html ########################################## */
 
-.div14 {
-    margin-top: 100px;
-
-    .titulo {
-        h2 {
-            font-size: 24pt;
-            font-family: 'Teko';
-            color: map-get($colores, color-titulos);
-            margin-left: 5px;
-        }
+.texto-Historia {
+    h3 {
+        font-size: 22pt;
+        font-family: 'Teko';
+        color: map-get($colores, color-titulos);
+        margin-top: 40px;
+        text-align: center;
     }
 
-    .elClu {
-        h3 {
-            font-size: 22pt;
-            font-family: 'Teko';
-            color: map-get($colores, color-titulos);
-            margin-top: 40px;
-            text-align: center;
-        }
+    img {
+        @include sizes (98%, 280px);
+        margin-left: 4px;
+        border: 2px solid;
+    }
 
-        img {
-            height: 350px;
-            width: 98%;
-            margin-left: 4px;
-            border: 2px solid;
-        }
+    p {
+        font-family: 'Teko2';
+        font-size: 14pt;
+        color: map-get($colores, color-texto-primario);
+        text-align: left;
+        margin: 0 auto;
+        margin-top: 15px;
+        width: 98%;
+    }
+}
 
-        p {
-            font-family: 'Teko2';
-            font-size: 14pt;
-            color: map-get($colores, color-texto-primario);
-            text-align: left;
-            margin: 0 auto;
-            margin-top: 5px;
-            border: 2px solid;
-            width: 99%;
-        }
+.div14 {
+    margin-top: 100px;
+    @extend .texto-Historia;
+
+    h2 {
+        font-size: 24pt;
+        font-family: 'Teko';
+        color: map-get($colores, color-titulos);
+        margin-left: 5px;
+    }
+
+    h4 {
+        font-size: 24pt;
+        font-family: 'Teko';
+        color: map-get($colores, color-titulos);
+        margin-left: 5px;
     }
 }
 
 .div15 {
     margin-top: 50px;
-
-    h3 {
-        font-size: 22pt;
-        font-family: 'Teko';
-        color: map-get($colores, color-titulos);
-        text-align: center;
-    }
-
-    img {
-        height: 350px;
-        width: 98%;
-        margin-left: 4px;
-        border: 2px solid;
-    }
-
-    p {
-        font-family: 'Teko2';
-        font-size: 14pt;
-        color: map-get($colores, color-texto-primario);
-        text-align: left;
-        margin: 0 auto;
-        margin-top: 5px;
-        border: 2px solid;
-        width: 99%;
-    }
+    @extend .texto-Historia;
 }
 
 .div16 {
     margin-top: 50px;
-
-    h3 {
-        font-size: 22pt;
-        font-family: 'Teko';
-        color: map-get($colores, color-titulos);
-        text-align: center;
-    }
-
-    img {
-        height: 350px;
-        width: 98%;
-        margin-left: 4px;
-        border: 2px solid;
-    }
-
-    p {
-        font-family: 'Teko2';
-        font-size: 14pt;
-        color: map-get($colores, color-texto-primario);
-        text-align: left;
-        margin: 0 auto;
-        margin-top: 5px;
-        border: 2px solid;
-        width: 99%;
-    }
+    @extend .texto-Historia;
 }
 
 .div17 {
     margin-top: 50px;
-
-    h3 {
-        font-size: 22pt;
-        font-family: 'Teko';
-        color: map-get($colores, color-titulos);
-        text-align: center;
-    }
+    @extend .texto-Historia;
 }
 
 /* ####################################### TITULOS.html ########################################## */
