@@ -10,13 +10,13 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    overflow-x: hidden;
-}
+// html,
+// body {
+//     overflow-x: hidden;
+// }
 
 body {
-    position: relative;
+    width: 100%;
     background-color: map-get($colores, color-fondo);
 }
 
@@ -96,155 +96,155 @@ body {
             "tig sab"
             "footer footer";
 
-            .div2 {
-                @include sizes (99%, 360px);
-                margin: 0 auto;
-                margin-top: 50px;
-                margin-left: 12px;
-                border: 2px solid black;
-                background-image: url('../img/diario.jpg');
+        .div2 {
+            @include sizes (99%, 360px);
+            margin: 0 auto;
+            margin-top: 50px;
+            margin-left: 12px;
+            border: 2px solid black;
+            background-image: url('../img/diario.jpg');
 
-                .fotos {
-                    @include sizes(480px, 320px);
-                    margin: 0 auto;
-                }
+            .fotos {
+                @include sizes(480px, 320px);
+                margin: 0 auto;
+            }
+        }
+
+        .div3 {
+            @include sizes (99%, 360px);
+            margin: 0 auto;
+            margin-top: 50px;
+            margin-right: 12px;
+            background-image: url('../img/diario.jpg');
+            border: 2px solid black;
+
+            h2 {
+                margin-top: 20px;
+                font-family: 'Teko';
+                font-size: 28pt;
+                text-align: center;
             }
 
-            .div3 {
-                @include sizes (99%, 360px);
+            p {
+                font-size: 14pt;
+                width: 98%;
                 margin: 0 auto;
-                margin-top: 50px;
-                margin-right: 12px;
-                background-image: url('../img/diario.jpg');
-                border: 2px solid black;
-
-                h2 {
-                    margin-top: 20px;
-                    font-family: 'Teko';
-                    font-size: 28pt;
-                    text-align: center;
-                }
-
-                p {
-                    font-size: 14pt;
-                    width: 98%;
-                    margin: 0 auto;
-                    font-family: 'Teko2';
-                    text-align: left;
-                }
-
-                #his {
-                    @extend .bot2;
-
-                    &:hover {
-                        background-color: map-get($colores, color-hover);
-                        @include sizes (85px, 32px);
-                    }
-                }
+                font-family: 'Teko2';
+                text-align: left;
             }
 
-            .div4 {
-                @include sizes (99%, 360px);
+            #his {
+                @extend .bot2;
+
+                &:hover {
+                    background-color: map-get($colores, color-hover);
+                    @include sizes (85px, 32px);
+                }
+            }
+        }
+
+        .div4 {
+            @include sizes (99%, 360px);
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-right: 12px;
+            border: 2px solid black;
+
+            iframe {
+                @include sizes(95%, 320px);
+                margin: 0 auto;
+                margin-top: 16px;
+                margin-left: 20px;
+                border: 2px solid white;
+            }
+        }
+
+        .div5 {
+            @include sizes (99%, 360px);
+            border: 2px solid black;
+            border-right: none;
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-left: 12px;
+
+            h2 {
+                width: 97%;
+                margin: 0 auto;
+                margin-top: 20px;
+                font-family: 'Teko';
+                font-size: 28pt;
+                text-align: center;
+            }
+
+            p {
+                font-size: 18pt;
+                width: 97%;
                 margin: 0 auto;
                 margin-top: 10px;
-                margin-right: 12px;
-                border: 2px solid black;
-
-                iframe {
-                    @include sizes(95%, 320px);
-                    margin: 0 auto;
-                    margin-top: 16px;
-                    margin-left: 20px;
-                    border: 2px solid white;
-                }
+                font-family: 'Teko2';
+                text-align: left;
             }
 
-            .div5 {
-                @include sizes (99%, 360px);
-                border: 2px solid black;
-                border-right: none;
+            #tit {
+                @extend .bot2;
+
+                &:hover {
+                    background-color: map-get($colores, color-hover);
+                    @include sizes (85px, 32px);
+                }
+            }
+        }
+
+        .div6 {
+            @include sizes (99%, 360px);
+            margin: 0 auto;
+            margin-left: 12px;
+            margin-top: -30px;
+            border: 2px solid black;
+            border-right: none;
+
+            img {
+                @include sizes (96%, 320px);
+                margin-top: 15px;
+                margin-left: 13px;
+                border: 2px solid white;
+            }
+        }
+
+        .div7 {
+            @include sizes (99%, 360px);
+            margin: 0 auto;
+            margin-right: 12px;
+            margin-top: -30px;
+            border: 2px solid black;
+
+            h2 {
+                margin: 0 auto;
+                margin-top: 20px;
+                width: 97%;
+                font-family: 'Teko';
+                font-size: 24pt;
+                text-align: center;
+            }
+
+            p {
                 margin: 0 auto;
                 margin-top: 10px;
-                margin-left: 12px;
-
-                h2 {
-                    width: 97%;
-                    margin: 0 auto;
-                    margin-top: 20px;
-                    font-family: 'Teko';
-                    font-size: 28pt;
-                    text-align: center;
-                }
-
-                p {
-                    font-size: 18pt;
-                    width: 97%;
-                    margin: 0 auto;
-                    margin-top: 10px;
-                    font-family: 'Teko2';
-                    text-align: left;
-                }
-
-                #tit {
-                    @extend .bot2;
-
-                    &:hover {
-                        background-color: map-get($colores, color-hover);
-                        @include sizes (85px, 32px);
-                    }
-                }
+                width: 97%;
+                font-size: 16pt;
+                font-family: 'Teko2';
+                text-align: left;
             }
 
-            .div6 {
-                @include sizes (99%, 360px);
-                margin: 0 auto;
-                margin-left: 12px;
-                margin-top: -30px;
-                border: 2px solid black;
-                border-right: none;
+            #not {
+                @extend .bot2;
 
-                img {
-                    @include sizes (96%, 320px);
-                    margin-top: 15px;
-                    margin-left: 13px;
-                    border: 2px solid white;
+                &:hover {
+                    background-color: map-get($colores, color-hover);
+                    @include sizes (85px, 32px);
                 }
             }
-
-            .div7 {
-                @include sizes (99%, 360px);
-                margin: 0 auto;
-                margin-right: 12px;
-                margin-top: -30px;
-                border: 2px solid black;
-
-                h2 {
-                    margin: 0 auto;
-                    margin-top: 20px;
-                    width: 97%;
-                    font-family: 'Teko';
-                    font-size: 24pt;
-                    text-align: center;
-                }
-
-                p {
-                    margin: 0 auto;
-                    margin-top: 10px;
-                    width: 97%;
-                    font-size: 16pt;
-                    font-family: 'Teko2';
-                    text-align: left;
-                }
-
-                #not {
-                    @extend .bot2;
-
-                    &:hover {
-                        background-color: map-get($colores, color-hover);
-                        @include sizes (85px, 32px);
-                    }
-                }
-            }
+        }
     }
 }
 
@@ -266,56 +266,56 @@ body {
             "for"
             "footer";
 
-            .div9 {
-                .formu {
-                    @include sizes (80%, fit-content);
-                    margin: 70px 0px 100px 15px;
-                    font-family: 'Teko2';
-                    font-size: 14pt;
+        .div9 {
+            .formu {
+                @include sizes (80%, fit-content);
+                margin: 70px 0px 100px 15px;
+                font-family: 'Teko2';
+                font-size: 14pt;
 
-                    h2 {
-                        font-family: 'Teko';
-                        font-size: 34pt;
-                        width: 98%;
-                        text-align: left;
+                h2 {
+                    font-family: 'Teko';
+                    font-size: 34pt;
+                    width: 98%;
+                    text-align: left;
+                }
+
+                .datos {
+                    float: left;
+                    width: 98%;
+                    margin: 0 auto;
+
+                    .nom {
+                        margin-top: 20px;
                     }
 
-                    .datos {
-                        float: left;
-                        width: 98%;
-                        margin: 0 auto;
+                    .ape {
+                        margin-top: 30px;
+                    }
 
-                        .nom {
-                            margin-top: 20px;
-                        }
+                    .mail {
+                        margin-top: 30px;
+                    }
 
-                        .ape {
-                            margin-top: 30px;
-                        }
+                    .tick {
+                        margin-top: 30px;
+                    }
 
-                        .mail {
-                            margin-top: 30px;
-                        }
+                    .opt {
+                        margin-top: 30px;
+                    }
 
-                        .tick {
-                            margin-top: 30px;
-                        }
+                    .cont {
+                        margin-top: 30px;
+                    }
 
-                        .opt {
-                            margin-top: 30px;
-                        }
-
-                        .cont {
-                            margin-top: 30px;
-                        }
-
-                        .env {
-                            margin-top: 40px;
-                            margin-bottom: 20px;
-                        }
+                    .env {
+                        margin-top: 40px;
+                        margin-bottom: 20px;
                     }
                 }
             }
+        }
     }
 }
 
@@ -489,39 +489,38 @@ body {
     .grilla3 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 78px repeat(2, 1fr) 100px;
+        grid-template-rows: 78px repeat(1, 1fr) 100px;
         row-gap: 10px;
         grid-template-areas: "header header"
             "plantel plantel"
-            "plantelG plantelG"
-            "gremio gremioT"
+            // "plantelG plantelG"
+            // "gremio gremioT"
             "footer footer";
 
-            .div10 {
-                @include sizes (98%, fit-content);
-                margin: 0 auto;
-                margin-top: 80px;
+        .div10 {
+            @include sizes (98%, fit-content);
+            margin: 0 auto;
+            margin-top: 80px;
 
-                h2 {
-                    font-size: 34pt;
-                    font-family: 'Teko';
-                }
+            h2 {
+                font-size: 34pt;
+            }
 
-                table {
-                    text-align: center;
-                    font-size: 14pt;
+            table {
+                text-align: center;
+                font-size: 14pt;
 
-                    thead {
-                        font-size: 18pt;
-                    }
+                thead {
+                    font-size: 18pt;
                 }
             }
+        }
     }
 
     /* ------------------------------------- PLANTELES -------------------------------------------------*/
 
     .grilla3 {
-        
+
         .div11 {
             @include sizes (98%, fit-content);
             margin: 0 auto;
@@ -591,66 +590,81 @@ body {
     .grilla5 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 78px repeat(2, 1fr) 100px;
+        grid-template-rows: 78px 1fr 40rem 100px;
         row-gap: 0px;
         grid-template-areas: "header header"
             "trofeos trofeos"
-            "palermo palermo"
+            "palermo recuerdo"
             "footer footer";
-    }
 
-    /* ------------------------------------- TROFEOS ----------------------------------------------  */
-
-    .grilla5 {
         .div18 {
             margin-top: 80px;
 
             h2 {
                 font-size: 34pt;
-                font-family: 'Teko';
                 margin-left: 15px;
             }
 
             table {
                 text-align: center;
-                font-size: 14pt;
+                font-size: 20pt;
 
                 thead {
-                    font-size: 18pt;
+                    font-size: 22pt;
+                }
+
+                img {
+                    margin: 0 auto;
+                    @include sizes (40px, 60px);
                 }
             }
         }
 
         .div19 {
-            margin-top: 20px;
+            @include sizes (98%, 25rem);
+            margin: 0 auto;
+            margin-top: 140px;
 
             h2 {
                 font-size: 34pt;
-                font-family: 'Teko';
-                width: fit-content;
-                margin-left: 15px;
-            }
-
-            iframe {
-                width: 500px;
-                height: 280px;
-                margin-left: 5px;
-            }
-
-            img {
-                @include sizes (500px, 280px);
-                margin-top: 20px;
-                float: right;
-                margin-right: 5px;
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 10px;
             }
 
             p {
-                font-family: 'Teko2';
                 font-size: 18pt;
                 text-align: left;
                 margin: 0 auto;
                 margin-top: 15px;
-                width: 99%;
+                width: 98%;
+                height: fit-content;
+            }
+        }
+
+        .div190 {
+            @include sizes (98%, fit-content);
+            margin: 0 auto;
+            margin-top: 40px;
+
+            iframe {
+                @include sizes (98%, 280px);
+                margin: 0 auto;
+                margin-left: 6px;
+                margin-top: 10px;
+                border: 2px solid white;
+            }
+
+            img {
+                @include sizes (98%, 280px);
+                margin: 0 auto;
+                margin-left: 6px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border: 2px solid white;
+
+
+                // margin-top: -270px;
             }
         }
     }
@@ -682,17 +696,12 @@ body {
         grid-template-rows: 78px repeat(2, 1fr) 100px;
         gap: 24px;
         grid-template-areas: "header header"
-            "cor dyj"
-            "tig asa"
+            "not1 not2"
+            "not3 not4"
             "footer footer";
-    }
 
-    /* ------------------------------------- NOTICIAS ----------------------------------------------  */
-
-    .grilla6 {
         .noti {
             font-size: 34pt;
-            font-family: 'Teko';
             margin-left: 15px;
             margin-top: 60px;
         }
@@ -702,8 +711,11 @@ body {
             margin-left: 10px;
 
             img {
-                width: 476px;
+                @include sizes (86%, 240px);
+                margin: 0 auto;
+                margin-top: 5px;
             }
+
 
             h2 {
                 font-size: 22pt;
@@ -717,27 +729,12 @@ body {
         .div21 {
             margin-top: 135px;
             margin-right: 10px;
-            float: right;
-
-            img {
-                @include sizes (476px, 280.2px);
-            }
-
-            h2 {
-                font-size: 16.5pt;
-            }
-
-            p {
-                font-size: 12pt;
-            }
-        }
-
-        .div22 {
             height: 480px;
-            margin-left: 10px;
 
             img {
-                @include sizes (476px, 280.2px);
+                @include sizes (86%, 240px);
+                margin: 0 auto;
+                margin-top: 5px;
             }
 
             h2 {
@@ -749,22 +746,41 @@ body {
             }
         }
 
-        .div30 {
-            margin-top: 20px;
-            margin-right: 10px;
+        .div22 {
             height: 480px;
-            float: right;
+            margin-left: 10px;
 
             img {
-                @include sizes (476px, 280.2px);
+                @include sizes (86%, 240px);
+                margin: 0 auto;
+                margin-top: 5px;
             }
 
             h2 {
-                font-size: 16.5pt;
+                font-size: 22pt;
             }
 
             p {
-                font-size: 12pt;
+                font-size: 15pt;
+            }
+        }
+
+        .div30 {
+            height: 480px;
+            margin-right: 10px;
+
+            img {
+                @include sizes (86%, 240px);
+                margin: 0 auto;
+                margin-top: 5px;
+            }
+
+            h2 {
+                font-size: 22pt;
+            }
+
+            p {
+                font-size: 16pt;
             }
         }
     }
@@ -797,61 +813,91 @@ body {
     .grilla7 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 78px repeat(4, 1fr) 100px;
+        grid-template-rows: 78px repeat(5, 1fr) 100px;
         gap: 15px;
         grid-template-areas: "header header"
-            "tabla barr"
             "tabla prox"
+            "tabla prox"
+            "notR1 notR2"
             "pibes pibes"
             "hur hur"
             "footer footer";
-    }
 
-    /* ------------------------------------- RESERVA ----------------------------------------------- */
-
-    .grilla7 {
         .div23 {
+            margin-left: 10px;
             margin-top: 80px;
+            height: fit-content;
 
             .res {
                 h2 {
                     font-size: 40pt;
-                    font-family: 'Teko';
+                    margin-left: 10px;
                 }
             }
 
             h2 {
                 font-size: 34pt;
-                font-family: 'Teko';
                 margin-left: 10px;
             }
 
             table {
+                margin: 0 auto;
                 margin-left: 10px;
                 text-align: center;
-                font-size: 14pt;
+                font-size: 16pt;
 
                 thead {
-                    font-size: 14pt;
+                    font-size: 16pt;
                 }
             }
         }
 
         .div24 {
-            margin-top: 80px;
-            margin-left: 15px;
-            height: 520px;
-            width: 480px;
+            @include sizes (480px, fit-content);
+            margin: 0 auto;
+            margin-top: 40px;
+
 
             img {
-                @include sizes (466px, 250px);
+                @include sizes (86%, 250px);
+            }
+
+            h2 {
+                font-size: 18pt;
+            }
+
+            p {
+                font-size: 14pt;
+            }
+        }
+
+        .div240 {
+            @include sizes (480px, fit-content);
+            margin: 0 auto;
+            margin-top: 40px;
+
+
+            img {
+                @include sizes (86%, 250px);
+            }
+
+            h2 {
+                font-size: 18pt;
+            }
+
+            p {
+                font-size: 14pt;
             }
         }
 
         .div25 {
+            margin: 0 auto;
+            margin-top: 80px;
+            margin-right: 60px;
+            height: fit-content;
+
             h2 {
                 font-size: 34pt;
-                font-family: 'Teko';
                 text-align: center;
             }
 
@@ -868,7 +914,10 @@ body {
         }
 
         .div26 {
-            margin-top: -280px;
+            width: 98%;
+            margin: 0 auto;
+            margin-left: 10px;
+            margin-top: -190px;
 
             h2 {
                 font-size: 34pt;
@@ -878,19 +927,27 @@ body {
             table {
                 text-align: center;
                 font-size: 14pt;
+                width: 98%;
 
                 thead {
                     font-size: 18pt;
                 }
             }
         }
+    }
+
+    /* ------------------------------------- RESERVA ----------------------------------------------- */
+
+    .grilla7 {
 
         .div27 {
-            margin-top: -150px;
+            height: fit-content;
+            border: 2px solid;
+            width: fit-content;
+            margin-top: -80px;
 
             img {
                 @include sizes (800px, 400px);
-                margin-left: 100px;
             }
         }
     }
@@ -1103,7 +1160,7 @@ body {
         text-align: center;
 
         thead {
-            font-family: 'Teko';
+            font-family: 'Teko2';
             font-size: 9pt;
             color: map-get($colores, color-titulos);
         }
@@ -1135,7 +1192,7 @@ body {
         color: map-get($colores, color-texto-secundario);
 
         thead {
-            font-family: 'Teko';
+            font-family: 'Teko2';
             font-size: 9pt;
             color: map-get($colores, color-titulos);
         }
@@ -1249,11 +1306,21 @@ body {
         font-family: 'Teko2';
         color: map-get($colores, color-texto-secundario);
         text-align: center;
+        vertical-align: middle;
 
         thead {
-            font-family: 'Teko';
+            font-family: 'Teko2';
             font-size: 6pt;
             color: map-get($colores, color-titulos);
+        }
+
+        a {
+            text-decoration: underline goldenrod;
+            color: white;
+        }
+
+        img {
+            @include sizes (30px, 40px);
         }
     }
 }
@@ -1268,6 +1335,20 @@ body {
         text-align: center;
     }
 
+
+
+    p {
+        font-size: 14pt;
+        font-family: 'Teko2';
+        color: map-get($colores, color-texto-primario);
+        text-align: center;
+        width: 98%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}
+
+.div190 {
     iframe {
         @include sizes (98%, 250px);
         margin: 0 auto;
@@ -1282,17 +1363,6 @@ body {
         margin-top: 5px;
         margin-left: 4px;
         border: 2px solid white;
-    }
-
-    p {
-        font-size: 14pt;
-        font-family: 'Teko2';
-        color: map-get($colores, color-texto-primario);
-        text-align: center;
-        border: 2px solid;
-        width: 98%;
-        margin: 0 auto;
-        margin-top: 10px;
     }
 }
 
@@ -1313,7 +1383,7 @@ body {
     border: 5px solid;
 
     img {
-        @include sizes (98%, 350px);
+        @include sizes (98%, 280px);
         margin: 0 auto;
         margin-top: 2px;
         border: 2px solid;
@@ -1340,7 +1410,7 @@ body {
     border: 5px solid;
 
     img {
-        @include sizes (98%, 350px);
+        @include sizes (98%, 280px);
         margin: 0 auto;
         margin-top: 2px;
         border: 2px solid;
@@ -1367,7 +1437,7 @@ body {
     border: 5px solid;
 
     img {
-        @include sizes (98%, 350px);
+        @include sizes (98%, 280px);
         margin: 0 auto;
         margin-top: 2px;
         border: 2px solid;
@@ -1394,7 +1464,7 @@ body {
     border: 5px solid;
 
     img {
-        @include sizes (98%, 350px);
+        @include sizes (98%, 280px);
         margin: 0 auto;
         margin-top: 2px;
         border: 2px solid;
@@ -1444,7 +1514,7 @@ body {
         text-align: center;
 
         thead {
-            font-family: 'Teko';
+            font-family: 'Teko2';
             font-size: 8pt;
             color: map-get($colores, color-titulos);
         }
@@ -1452,6 +1522,33 @@ body {
 }
 
 .div24 {
+    @include sizes (98%, fit-content);
+    border: 5px solid;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    img {
+        @include sizes (98%, 350px);
+        margin: 0 auto;
+        margin-top: 2px;
+        border: 2px solid;
+    }
+
+    h2 {
+        font-family: 'Teko';
+        font-size: 16.5pt;
+        text-align: center;
+        color: map-get($colores, color-texto-primario);
+    }
+
+    p {
+        font-family: 'Teko2';
+        font-size: 12pt;
+        color: map-get($colores, color-texto-primario);
+    }
+}
+
+.div240 {
     @include sizes (98%, fit-content);
     border: 5px solid;
     margin: 0 auto;
@@ -1496,7 +1593,7 @@ body {
         color: map-get($colores, color-texto-secundario);
 
         thead {
-            font-family: 'Teko';
+            font-family: 'Teko2';
             font-size: 16pt;
             color: map-get($colores, color-titulos);
         }
