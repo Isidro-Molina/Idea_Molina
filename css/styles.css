@@ -34,26 +34,26 @@
     width: fit-content; }
 
 @media screen and (min-width: 1024px) {
-  .header .div1 nav, .grilla .div1 nav, .grilla2 .div1 nav, .grilla3 .div1 nav, .grilla4 .div1 nav, .grilla5 .div1 nav, .grilla6 .div1 nav, .grilla7 .div1 nav {
+  .header .div1 nav, .grilla .div1 nav, .grilla2 .div1 nav, .grilla3 .div1 nav, .grilla4 .div1 nav, .grilla5 .div1 nav, .grilla6 .div1 nav, .grilla7 .div1 nav, .grilla8 .div1 nav {
     border: 5px solid black; }
-  .header .div1 .bokita, .grilla .div1 .bokita, .grilla2 .div1 .bokita, .grilla3 .div1 .bokita, .grilla4 .div1 .bokita, .grilla5 .div1 .bokita, .grilla6 .div1 .bokita, .grilla7 .div1 .bokita {
+  .header .div1 .bokita, .grilla .div1 .bokita, .grilla2 .div1 .bokita, .grilla3 .div1 .bokita, .grilla4 .div1 .bokita, .grilla5 .div1 .bokita, .grilla6 .div1 .bokita, .grilla7 .div1 .bokita, .grilla8 .div1 .bokita {
     width: 90px;
     height: 100px;
     float: left;
     margin-left: -10px;
     visibility: visible; }
-  .header .div1 h1, .grilla .div1 h1, .grilla2 .div1 h1, .grilla3 .div1 h1, .grilla4 .div1 h1, .grilla5 .div1 h1, .grilla6 .div1 h1, .grilla7 .div1 h1 {
+  .header .div1 h1, .grilla .div1 h1, .grilla2 .div1 h1, .grilla3 .div1 h1, .grilla4 .div1 h1, .grilla5 .div1 h1, .grilla6 .div1 h1, .grilla7 .div1 h1, .grilla8 .div1 h1 {
     font-family: 'Teko';
     font-size: 30pt;
     width: 430px;
     margin-left: 90px; }
-  .header .div1 h2, .grilla .div1 h2, .grilla2 .div1 h2, .grilla3 .div1 h2, .grilla4 .div1 h2, .grilla5 .div1 h2, .grilla6 .div1 h2, .grilla7 .div1 h2 {
+  .header .div1 h2, .grilla .div1 h2, .grilla2 .div1 h2, .grilla3 .div1 h2, .grilla4 .div1 h2, .grilla5 .div1 h2, .grilla6 .div1 h2, .grilla7 .div1 h2, .grilla8 .div1 h2 {
     font-family: 'Teko';
     font-size: 22pt;
     width: 220px;
     margin-left: 90px;
     margin-top: -7px; }
-  .header .div1 .menu, .grilla .div1 .menu, .grilla2 .div1 .menu, .grilla3 .div1 .menu, .grilla4 .div1 .menu, .grilla5 .div1 .menu, .grilla6 .div1 .menu, .grilla7 .div1 .menu {
+  .header .div1 .menu, .grilla .div1 .menu, .grilla2 .div1 .menu, .grilla3 .div1 .menu, .grilla4 .div1 .menu, .grilla5 .div1 .menu, .grilla6 .div1 .menu, .grilla7 .div1 .menu, .grilla8 .div1 .menu {
     font-size: 15pt;
     width: fit-content;
     border: 2px solid #ffc107;
@@ -61,9 +61,9 @@
     float: right;
     margin-top: -40px;
     margin-right: -5px; }
-    .header .div1 .menu .pag, .grilla .div1 .menu .pag, .grilla2 .div1 .menu .pag, .grilla3 .div1 .menu .pag, .grilla4 .div1 .menu .pag, .grilla5 .div1 .menu .pag, .grilla6 .div1 .menu .pag, .grilla7 .div1 .menu .pag {
+    .header .div1 .menu .pag, .grilla .div1 .menu .pag, .grilla2 .div1 .menu .pag, .grilla3 .div1 .menu .pag, .grilla4 .div1 .menu .pag, .grilla5 .div1 .menu .pag, .grilla6 .div1 .menu .pag, .grilla7 .div1 .menu .pag, .grilla8 .div1 .menu .pag {
       color: white; }
-      .header .div1 .menu .pag:hover, .grilla .div1 .menu .pag:hover, .grilla2 .div1 .menu .pag:hover, .grilla3 .div1 .menu .pag:hover, .grilla4 .div1 .menu .pag:hover, .grilla5 .div1 .menu .pag:hover, .grilla6 .div1 .menu .pag:hover, .grilla7 .div1 .menu .pag:hover {
+      .header .div1 .menu .pag:hover, .grilla .div1 .menu .pag:hover, .grilla2 .div1 .menu .pag:hover, .grilla3 .div1 .menu .pag:hover, .grilla4 .div1 .menu .pag:hover, .grilla5 .div1 .menu .pag:hover, .grilla6 .div1 .menu .pag:hover, .grilla7 .div1 .menu .pag:hover, .grilla8 .div1 .menu .pag:hover {
         color: #ffc107; } }
 
 .div8 {
@@ -85,25 +85,25 @@
         margin: 0 auto; }
 
 @media screen and (min-width: 1024px) {
-  .footer .div8, .grilla .div8, .grilla2 .div8, .grilla3 .div8, .grilla4 .div8, .grilla5 .div8, .grilla6 .div8, .grilla7 .div8 {
+  .footer .div8, .grilla .div8, .grilla2 .div8, .grilla3 .div8, .grilla4 .div8, .grilla5 .div8, .grilla6 .div8, .grilla7 .div8, .grilla8 .div8 {
     border-top: 2px solid black; }
-    .footer .div8 .pie section a, .grilla .div8 .pie section a, .grilla2 .div8 .pie section a, .grilla3 .div8 .pie section a, .grilla4 .div8 .pie section a, .grilla5 .div8 .pie section a, .grilla6 .div8 .pie section a, .grilla7 .div8 .pie section a {
+    .footer .div8 .pie section a, .grilla .div8 .pie section a, .grilla2 .div8 .pie section a, .grilla3 .div8 .pie section a, .grilla4 .div8 .pie section a, .grilla5 .div8 .pie section a, .grilla6 .div8 .pie section a, .grilla7 .div8 .pie section a, .grilla8 .div8 .pie section a {
       border: none;
       width: 50px;
       height: 36px;
       transition: width 1s, height 1s; }
-      .footer .div8 .pie section a:hover, .grilla .div8 .pie section a:hover, .grilla2 .div8 .pie section a:hover, .grilla3 .div8 .pie section a:hover, .grilla4 .div8 .pie section a:hover, .grilla5 .div8 .pie section a:hover, .grilla6 .div8 .pie section a:hover, .grilla7 .div8 .pie section a:hover {
+      .footer .div8 .pie section a:hover, .grilla .div8 .pie section a:hover, .grilla2 .div8 .pie section a:hover, .grilla3 .div8 .pie section a:hover, .grilla4 .div8 .pie section a:hover, .grilla5 .div8 .pie section a:hover, .grilla6 .div8 .pie section a:hover, .grilla7 .div8 .pie section a:hover, .grilla8 .div8 .pie section a:hover {
         width: 65px;
         height: 40px; }
-    .footer .div8 .contacto, .grilla .div8 .contacto, .grilla2 .div8 .contacto, .grilla3 .div8 .contacto, .grilla4 .div8 .contacto, .grilla5 .div8 .contacto, .grilla6 .div8 .contacto, .grilla7 .div8 .contacto {
+    .footer .div8 .contacto, .grilla .div8 .contacto, .grilla2 .div8 .contacto, .grilla3 .div8 .contacto, .grilla4 .div8 .contacto, .grilla5 .div8 .contacto, .grilla6 .div8 .contacto, .grilla7 .div8 .contacto, .grilla8 .div8 .contacto {
       width: fit-content;
       margin: 0 auto; }
-      .footer .div8 .contacto h2, .grilla .div8 .contacto h2, .grilla2 .div8 .contacto h2, .grilla3 .div8 .contacto h2, .grilla4 .div8 .contacto h2, .grilla5 .div8 .contacto h2, .grilla6 .div8 .contacto h2, .grilla7 .div8 .contacto h2 {
+      .footer .div8 .contacto h2, .grilla .div8 .contacto h2, .grilla2 .div8 .contacto h2, .grilla3 .div8 .contacto h2, .grilla4 .div8 .contacto h2, .grilla5 .div8 .contacto h2, .grilla6 .div8 .contacto h2, .grilla7 .div8 .contacto h2, .grilla8 .div8 .contacto h2 {
         font-family: 'Teko';
         text-decoration: none;
         width: fit-content;
         margin: 0 auto; }
-        .footer .div8 .contacto h2:hover, .grilla .div8 .contacto h2:hover, .grilla2 .div8 .contacto h2:hover, .grilla3 .div8 .contacto h2:hover, .grilla4 .div8 .contacto h2:hover, .grilla5 .div8 .contacto h2:hover, .grilla6 .div8 .contacto h2:hover, .grilla7 .div8 .contacto h2:hover {
+        .footer .div8 .contacto h2:hover, .grilla .div8 .contacto h2:hover, .grilla2 .div8 .contacto h2:hover, .grilla3 .div8 .contacto h2:hover, .grilla4 .div8 .contacto h2:hover, .grilla5 .div8 .contacto h2:hover, .grilla6 .div8 .contacto h2:hover, .grilla7 .div8 .contacto h2:hover, .grilla8 .div8 .contacto h2:hover {
           color: #e7e72e; } }
 
 * {
@@ -746,6 +746,26 @@ body {
       width: 800px;
       height: 400px; } }
 
+/* ####################################### gracias.html ########################################## */
+#gracias {
+  grid-area: gracias; }
+
+@media screen and (min-width: 1024px) {
+  .grilla8 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 78px  1fr 800px;
+    column-gap: 0px;
+    row-gap: 10px;
+    grid-template-areas: "header" "gracias" "footer"; }
+    .grilla8 .div000 {
+      margin: 0 auto;
+      margin-top: 100px; }
+      .grilla8 .div000 h2 {
+        font-size: 34pt; }
+    .grilla8 .div8 {
+      margin-top: 800px; } }
+
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MOBILE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /* ####################################### INDEX.html ########################################## */
 /* ------------------------------------- CLUB ----------------------------------------------  */
@@ -1256,3 +1276,15 @@ body {
     margin-left: 6px;
     margin-top: 2px;
     border: 2px solid; }
+
+/* ####################################### gracias.html ########################################## */
+.div000 {
+  margin-top: 100px; }
+  .div000 h2 {
+    font-size: 20pt;
+    margin-left: 5px;
+    font-family: 'Teko2';
+    color: #ffe100; }
+
+.grilla8 .div8 {
+  margin-top: 800px; }

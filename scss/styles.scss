@@ -953,6 +953,39 @@ body {
     }
 }
 
+/* ####################################### gracias.html ########################################## */
+
+#gracias {
+    grid-area: gracias;
+}
+
+@media screen and (min-width:#{$laptop}) {
+    .grilla8{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 78px  1fr 800px;
+        column-gap: 0px;
+        row-gap: 10px;
+        grid-template-areas: "header"
+        "gracias"
+        "footer";
+
+        .div000{
+            margin: 0 auto;
+            margin-top: 100px;
+
+            h2{
+                font-size: 34pt;
+            }
+        }
+
+        .div8{
+            margin-top: 800px;
+        }
+    }
+    
+}
+
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MOBILE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 /* ####################################### INDEX.html ########################################## */
@@ -1633,5 +1666,23 @@ body {
         margin-left: 6px;
         margin-top: 2px;
         border: 2px solid;
+    }
+}
+
+/* ####################################### gracias.html ########################################## */
+
+.div000{
+    margin-top: 100px;
+    h2{
+        font-size: 20pt;
+        margin-left: 5px;
+        font-family: 'Teko2';
+        color: map-get($colores, color-titulos);
+    }
+}
+
+.grilla8{
+    .div8{
+        margin-top: 800px;
     }
 }
