@@ -18,6 +18,7 @@
 <body>
 
     <div class="grilla2">
+
         <div id="header" class="div1">
             <header>
                 <nav class="navbar-text fixed-top navbar-expand-lg navbar-light">
@@ -64,22 +65,22 @@
         </div>
 
         <div id="for" class="div9">
-            <form class=" formu row g-3">
+            <form action="envia.php" method="post" class=" formu row g-3">
                 <h2>CONTACTANOS</h2>
                 <div class="datos">
                     <div class="col-md-6 nom">
                         <label for="nombre1">Nombre</label>
                         <input id="nombre1" type="text" class="form-control" placeholder="Juan Roman"
-                            aria-label="First name">
+                            aria-label="First name" name="nombre" required>
                     </div>
                     <div class="col-md-6 ape">
                         <label for="apellido1">Apellido</label>
                         <input id="apellido1" type="text" class="form-control" placeholder="Riquelme"
-                            aria-label="Last name">
+                            aria-label="Last name" name="apellido" required>
                     </div>
                     <div class="col-md-6 mail">
                         <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" placeholder="apachetevez32@gmail.com" class="form-control" id="inputEmail4">
+                        <input type="email" placeholder="apachetevez32@gmail.com" class="form-control" id="inputEmail4" name="email" required>
                     </div>
                     <div class="col-12 tick">
                         <div class="form-check">
@@ -91,7 +92,7 @@
                     </div>
                     <div class="col-md-4 opt">
                         <label for="">Motivo</label>
-                        <select class="form-select" aria-label="Default select example">
+                        <select class="form-select" aria-label="Default select example" name="motivo" required>
                             <option selected>-</option>
                             <option value="1">Prensa</option>
                             <option value="2">Eventos</option>
@@ -101,7 +102,7 @@
                     </div>
                     <div class="mb-3 cont">
                         <label for="exampleFormControlTextarea1" class="form-label">Contanos...</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" name="textazo" required></textarea>
                     </div>
                     <div class="col-12 env">
                         <button type="submit" class="btn btn-primary">Enviar</button>
@@ -112,41 +113,28 @@
         </div>
 
         <div id="footer" class="div8">
-            <!-- Footer -->
             <footer class=" pie text-center text-white" style="background-color:#002f7a">
-                <!-- Grid container -->
                 <div class="container p-4">
-                    <!-- Section: Social media -->
                     <section class="mb-4">
-                        <!-- Facebook -->
                         <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998"
                             href="https://www.facebook.com/BocaJuniors/" target="_blank" role="button"><i
                                 class="bi bi-facebook"></i></a>
-
-                        <!-- Twitter -->
                         <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee"
                             href="https://twitter.com/BocaJrsOficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
                             target="_blank" role="button"><i class="bi bi-twitter"></i></a>
-
-                        <!-- Instagram -->
                         <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac"
                             href="https://www.instagram.com/bocajrsoficial/?hl=en" target="_blank" role="button">
                             <i class="bi bi-instagram"></i></a>
-
-                        <!-- YouTube -->
                         <a class="btn btn-primary btn-floating m-1" style="background-color: red"
                             href="https://www.youtube.com/channel/UCRtB_RAtKH72CgVAKHFgdIw" target="_blank"
                             role="button"><i class="bi bi-youtube"></i></a>
                     </section>
-                    <!-- Section: Social media -->
 
-                    <!-- Section: Text -->
                     <section class="mb-2 contacto">
                         <a href="#">
                             <h2>Contactanos</h2>
                         </a>
                     </section>
-                    <!-- Section: Text -->
                 </div>
         </div>
     </div>
