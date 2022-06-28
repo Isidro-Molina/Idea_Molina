@@ -338,8 +338,6 @@ body {
     grid-area: prof;
 }
 
-
-
 @media screen and (min-width:#{$laptop}) {
 
     .textazo-HistoriaR {
@@ -390,14 +388,13 @@ body {
     .grillaH {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 78px repeat(5, 1fr) 100px;
+        grid-template-rows: 78px repeat(4, 1fr) 100px;
         row-gap: 10px;
         grid-template-areas: "header header"
             "elClub elClub"
             "colores colores"
             "primera primera"
             "gira gira"
-            "prof prof"
             "footer footer";
 
         .divH1 {
@@ -432,6 +429,9 @@ body {
             margin-top: 25px;
 
             @extend .textazo-HistoriaR;
+            img{
+                margin-left: -4px;
+            }
         }
 
         .divH3 {
@@ -451,12 +451,27 @@ body {
             img{
                 margin-left: -2px;
             }
-        }
 
-        .divH5{
+            a{
+                margin-top: 40px;
+                float: right;
+            }
+        }
+    }
+
+    .grillaH2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 78px repeat(1, 1fr) 100px;
+        row-gap: 10px;
+        grid-template-areas: "header header"
+        "prof prof"
+        "footer footer";
+
+        .divH5 {
             @include sizes (98%, fit-content);
             margin: 0 auto;
-            margin-top: -250px;
+            margin-top: 50px;
 
             @extend .textazo-HistoriaL;
         }
@@ -713,7 +728,6 @@ body {
                 margin-top: 5px;
             }
 
-
             h2 {
                 font-size: 22pt;
             }
@@ -850,7 +864,7 @@ body {
         }
 
         .div24 {
-            @include sizes (480px, fit-content);
+            @include sizes (480px, 500px);
             margin: 0 auto;
             margin-top: 40px;
 
@@ -869,7 +883,7 @@ body {
         }
 
         .div240 {
-            @include sizes (480px, fit-content);
+            @include sizes (480px, 500px);
             margin: 0 auto;
             margin-top: 40px;
 
@@ -889,7 +903,7 @@ body {
 
         .div25 {
             margin: 0 auto;
-            margin-top: 80px;
+            margin-top: 150px;
             margin-right: 60px;
             height: fit-content;
 
@@ -931,11 +945,6 @@ body {
                 }
             }
         }
-    }
-
-    /* ------------------------------------- RESERVA ----------------------------------------------- */
-
-    .grilla7 {
 
         .div27 {
             height: fit-content;
@@ -1308,7 +1317,12 @@ body {
 
 .divH4 {
     margin-top: 50px;
+    margin-bottom: 50px;
     @extend .texto-Historia;
+    a{
+        float: right;
+        margin-right: 10px;
+    }
 }
 
 .divH5{
@@ -1363,8 +1377,6 @@ body {
         color: map-get($colores, color-titulos);
         text-align: center;
     }
-
-
 
     p {
         font-size: 14pt;

@@ -34,26 +34,26 @@
     width: fit-content; }
 
 @media screen and (min-width: 1024px) {
-  .header .div1 nav, .grilla .div1 nav, .grilla2 .div1 nav, .grilla3 .div1 nav, .grillaH .div1 nav, .grilla5 .div1 nav, .grilla6 .div1 nav, .grilla7 .div1 nav, .grilla8 .div1 nav {
+  .header .div1 nav, .grilla .div1 nav, .grilla2 .div1 nav, .grilla3 .div1 nav, .grillaH .div1 nav, .grillaH2 .div1 nav, .grilla5 .div1 nav, .grilla6 .div1 nav, .grilla7 .div1 nav, .grilla8 .div1 nav {
     border: 5px solid black; }
-  .header .div1 .bokita, .grilla .div1 .bokita, .grilla2 .div1 .bokita, .grilla3 .div1 .bokita, .grillaH .div1 .bokita, .grilla5 .div1 .bokita, .grilla6 .div1 .bokita, .grilla7 .div1 .bokita, .grilla8 .div1 .bokita {
+  .header .div1 .bokita, .grilla .div1 .bokita, .grilla2 .div1 .bokita, .grilla3 .div1 .bokita, .grillaH .div1 .bokita, .grillaH2 .div1 .bokita, .grilla5 .div1 .bokita, .grilla6 .div1 .bokita, .grilla7 .div1 .bokita, .grilla8 .div1 .bokita {
     width: 90px;
     height: 100px;
     float: left;
     margin-left: -10px;
     visibility: visible; }
-  .header .div1 h1, .grilla .div1 h1, .grilla2 .div1 h1, .grilla3 .div1 h1, .grillaH .div1 h1, .grilla5 .div1 h1, .grilla6 .div1 h1, .grilla7 .div1 h1, .grilla8 .div1 h1 {
+  .header .div1 h1, .grilla .div1 h1, .grilla2 .div1 h1, .grilla3 .div1 h1, .grillaH .div1 h1, .grillaH2 .div1 h1, .grilla5 .div1 h1, .grilla6 .div1 h1, .grilla7 .div1 h1, .grilla8 .div1 h1 {
     font-family: 'Teko';
     font-size: 30pt;
     width: 430px;
     margin-left: 90px; }
-  .header .div1 h2, .grilla .div1 h2, .grilla2 .div1 h2, .grilla3 .div1 h2, .grillaH .div1 h2, .grilla5 .div1 h2, .grilla6 .div1 h2, .grilla7 .div1 h2, .grilla8 .div1 h2 {
+  .header .div1 h2, .grilla .div1 h2, .grilla2 .div1 h2, .grilla3 .div1 h2, .grillaH .div1 h2, .grillaH2 .div1 h2, .grilla5 .div1 h2, .grilla6 .div1 h2, .grilla7 .div1 h2, .grilla8 .div1 h2 {
     font-family: 'Teko';
     font-size: 22pt;
     width: 220px;
     margin-left: 90px;
     margin-top: -7px; }
-  .header .div1 .menu, .grilla .div1 .menu, .grilla2 .div1 .menu, .grilla3 .div1 .menu, .grillaH .div1 .menu, .grilla5 .div1 .menu, .grilla6 .div1 .menu, .grilla7 .div1 .menu, .grilla8 .div1 .menu {
+  .header .div1 .menu, .grilla .div1 .menu, .grilla2 .div1 .menu, .grilla3 .div1 .menu, .grillaH .div1 .menu, .grillaH2 .div1 .menu, .grilla5 .div1 .menu, .grilla6 .div1 .menu, .grilla7 .div1 .menu, .grilla8 .div1 .menu {
     font-size: 15pt;
     width: fit-content;
     border: 2px solid #ffc107;
@@ -61,9 +61,9 @@
     float: right;
     margin-top: -40px;
     margin-right: -5px; }
-    .header .div1 .menu .pag, .grilla .div1 .menu .pag, .grilla2 .div1 .menu .pag, .grilla3 .div1 .menu .pag, .grillaH .div1 .menu .pag, .grilla5 .div1 .menu .pag, .grilla6 .div1 .menu .pag, .grilla7 .div1 .menu .pag, .grilla8 .div1 .menu .pag {
+    .header .div1 .menu .pag, .grilla .div1 .menu .pag, .grilla2 .div1 .menu .pag, .grilla3 .div1 .menu .pag, .grillaH .div1 .menu .pag, .grillaH2 .div1 .menu .pag, .grilla5 .div1 .menu .pag, .grilla6 .div1 .menu .pag, .grilla7 .div1 .menu .pag, .grilla8 .div1 .menu .pag {
       color: white; }
-      .header .div1 .menu .pag:hover, .grilla .div1 .menu .pag:hover, .grilla2 .div1 .menu .pag:hover, .grilla3 .div1 .menu .pag:hover, .grillaH .div1 .menu .pag:hover, .grilla5 .div1 .menu .pag:hover, .grilla6 .div1 .menu .pag:hover, .grilla7 .div1 .menu .pag:hover, .grilla8 .div1 .menu .pag:hover {
+      .header .div1 .menu .pag:hover, .grilla .div1 .menu .pag:hover, .grilla2 .div1 .menu .pag:hover, .grilla3 .div1 .menu .pag:hover, .grillaH .div1 .menu .pag:hover, .grillaH2 .div1 .menu .pag:hover, .grilla5 .div1 .menu .pag:hover, .grilla6 .div1 .menu .pag:hover, .grilla7 .div1 .menu .pag:hover, .grilla8 .div1 .menu .pag:hover {
         color: #ffc107; } }
 
 .div8 {
@@ -85,25 +85,25 @@
         margin: 0 auto; }
 
 @media screen and (min-width: 1024px) {
-  .footer .div8, .grilla .div8, .grilla2 .div8, .grilla3 .div8, .grillaH .div8, .grilla5 .div8, .grilla6 .div8, .grilla7 .div8, .grilla8 .div8 {
+  .footer .div8, .grilla .div8, .grilla2 .div8, .grilla3 .div8, .grillaH .div8, .grillaH2 .div8, .grilla5 .div8, .grilla6 .div8, .grilla7 .div8, .grilla8 .div8 {
     border-top: 2px solid black; }
-    .footer .div8 .pie section a, .grilla .div8 .pie section a, .grilla2 .div8 .pie section a, .grilla3 .div8 .pie section a, .grillaH .div8 .pie section a, .grilla5 .div8 .pie section a, .grilla6 .div8 .pie section a, .grilla7 .div8 .pie section a, .grilla8 .div8 .pie section a {
+    .footer .div8 .pie section a, .grilla .div8 .pie section a, .grilla2 .div8 .pie section a, .grilla3 .div8 .pie section a, .grillaH .div8 .pie section a, .grillaH2 .div8 .pie section a, .grilla5 .div8 .pie section a, .grilla6 .div8 .pie section a, .grilla7 .div8 .pie section a, .grilla8 .div8 .pie section a {
       border: none;
       width: 50px;
       height: 36px;
       transition: width 1s, height 1s; }
-      .footer .div8 .pie section a:hover, .grilla .div8 .pie section a:hover, .grilla2 .div8 .pie section a:hover, .grilla3 .div8 .pie section a:hover, .grillaH .div8 .pie section a:hover, .grilla5 .div8 .pie section a:hover, .grilla6 .div8 .pie section a:hover, .grilla7 .div8 .pie section a:hover, .grilla8 .div8 .pie section a:hover {
+      .footer .div8 .pie section a:hover, .grilla .div8 .pie section a:hover, .grilla2 .div8 .pie section a:hover, .grilla3 .div8 .pie section a:hover, .grillaH .div8 .pie section a:hover, .grillaH2 .div8 .pie section a:hover, .grilla5 .div8 .pie section a:hover, .grilla6 .div8 .pie section a:hover, .grilla7 .div8 .pie section a:hover, .grilla8 .div8 .pie section a:hover {
         width: 65px;
         height: 40px; }
-    .footer .div8 .contacto, .grilla .div8 .contacto, .grilla2 .div8 .contacto, .grilla3 .div8 .contacto, .grillaH .div8 .contacto, .grilla5 .div8 .contacto, .grilla6 .div8 .contacto, .grilla7 .div8 .contacto, .grilla8 .div8 .contacto {
+    .footer .div8 .contacto, .grilla .div8 .contacto, .grilla2 .div8 .contacto, .grilla3 .div8 .contacto, .grillaH .div8 .contacto, .grillaH2 .div8 .contacto, .grilla5 .div8 .contacto, .grilla6 .div8 .contacto, .grilla7 .div8 .contacto, .grilla8 .div8 .contacto {
       width: fit-content;
       margin: 0 auto; }
-      .footer .div8 .contacto h2, .grilla .div8 .contacto h2, .grilla2 .div8 .contacto h2, .grilla3 .div8 .contacto h2, .grillaH .div8 .contacto h2, .grilla5 .div8 .contacto h2, .grilla6 .div8 .contacto h2, .grilla7 .div8 .contacto h2, .grilla8 .div8 .contacto h2 {
+      .footer .div8 .contacto h2, .grilla .div8 .contacto h2, .grilla2 .div8 .contacto h2, .grilla3 .div8 .contacto h2, .grillaH .div8 .contacto h2, .grillaH2 .div8 .contacto h2, .grilla5 .div8 .contacto h2, .grilla6 .div8 .contacto h2, .grilla7 .div8 .contacto h2, .grilla8 .div8 .contacto h2 {
         font-family: 'Teko';
         text-decoration: none;
         width: fit-content;
         margin: 0 auto; }
-        .footer .div8 .contacto h2:hover, .grilla .div8 .contacto h2:hover, .grilla2 .div8 .contacto h2:hover, .grilla3 .div8 .contacto h2:hover, .grillaH .div8 .contacto h2:hover, .grilla5 .div8 .contacto h2:hover, .grilla6 .div8 .contacto h2:hover, .grilla7 .div8 .contacto h2:hover, .grilla8 .div8 .contacto h2:hover {
+        .footer .div8 .contacto h2:hover, .grilla .div8 .contacto h2:hover, .grilla2 .div8 .contacto h2:hover, .grilla3 .div8 .contacto h2:hover, .grillaH .div8 .contacto h2:hover, .grillaH2 .div8 .contacto h2:hover, .grilla5 .div8 .contacto h2:hover, .grilla6 .div8 .contacto h2:hover, .grilla7 .div8 .contacto h2:hover, .grilla8 .div8 .contacto h2:hover {
           color: #e7e72e; } }
 
 * {
@@ -361,17 +361,17 @@ body {
     width: 99%;
     padding: 4px;
     margin: 0 auto; }
-  .textazo-HistoriaL h3, .grillaH .divH1 .elClu h3, .grillaH .divH3 h3, .grillaH .divH5 h3 {
+  .textazo-HistoriaL h3, .grillaH .divH1 .elClu h3, .grillaH .divH3 h3, .grillaH2 .divH5 h3 {
     font-size: 34pt;
     width: fit-content;
     text-align: left;
     margin-left: 20px; }
-  .textazo-HistoriaL img, .grillaH .divH1 .elClu img, .grillaH .divH3 img, .grillaH .divH5 img {
+  .textazo-HistoriaL img, .grillaH .divH1 .elClu img, .grillaH .divH3 img, .grillaH2 .divH5 img {
     width: 600px;
     height: 350px;
     margin-right: 10px;
     float: right; }
-  .textazo-HistoriaL p, .grillaH .divH1 .elClu p, .grillaH .divH3 p, .grillaH .divH5 p {
+  .textazo-HistoriaL p, .grillaH .divH1 .elClu p, .grillaH .divH3 p, .grillaH2 .divH5 p {
     font-size: 18pt;
     width: 99%;
     margin: 0 auto;
@@ -380,9 +380,9 @@ body {
   .grillaH {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 78px repeat(5, 1fr) 100px;
+    grid-template-rows: 78px repeat(4, 1fr) 100px;
     row-gap: 10px;
-    grid-template-areas: "header header" "elClub elClub" "colores colores" "primera primera" "gira gira" "prof prof" "footer footer"; }
+    grid-template-areas: "header header" "elClub elClub" "colores colores" "primera primera" "gira gira" "footer footer"; }
     .grillaH .divH1 {
       width: 98%;
       height: fit-content;
@@ -405,6 +405,8 @@ body {
       height: fit-content;
       margin: 0 auto;
       margin-top: 25px; }
+      .grillaH .divH2 img {
+        margin-left: -4px; }
     .grillaH .divH3 {
       width: 98%;
       height: fit-content;
@@ -417,11 +419,20 @@ body {
       margin-top: -210px; }
       .grillaH .divH4 img {
         margin-left: -2px; }
-    .grillaH .divH5 {
+      .grillaH .divH4 a {
+        margin-top: 40px;
+        float: right; }
+  .grillaH2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 78px repeat(1, 1fr) 100px;
+    row-gap: 10px;
+    grid-template-areas: "header header" "prof prof" "footer footer"; }
+    .grillaH2 .divH5 {
       width: 98%;
       height: fit-content;
       margin: 0 auto;
-      margin-top: -250px; } }
+      margin-top: 50px; } }
 
 /* ####################################### PLANTILLA.html ########################################## */
 #plantel {
@@ -674,7 +685,7 @@ body {
           font-size: 16pt; }
     .grilla7 .div24 {
       width: 480px;
-      height: fit-content;
+      height: 500px;
       margin: 0 auto;
       margin-top: 40px; }
       .grilla7 .div24 img {
@@ -686,7 +697,7 @@ body {
         font-size: 14pt; }
     .grilla7 .div240 {
       width: 480px;
-      height: fit-content;
+      height: 500px;
       margin: 0 auto;
       margin-top: 40px; }
       .grilla7 .div240 img {
@@ -698,7 +709,7 @@ body {
         font-size: 14pt; }
     .grilla7 .div25 {
       margin: 0 auto;
-      margin-top: 80px;
+      margin-top: 150px;
       margin-right: 60px;
       height: fit-content; }
       .grilla7 .div25 h2 {
@@ -725,15 +736,14 @@ body {
         width: 98%; }
         .grilla7 .div26 table thead {
           font-size: 18pt; }
-  /* ------------------------------------- RESERVA ----------------------------------------------- */
-  .grilla7 .div27 {
-    height: fit-content;
-    border: 2px solid;
-    width: fit-content;
-    margin-top: -80px; }
-    .grilla7 .div27 img {
-      width: 800px;
-      height: 400px; } }
+    .grilla7 .div27 {
+      height: fit-content;
+      border: 2px solid;
+      width: fit-content;
+      margin-top: -80px; }
+      .grilla7 .div27 img {
+        width: 800px;
+        height: 400px; } }
 
 /* ####################################### gracias.html ########################################## */
 #gracias {
@@ -992,7 +1002,11 @@ body {
   margin-top: 50px; }
 
 .divH4 {
-  margin-top: 50px; }
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .divH4 a {
+    float: right;
+    margin-right: 10px; }
 
 .divH5 {
   margin-top: 50px; }
