@@ -10,11 +10,6 @@
     box-sizing: border-box;
 }
 
-// html,
-// body {
-//     overflow-x: hidden;
-// }
-
 body {
     width: 100%;
     background-color: map-get($colores, color-fondo);
@@ -339,21 +334,73 @@ body {
     grid-area: gira;
 }
 
+#prof{
+    grid-area: prof;
+}
+
+
+
 @media screen and (min-width:#{$laptop}) {
 
-    .grilla4 {
+    .textazo-HistoriaR {
+        h3 {
+            text-align: right;
+            font-size: 34pt;
+            margin-right: 20px;
+        }
+
+        img {
+            @include sizes (600px, 350px);
+            margin-left: 8px;
+            float: left;
+        }
+
+        p {
+            font-size: 18pt;
+            text-align: right;
+            width: 99%;
+            padding: 4px;
+            margin: 0 auto;
+        }
+    }
+
+    .textazo-HistoriaL {
+        h3 {
+            font-size: 34pt;
+            width: fit-content;
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        img {
+            @include sizes (600px, 350px);
+            margin-right: 10px;
+            float: right;
+        }
+
+        p {
+            font-size: 18pt;
+            width: 99%;
+            margin: 0 auto;
+            padding: 5px;
+            margin-left: 5px;
+        }
+    }
+
+    .grillaH {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 78px repeat(3, 1fr) 100px;
+        grid-template-rows: 78px repeat(5, 1fr) 100px;
         row-gap: 10px;
         grid-template-areas: "header header"
             "elClub elClub"
             "colores colores"
             "primera primera"
             "gira gira"
+            "prof prof"
             "footer footer";
 
-        .div14 {
+        .divH1 {
             @include sizes (98%, fit-content);
             margin: 0 auto;
             margin-top: 80px;
@@ -375,93 +422,43 @@ body {
             .elClu {
                 margin: 0 auto;
 
-                h3 {
-                    font-size: 34pt;
-                    width: fit-content;
-                    text-align: left;
-                    margin-left: 20px;
-                }
-
-                img {
-                    @include sizes (600px, 350px);
-                    margin-right: 10px;
-                    float: right;
-                }
-
-                p {
-                    font-size: 18pt;
-                    width: 99%;
-                    margin: 0 auto;
-                    padding: 4px;
-                }
+                @extend .textazo-HistoriaL;
             }
         }
 
-        .div15 {
+        .divH2 {
             @include sizes (98%, fit-content);
             margin: 0 auto;
             margin-top: 25px;
 
-            h3 {
-                text-align: right;
-                font-size: 34pt;
-                margin-right: 20px;
-            }
-
-            img {
-                @include sizes (600px, 350px);
-                margin-left: 8px;
-                float: left;
-            }
-
-            p {
-                font-size: 18pt;
-                text-align: right;
-                width: 99%;
-                padding: 4px;
-                margin: 0 auto;
-                margin-right: -2px;
-            }
+            @extend .textazo-HistoriaR;
         }
 
-        .div16 {
+        .divH3 {
             @include sizes (98%, fit-content);
             margin: 0 auto;
             margin-top: -90px;
 
-            h3 {
-                font-size: 34pt;
-                width: fit-content;
-                text-align: left;
-                margin-left: 20px;
-            }
-
-            img {
-                @include sizes (600px, 350px);
-                margin-right: 10px;
-                float: right;
-            }
-
-            p {
-                font-size: 18pt;
-                width: 99%;
-                margin: 0 auto;
-                padding: 5px;
-                margin-left: 5px;
-            }
+            @extend .textazo-HistoriaL;
         }
 
-        .div17 {
+        .divH4 {
             @include sizes (98%, fit-content);
             margin: 0 auto;
             margin-top: -210px;
 
-            h3 {
-                text-align: right;
-                font-size: 30pt;
-                font-family: 'Teko';
-                margin-right: 20px;
+            @extend .textazo-HistoriaR;
+            img{
+                margin-left: -2px;
             }
+        }
+
+        .divH5{
+            @include sizes (98%, fit-content);
+            margin: 0 auto;
+            margin-top: -250px;
+
+            @extend .textazo-HistoriaL;
         }
     }
 }
@@ -960,37 +957,35 @@ body {
 }
 
 @media screen and (min-width:#{$laptop}) {
-    .grilla8{
+    .grilla8 {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 78px  1fr 800px;
+        grid-template-rows: 78px 1fr 800px;
         column-gap: 0px;
         row-gap: 10px;
         grid-template-areas: "header"
-        "gracias"
-        "footer";
+            "gracias"
+            "footer";
 
-        .div000{
+        .div000 {
             margin: 0 auto;
             margin-top: 100px;
 
-            h2{
+            h2 {
                 font-size: 34pt;
             }
         }
 
-        .div8{
+        .div8 {
             margin-top: 800px;
         }
     }
-    
+
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MOBILE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 /* ####################################### INDEX.html ########################################## */
-
-/* ------------------------------------- CLUB ----------------------------------------------  */
 
 .bot {
     width: 80px;
@@ -1048,8 +1043,6 @@ body {
     }
 }
 
-/* ------------------------------------- REAL MADRID -------------------------------------------------*/
-
 .div4 {
     @include sizes (98%, 220px);
     margin: 0 auto;
@@ -1087,8 +1080,6 @@ body {
         @extend .bot;
     }
 }
-
-/* ------------------------------------------------   TIGRE   ----------------------------------------------------------*/
 
 .div6 {
     margin: 0 auto;
@@ -1286,7 +1277,7 @@ body {
     }
 }
 
-.div14 {
+.divH1 {
     margin-top: 100px;
     @extend .texto-Historia;
 
@@ -1305,17 +1296,22 @@ body {
     }
 }
 
-.div15 {
+.divH2 {
     margin-top: 50px;
     @extend .texto-Historia;
 }
 
-.div16 {
+.divH3 {
     margin-top: 50px;
     @extend .texto-Historia;
 }
 
-.div17 {
+.divH4 {
+    margin-top: 50px;
+    @extend .texto-Historia;
+}
+
+.divH5{
     margin-top: 50px;
     @extend .texto-Historia;
 }
@@ -1671,18 +1667,19 @@ body {
 
 /* ####################################### gracias.html ########################################## */
 
-.div000{
-    margin-top: 100px;
-    h2{
-        font-size: 20pt;
-        margin-left: 5px;
-        font-family: 'Teko2';
-        color: map-get($colores, color-titulos);
-    }
-}
+.grilla8 {
+    .div000 {
+        margin-top: 100px;
 
-.grilla8{
-    .div8{
+        h2 {
+            font-size: 20pt;
+            margin-left: 5px;
+            font-family: 'Teko2';
+            color: map-get($colores, color-titulos);
+        }
+    }
+
+    .div8 {
         margin-top: 800px;
     }
 }
