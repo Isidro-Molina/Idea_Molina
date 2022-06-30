@@ -39,8 +39,6 @@ body {
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MEDIA QUERIES !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-/* ###################################### INDEX.html ########################################### */
-
 #fot {
     grid-area: fot;
 }
@@ -65,7 +63,85 @@ body {
     grid-area: sab;
 }
 
+#for {
+    grid-area: for;
+}
+
+#elClub {
+    grid-area: elClub;
+}
+
+#colores {
+    grid-area: colores;
+}
+
+#primera {
+    grid-area: primera;
+}
+
+#gira {
+    grid-area: gira;
+}
+
+#prof {
+    grid-area: prof;
+}
+
+#plantel {
+    grid-area: plantel;
+}
+
+#plantelG {
+    grid-area: plantelG;
+}
+
+#trofeos {
+    grid-area: trofeos;
+}
+
+#palermo {
+    grid-area: palermo;
+}
+
+#cor {
+    grid-area: cor;
+}
+
+#dyj {
+    grid-area: dyj;
+}
+
+#tig {
+    grid-area: tig;
+}
+
+#asa {
+    grid-area: asa;
+}
+
+#tabla {
+    grid-area: tabla;
+}
+
+#barr {
+    grid-area: barr;
+}
+
+#prox {
+    grid-area: prox;
+}
+
+#pibes {
+    grid-area: pibes;
+}
+
+#gracias {
+    grid-area: gracias;
+}
+
 @media screen and (min-width:#{$laptop}) {
+
+    /* ###################################### INDEX.html ########################################### */
 
     .bot2 {
         @include sizes (80px, 30px);
@@ -241,17 +317,10 @@ body {
             }
         }
     }
-}
 
-/* ################################ CONTACTO.html ######################################## */
+    /* ################################ CONTACTO.html ######################################## */
 
-#for {
-    grid-area: for;
-}
-
-@media screen and (min-width:#{$laptop}) {
-
-    .grilla2 {
+    .grillaC {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 78px 1fr 100px;
@@ -261,7 +330,7 @@ body {
             "for"
             "footer";
 
-        .div9 {
+        .divC1 {
             .formu {
                 @include sizes (80%, fit-content);
                 margin: 70px 0px 100px 15px;
@@ -312,33 +381,8 @@ body {
             }
         }
     }
-}
 
-/* ####################################### HISTORIA.html ########################################## */
-
-// div14-17
-
-#elClub {
-    grid-area: elClub;
-}
-
-#colores {
-    grid-area: colores;
-}
-
-#primera {
-    grid-area: primera;
-}
-
-#gira {
-    grid-area: gira;
-}
-
-#prof{
-    grid-area: prof;
-}
-
-@media screen and (min-width:#{$laptop}) {
+    /* ####################################### HISTORIA.html ########################################## */
 
     .textazo-HistoriaR {
         h3 {
@@ -429,7 +473,8 @@ body {
             margin-top: 25px;
 
             @extend .textazo-HistoriaR;
-            img{
+
+            img {
                 margin-left: -4px;
             }
         }
@@ -448,25 +493,30 @@ body {
             margin-top: -210px;
 
             @extend .textazo-HistoriaR;
-            img{
+
+            img {
                 margin-left: -2px;
             }
 
-            a{
-                margin-top: 40px;
-                float: right;
+            #sig {
+                @extend .bot2;
+
+                &:hover {
+                    background-color: map-get($colores, color-hover);
+                    @include sizes (85px, 32px);
+                }
             }
         }
     }
 
-    .grillaH2{
+    .grillaH2 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 78px repeat(1, 1fr) 100px;
         row-gap: 10px;
         grid-template-areas: "header header"
-        "prof prof"
-        "footer footer";
+            "prof prof"
+            "footer footer";
 
         .divH5 {
             @include sizes (98%, fit-content);
@@ -476,40 +526,19 @@ body {
             @extend .textazo-HistoriaL;
         }
     }
-}
 
-/* ####################################### PLANTILLA.html ########################################## */
+    /* ####################################### PLANTILLA.html ########################################## */
 
-#plantel {
-    grid-area: plantel;
-}
-
-#plantelG {
-    grid-area: plantelG;
-}
-
-#gremio {
-    grid-area: gremio;
-}
-
-#gremioT {
-    grid-area: gremioT;
-}
-
-@media screen and (min-width:#{$laptop}) {
-
-    .grilla3 {
+    .grillaP {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 78px repeat(1, 1fr) 100px;
+        grid-template-rows: 78px 1fr 100px;
         row-gap: 10px;
         grid-template-areas: "header header"
             "plantel plantel"
-            // "plantelG plantelG"
-            // "gremio gremioT"
             "footer footer";
 
-        .div10 {
+        .divP1 {
             @include sizes (98%, fit-content);
             margin: 0 auto;
             margin-top: 80px;
@@ -529,77 +558,9 @@ body {
         }
     }
 
-    /* ------------------------------------- PLANTELES -------------------------------------------------*/
+    /* ####################################### TITULOS.html ########################################## */
 
-    .grilla3 {
-
-        .div11 {
-            @include sizes (98%, fit-content);
-            margin: 0 auto;
-            margin-top: 40px;
-
-            h2 {
-                font-size: 34pt;
-                width: fit-content;
-            }
-
-            h3 {
-                margin-top: 50px;
-                font-size: 28pt;
-                width: fit-content;
-            }
-
-            table {
-                text-align: center;
-                font-size: 14pt;
-
-                thead {
-                    font-size: 18pt;
-                }
-            }
-        }
-
-        .div12 {
-            height: fit-content;
-            margin: 0 auto;
-            margin-top: -680px;
-
-            img {
-                width: 98%;
-                border: 2px solid white;
-            }
-        }
-
-        .div13 {
-            border: 2px solid black;
-            margin-top: -620px;
-            top: 0%;
-            height: 330.45px;
-
-            p {
-                font-size: 18pt;
-                text-align: left;
-                margin: 0 auto;
-                margin-top: 15px;
-                width: 99%;
-            }
-        }
-    }
-}
-
-/* ####################################### TITULOS.html ########################################## */
-
-#trofeos {
-    grid-area: trofeos;
-}
-
-#palermo {
-    grid-area: palermo;
-}
-
-@media screen and (min-width:#{$laptop}) {
-
-    .grilla5 {
+    .grillaT {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 78px 1fr 40rem 100px;
@@ -609,7 +570,7 @@ body {
             "palermo recuerdo"
             "footer footer";
 
-        .div18 {
+        .divT1 {
             margin-top: 80px;
 
             h2 {
@@ -632,7 +593,7 @@ body {
             }
         }
 
-        .div19 {
+        .divT2 {
             @include sizes (98%, 25rem);
             margin: 0 auto;
             margin-top: 140px;
@@ -654,7 +615,7 @@ body {
             }
         }
 
-        .div190 {
+        .divT3 {
             @include sizes (98%, fit-content);
             margin: 0 auto;
             margin-top: 40px;
@@ -680,29 +641,10 @@ body {
             }
         }
     }
-}
 
-/* ####################################### NOTICIAS.html ########################################## */
+    /* ####################################### NOTICIAS.html ########################################## */
 
-#cor {
-    grid-area: cor;
-}
-
-#dyj {
-    grid-area: dyj;
-}
-
-#tig {
-    grid-area: tig;
-}
-
-#asa {
-    grid-area: asa;
-}
-
-@media screen and (min-width:#{$laptop}) {
-
-    .grilla6 {
+    .grillaN {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 78px repeat(2, 1fr) 100px;
@@ -718,7 +660,7 @@ body {
             margin-top: 60px;
         }
 
-        .div20 {
+        .divN1 {
             height: 480px;
             margin-left: 10px;
 
@@ -737,7 +679,7 @@ body {
             }
         }
 
-        .div21 {
+        .divN2 {
             margin-top: 135px;
             margin-right: 10px;
             height: 480px;
@@ -757,7 +699,7 @@ body {
             }
         }
 
-        .div22 {
+        .divN3 {
             height: 480px;
             margin-left: 10px;
 
@@ -776,7 +718,7 @@ body {
             }
         }
 
-        .div30 {
+        .divN4 {
             height: 480px;
             margin-right: 10px;
 
@@ -795,46 +737,22 @@ body {
             }
         }
     }
-}
 
-/* ####################################### RESERVA.html ########################################## */
+    /* ####################################### RESERVA.html ########################################## */
 
-#tabla {
-    grid-area: tabla;
-}
-
-#barr {
-    grid-area: barr;
-}
-
-#prox {
-    grid-area: prox;
-}
-
-#pibes {
-    grid-area: pibes;
-}
-
-#hur {
-    grid-area: hur;
-}
-
-@media screen and (min-width:#{$laptop}) {
-
-    .grilla7 {
+    .grillaR {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 78px repeat(5, 1fr) 100px;
+        grid-template-rows: 78px 60rem repeat(2, 700px) 1fr 100px;
         gap: 15px;
         grid-template-areas: "header header"
             "tabla prox"
             "tabla prox"
             "notR1 notR2"
             "pibes pibes"
-            "hur hur"
             "footer footer";
 
-        .div23 {
+        .divR1 {
             margin-left: 10px;
             margin-top: 80px;
             height: fit-content;
@@ -863,45 +781,7 @@ body {
             }
         }
 
-        .div24 {
-            @include sizes (480px, 500px);
-            margin: 0 auto;
-            margin-top: 40px;
-
-
-            img {
-                @include sizes (86%, 250px);
-            }
-
-            h2 {
-                font-size: 18pt;
-            }
-
-            p {
-                font-size: 14pt;
-            }
-        }
-
-        .div240 {
-            @include sizes (480px, 500px);
-            margin: 0 auto;
-            margin-top: 40px;
-
-
-            img {
-                @include sizes (86%, 250px);
-            }
-
-            h2 {
-                font-size: 18pt;
-            }
-
-            p {
-                font-size: 14pt;
-            }
-        }
-
-        .div25 {
+        .divR2 {
             margin: 0 auto;
             margin-top: 150px;
             margin-right: 60px;
@@ -924,11 +804,31 @@ body {
             }
         }
 
-        .div26 {
+        .divR3,
+        .divR4 {
+            @include sizes (480px, 500px);
+            margin: 0 auto;
+            margin-top: 20px;
+
+
+            img {
+                @include sizes (86%, 250px);
+            }
+
+            h2 {
+                font-size: 18pt;
+            }
+
+            p {
+                font-size: 14pt;
+            }
+        }
+
+        .divR5 {
             width: 98%;
             margin: 0 auto;
             margin-left: 10px;
-            margin-top: -190px;
+            margin-top: -140px;
 
             h2 {
                 font-size: 34pt;
@@ -945,27 +845,10 @@ body {
                 }
             }
         }
-
-        .div27 {
-            height: fit-content;
-            border: 2px solid;
-            width: fit-content;
-            margin-top: -80px;
-
-            img {
-                @include sizes (800px, 400px);
-            }
-        }
     }
-}
 
-/* ####################################### gracias.html ########################################## */
+    /* ####################################### gracias.html ########################################## */
 
-#gracias {
-    grid-area: gracias;
-}
-
-@media screen and (min-width:#{$laptop}) {
     .grilla8 {
         display: grid;
         grid-template-columns: 1fr;
@@ -989,7 +872,6 @@ body {
             margin-top: 800px;
         }
     }
-
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MOBILE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -1012,7 +894,7 @@ body {
     border-radius: 4px;
 }
 
-.div2 {
+.divI1 {
     width: 98%;
     margin: 0 auto;
     margin-top: 100px;
@@ -1025,7 +907,7 @@ body {
     }
 }
 
-.div3 {
+.divI2 {
     @include sizes (98%, 260px);
     margin: 0 auto;
     background-image: url('../img/diario.jpg');
@@ -1052,19 +934,7 @@ body {
     }
 }
 
-.div4 {
-    @include sizes (98%, 220px);
-    margin: 0 auto;
-    margin-top: 0px;
-    border: 2px solid black;
-
-    iframe {
-        width: 100%;
-        height: 215px;
-    }
-}
-
-.div5 {
+.divI3 {
     margin: 0 auto;
     margin-top: 20px;
     width: 98%;
@@ -1088,9 +958,22 @@ body {
     #tit {
         @extend .bot;
     }
+    
 }
 
-.div6 {
+.divI4 {
+    @include sizes (98%, 220px);
+    margin: 0 auto;
+    margin-top: 0px;
+    border: 2px solid black;
+
+    iframe {
+        width: 100%;
+        height: 215px;
+    }
+}
+
+.divI5 {
     margin: 0 auto;
     margin-top: 20px;
     width: 98%;
@@ -1101,7 +984,7 @@ body {
     }
 }
 
-.div7 {
+.divI6 {
     @include sizes (98%, 240px);
     margin: 0 auto;
     border: 2px solid black;
@@ -1174,7 +1057,7 @@ body {
 
 /* ####################################### PLANTILLA.html ########################################## */
 
-.div10 {
+.divP1 {
     margin-top: 120px;
 
     h2 {
@@ -1194,67 +1077,9 @@ body {
 
         thead {
             font-family: 'Teko2';
-            font-size: 9pt;
+            font-size: 10pt;
             color: map-get($colores, color-titulos);
         }
-    }
-}
-
-.div11 {
-    margin-top: 40px;
-
-    h2 {
-        font-size: 20pt;
-        margin-left: 5px;
-        font-family: 'Teko';
-        color: map-get($colores, color-titulos);
-    }
-
-    h3 {
-        font-size: 18pt;
-        margin-left: 5px;
-        font-family: 'Teko';
-        color: map-get($colores, color-titulos);
-    }
-
-    table {
-        font-size: 11pt;
-        width: 98%;
-        margin: 0 auto;
-        font-family: 'Teko2';
-        color: map-get($colores, color-texto-secundario);
-
-        thead {
-            font-family: 'Teko2';
-            font-size: 9pt;
-            color: map-get($colores, color-titulos);
-        }
-    }
-}
-
-.div12 {
-    img {
-        width: 98%;
-        margin: 0 auto;
-        margin-top: 15px;
-        margin-left: 4px;
-        border: 2px solid white;
-    }
-}
-
-.div13 {
-    border: 2px solid;
-    margin-top: 15px;
-    margin-left: 4px;
-    width: 98%;
-
-    p {
-        font-family: 'Teko2';
-        font-size: 14pt;
-        color: map-get($colores, color-texto-primario);
-        text-align: left;
-        margin: 0 auto;
-        width: 99%;
     }
 }
 
@@ -1319,20 +1144,21 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
     @extend .texto-Historia;
-    a{
-        float: right;
-        margin-right: 10px;
+
+    #sig {
+        @extend .bot;
     }
 }
 
-.divH5{
+.divH5 {
     margin-top: 50px;
     @extend .texto-Historia;
+
 }
 
 /* ####################################### TITULOS.html ########################################## */
 
-.div18 {
+.divT1 {
     margin-top: 120px;
 
     h2 {
@@ -1343,7 +1169,7 @@ body {
     }
 
     table {
-        font-size: 9pt;
+        font-size: 10pt;
         width: 98%;
         margin: 0 auto;
         font-family: 'Teko2';
@@ -1353,7 +1179,7 @@ body {
 
         thead {
             font-family: 'Teko2';
-            font-size: 6pt;
+            font-size: 10pt;
             color: map-get($colores, color-titulos);
         }
 
@@ -1368,7 +1194,7 @@ body {
     }
 }
 
-.div19 {
+.divT2 {
     margin-top: 40px;
 
     h2 {
@@ -1389,7 +1215,7 @@ body {
     }
 }
 
-.div190 {
+.divT3 {
     iframe {
         @include sizes (98%, 250px);
         margin: 0 auto;
@@ -1417,7 +1243,7 @@ body {
     margin-left: 5px;
 }
 
-.div20 {
+.divN1 {
     @include sizes (98%, fit-content);
     margin: 0 auto;
     margin-top: 20px;
@@ -1444,7 +1270,7 @@ body {
     }
 }
 
-.div21 {
+.divN2 {
     @include sizes (98%, fit-content);
     margin: 0 auto;
     margin-top: 20px;
@@ -1471,7 +1297,7 @@ body {
     }
 }
 
-.div22 {
+.divN3 {
     @include sizes (98%, fit-content);
     margin: 0 auto;
     margin-top: 20px;
@@ -1498,7 +1324,7 @@ body {
     }
 }
 
-.div30 {
+.divN4 {
     @include sizes (98%, fit-content);
     margin: 0 auto;
     margin-top: 20px;
@@ -1527,7 +1353,7 @@ body {
 
 /* ####################################### RESERVA.html ########################################## */
 
-.div23 {
+.divR1 {
     margin-top: 110px;
 
     .res {
@@ -1547,7 +1373,7 @@ body {
     }
 
     table {
-        font-size: 9pt;
+        font-size: 10pt;
         width: 98%;
         margin: 0 auto;
         font-family: 'Teko2';
@@ -1556,67 +1382,13 @@ body {
 
         thead {
             font-family: 'Teko2';
-            font-size: 8pt;
+            font-size: 9pt;
             color: map-get($colores, color-titulos);
         }
     }
 }
 
-.div24 {
-    @include sizes (98%, fit-content);
-    border: 5px solid;
-    margin: 0 auto;
-    margin-top: 20px;
-
-    img {
-        @include sizes (98%, 350px);
-        margin: 0 auto;
-        margin-top: 2px;
-        border: 2px solid;
-    }
-
-    h2 {
-        font-family: 'Teko';
-        font-size: 16.5pt;
-        text-align: center;
-        color: map-get($colores, color-texto-primario);
-    }
-
-    p {
-        font-family: 'Teko2';
-        font-size: 12pt;
-        color: map-get($colores, color-texto-primario);
-    }
-}
-
-.div240 {
-    @include sizes (98%, fit-content);
-    border: 5px solid;
-    margin: 0 auto;
-    margin-top: 20px;
-
-    img {
-        @include sizes (98%, 350px);
-        margin: 0 auto;
-        margin-top: 2px;
-        border: 2px solid;
-    }
-
-    h2 {
-        font-family: 'Teko';
-        font-size: 16.5pt;
-        text-align: center;
-        color: map-get($colores, color-texto-primario);
-    }
-
-    p {
-        font-family: 'Teko2';
-        font-size: 12pt;
-        color: map-get($colores, color-texto-primario);
-    }
-}
-
-.div25 {
+.divR2 {
     margin-top: 20px;
 
     h2 {
@@ -1641,7 +1413,61 @@ body {
     }
 }
 
-.div26 {
+.divR3 {
+    @include sizes (98%, fit-content);
+    border: 5px solid;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    img {
+        @include sizes (98%, 350px);
+        margin: 0 auto;
+        margin-top: 2px;
+        border: 2px solid;
+    }
+
+    h2 {
+        font-family: 'Teko';
+        font-size: 16.5pt;
+        text-align: center;
+        color: map-get($colores, color-texto-primario);
+    }
+
+    p {
+        font-family: 'Teko2';
+        font-size: 12pt;
+        color: map-get($colores, color-texto-primario);
+    }
+}
+
+.divR4 {
+    @include sizes (98%, fit-content);
+    border: 5px solid;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    img {
+        @include sizes (98%, 350px);
+        margin: 0 auto;
+        margin-top: 2px;
+        border: 2px solid;
+    }
+
+    h2 {
+        font-family: 'Teko';
+        font-size: 16.5pt;
+        text-align: center;
+        color: map-get($colores, color-texto-primario);
+    }
+
+    p {
+        font-family: 'Teko2';
+        font-size: 12pt;
+        color: map-get($colores, color-texto-primario);
+    }
+}
+
+.divR5 {
     margin-top: 20px;
 
     h2 {
@@ -1663,17 +1489,6 @@ body {
             font-size: 14pt;
             color: map-get($colores, color-titulos);
         }
-    }
-}
-
-.div27 {
-    margin-top: 20px;
-
-    img {
-        @include sizes (98%, 280px);
-        margin-left: 6px;
-        margin-top: 2px;
-        border: 2px solid;
     }
 }
 

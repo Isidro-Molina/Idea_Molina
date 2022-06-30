@@ -4,8 +4,8 @@
   .div1 nav .bokita {
     width: 55px;
     height: 55px;
-    float: right;
-    visibility: hidden; }
+    float: left;
+    margin-right: 15px; }
   .div1 nav h1 {
     font-family: 'Teko';
     font-size: 20pt;
@@ -19,41 +19,34 @@
     margin-bottom: -5px; }
   .div1 nav .navbar-toggler {
     margin-top: -45px;
-    float: right; }
-    .div1 nav .navbar-toggler .navbar-toggler-icon {
-      width: 7px;
-      height: 15px; }
-      .div1 nav .navbar-toggler .navbar-toggler-icon img {
-        margin-left: -24px;
-        margin-top: -19px;
-        width: 55px;
-        height: 55px; }
+    float: right;
+    border: 2px solid; }
   .div1 nav .menu .pag {
     margin-top: 5px;
     color: white;
     width: fit-content; }
 
 @media screen and (min-width: 1024px) {
-  .header .div1 nav, .grilla .div1 nav, .grilla2 .div1 nav, .grilla3 .div1 nav, .grillaH .div1 nav, .grillaH2 .div1 nav, .grilla5 .div1 nav, .grilla6 .div1 nav, .grilla7 .div1 nav, .grilla8 .div1 nav {
+  .header .div1 nav, .grilla .div1 nav, .grillaC .div1 nav, .grillaH .div1 nav, .grillaH2 .div1 nav, .grillaP .div1 nav, .grillaT .div1 nav, .grillaN .div1 nav, .grillaR .div1 nav, .grilla8 .div1 nav {
     border: 5px solid black; }
-  .header .div1 .bokita, .grilla .div1 .bokita, .grilla2 .div1 .bokita, .grilla3 .div1 .bokita, .grillaH .div1 .bokita, .grillaH2 .div1 .bokita, .grilla5 .div1 .bokita, .grilla6 .div1 .bokita, .grilla7 .div1 .bokita, .grilla8 .div1 .bokita {
+  .header .div1 .bokita, .grilla .div1 .bokita, .grillaC .div1 .bokita, .grillaH .div1 .bokita, .grillaH2 .div1 .bokita, .grillaP .div1 .bokita, .grillaT .div1 .bokita, .grillaN .div1 .bokita, .grillaR .div1 .bokita, .grilla8 .div1 .bokita {
     width: 90px;
     height: 100px;
     float: left;
     margin-left: -10px;
     visibility: visible; }
-  .header .div1 h1, .grilla .div1 h1, .grilla2 .div1 h1, .grilla3 .div1 h1, .grillaH .div1 h1, .grillaH2 .div1 h1, .grilla5 .div1 h1, .grilla6 .div1 h1, .grilla7 .div1 h1, .grilla8 .div1 h1 {
+  .header .div1 h1, .grilla .div1 h1, .grillaC .div1 h1, .grillaH .div1 h1, .grillaH2 .div1 h1, .grillaP .div1 h1, .grillaT .div1 h1, .grillaN .div1 h1, .grillaR .div1 h1, .grilla8 .div1 h1 {
     font-family: 'Teko';
     font-size: 30pt;
     width: 430px;
     margin-left: 90px; }
-  .header .div1 h2, .grilla .div1 h2, .grilla2 .div1 h2, .grilla3 .div1 h2, .grillaH .div1 h2, .grillaH2 .div1 h2, .grilla5 .div1 h2, .grilla6 .div1 h2, .grilla7 .div1 h2, .grilla8 .div1 h2 {
+  .header .div1 h2, .grilla .div1 h2, .grillaC .div1 h2, .grillaH .div1 h2, .grillaH2 .div1 h2, .grillaP .div1 h2, .grillaT .div1 h2, .grillaN .div1 h2, .grillaR .div1 h2, .grilla8 .div1 h2 {
     font-family: 'Teko';
     font-size: 22pt;
     width: 220px;
     margin-left: 90px;
     margin-top: -7px; }
-  .header .div1 .menu, .grilla .div1 .menu, .grilla2 .div1 .menu, .grilla3 .div1 .menu, .grillaH .div1 .menu, .grillaH2 .div1 .menu, .grilla5 .div1 .menu, .grilla6 .div1 .menu, .grilla7 .div1 .menu, .grilla8 .div1 .menu {
+  .header .div1 .menu, .grilla .div1 .menu, .grillaC .div1 .menu, .grillaH .div1 .menu, .grillaH2 .div1 .menu, .grillaP .div1 .menu, .grillaT .div1 .menu, .grillaN .div1 .menu, .grillaR .div1 .menu, .grilla8 .div1 .menu {
     font-size: 15pt;
     width: fit-content;
     border: 2px solid #ffc107;
@@ -61,9 +54,9 @@
     float: right;
     margin-top: -40px;
     margin-right: -5px; }
-    .header .div1 .menu .pag, .grilla .div1 .menu .pag, .grilla2 .div1 .menu .pag, .grilla3 .div1 .menu .pag, .grillaH .div1 .menu .pag, .grillaH2 .div1 .menu .pag, .grilla5 .div1 .menu .pag, .grilla6 .div1 .menu .pag, .grilla7 .div1 .menu .pag, .grilla8 .div1 .menu .pag {
+    .header .div1 .menu .pag, .grilla .div1 .menu .pag, .grillaC .div1 .menu .pag, .grillaH .div1 .menu .pag, .grillaH2 .div1 .menu .pag, .grillaP .div1 .menu .pag, .grillaT .div1 .menu .pag, .grillaN .div1 .menu .pag, .grillaR .div1 .menu .pag, .grilla8 .div1 .menu .pag {
       color: white; }
-      .header .div1 .menu .pag:hover, .grilla .div1 .menu .pag:hover, .grilla2 .div1 .menu .pag:hover, .grilla3 .div1 .menu .pag:hover, .grillaH .div1 .menu .pag:hover, .grillaH2 .div1 .menu .pag:hover, .grilla5 .div1 .menu .pag:hover, .grilla6 .div1 .menu .pag:hover, .grilla7 .div1 .menu .pag:hover, .grilla8 .div1 .menu .pag:hover {
+      .header .div1 .menu .pag:hover, .grilla .div1 .menu .pag:hover, .grillaC .div1 .menu .pag:hover, .grillaH .div1 .menu .pag:hover, .grillaH2 .div1 .menu .pag:hover, .grillaP .div1 .menu .pag:hover, .grillaT .div1 .menu .pag:hover, .grillaN .div1 .menu .pag:hover, .grillaR .div1 .menu .pag:hover, .grilla8 .div1 .menu .pag:hover {
         color: #ffc107; } }
 
 .div8 {
@@ -85,25 +78,25 @@
         margin: 0 auto; }
 
 @media screen and (min-width: 1024px) {
-  .footer .div8, .grilla .div8, .grilla2 .div8, .grilla3 .div8, .grillaH .div8, .grillaH2 .div8, .grilla5 .div8, .grilla6 .div8, .grilla7 .div8, .grilla8 .div8 {
+  .footer .div8, .grilla .div8, .grillaC .div8, .grillaH .div8, .grillaH2 .div8, .grillaP .div8, .grillaT .div8, .grillaN .div8, .grillaR .div8, .grilla8 .div8 {
     border-top: 2px solid black; }
-    .footer .div8 .pie section a, .grilla .div8 .pie section a, .grilla2 .div8 .pie section a, .grilla3 .div8 .pie section a, .grillaH .div8 .pie section a, .grillaH2 .div8 .pie section a, .grilla5 .div8 .pie section a, .grilla6 .div8 .pie section a, .grilla7 .div8 .pie section a, .grilla8 .div8 .pie section a {
+    .footer .div8 .pie section a, .grilla .div8 .pie section a, .grillaC .div8 .pie section a, .grillaH .div8 .pie section a, .grillaH2 .div8 .pie section a, .grillaP .div8 .pie section a, .grillaT .div8 .pie section a, .grillaN .div8 .pie section a, .grillaR .div8 .pie section a, .grilla8 .div8 .pie section a {
       border: none;
       width: 50px;
       height: 36px;
       transition: width 1s, height 1s; }
-      .footer .div8 .pie section a:hover, .grilla .div8 .pie section a:hover, .grilla2 .div8 .pie section a:hover, .grilla3 .div8 .pie section a:hover, .grillaH .div8 .pie section a:hover, .grillaH2 .div8 .pie section a:hover, .grilla5 .div8 .pie section a:hover, .grilla6 .div8 .pie section a:hover, .grilla7 .div8 .pie section a:hover, .grilla8 .div8 .pie section a:hover {
+      .footer .div8 .pie section a:hover, .grilla .div8 .pie section a:hover, .grillaC .div8 .pie section a:hover, .grillaH .div8 .pie section a:hover, .grillaH2 .div8 .pie section a:hover, .grillaP .div8 .pie section a:hover, .grillaT .div8 .pie section a:hover, .grillaN .div8 .pie section a:hover, .grillaR .div8 .pie section a:hover, .grilla8 .div8 .pie section a:hover {
         width: 65px;
         height: 40px; }
-    .footer .div8 .contacto, .grilla .div8 .contacto, .grilla2 .div8 .contacto, .grilla3 .div8 .contacto, .grillaH .div8 .contacto, .grillaH2 .div8 .contacto, .grilla5 .div8 .contacto, .grilla6 .div8 .contacto, .grilla7 .div8 .contacto, .grilla8 .div8 .contacto {
+    .footer .div8 .contacto, .grilla .div8 .contacto, .grillaC .div8 .contacto, .grillaH .div8 .contacto, .grillaH2 .div8 .contacto, .grillaP .div8 .contacto, .grillaT .div8 .contacto, .grillaN .div8 .contacto, .grillaR .div8 .contacto, .grilla8 .div8 .contacto {
       width: fit-content;
       margin: 0 auto; }
-      .footer .div8 .contacto h2, .grilla .div8 .contacto h2, .grilla2 .div8 .contacto h2, .grilla3 .div8 .contacto h2, .grillaH .div8 .contacto h2, .grillaH2 .div8 .contacto h2, .grilla5 .div8 .contacto h2, .grilla6 .div8 .contacto h2, .grilla7 .div8 .contacto h2, .grilla8 .div8 .contacto h2 {
+      .footer .div8 .contacto h2, .grilla .div8 .contacto h2, .grillaC .div8 .contacto h2, .grillaH .div8 .contacto h2, .grillaH2 .div8 .contacto h2, .grillaP .div8 .contacto h2, .grillaT .div8 .contacto h2, .grillaN .div8 .contacto h2, .grillaR .div8 .contacto h2, .grilla8 .div8 .contacto h2 {
         font-family: 'Teko';
         text-decoration: none;
         width: fit-content;
         margin: 0 auto; }
-        .footer .div8 .contacto h2:hover, .grilla .div8 .contacto h2:hover, .grilla2 .div8 .contacto h2:hover, .grilla3 .div8 .contacto h2:hover, .grillaH .div8 .contacto h2:hover, .grillaH2 .div8 .contacto h2:hover, .grilla5 .div8 .contacto h2:hover, .grilla6 .div8 .contacto h2:hover, .grilla7 .div8 .contacto h2:hover, .grilla8 .div8 .contacto h2:hover {
+        .footer .div8 .contacto h2:hover, .grilla .div8 .contacto h2:hover, .grillaC .div8 .contacto h2:hover, .grillaH .div8 .contacto h2:hover, .grillaH2 .div8 .contacto h2:hover, .grillaP .div8 .contacto h2:hover, .grillaT .div8 .contacto h2:hover, .grillaN .div8 .contacto h2:hover, .grillaR .div8 .contacto h2:hover, .grilla8 .div8 .contacto h2:hover {
           color: #e7e72e; } }
 
 * {
@@ -133,7 +126,6 @@ body {
   grid-area: footer; }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MEDIA QUERIES !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* ###################################### INDEX.html ########################################### */
 #fot {
   grid-area: fot; }
 
@@ -152,8 +144,66 @@ body {
 #sab {
   grid-area: sab; }
 
+#for {
+  grid-area: for; }
+
+#elClub {
+  grid-area: elClub; }
+
+#colores {
+  grid-area: colores; }
+
+#primera {
+  grid-area: primera; }
+
+#gira {
+  grid-area: gira; }
+
+#prof {
+  grid-area: prof; }
+
+#plantel {
+  grid-area: plantel; }
+
+#plantelG {
+  grid-area: plantelG; }
+
+#trofeos {
+  grid-area: trofeos; }
+
+#palermo {
+  grid-area: palermo; }
+
+#cor {
+  grid-area: cor; }
+
+#dyj {
+  grid-area: dyj; }
+
+#tig {
+  grid-area: tig; }
+
+#asa {
+  grid-area: asa; }
+
+#tabla {
+  grid-area: tabla; }
+
+#barr {
+  grid-area: barr; }
+
+#prox {
+  grid-area: prox; }
+
+#pibes {
+  grid-area: pibes; }
+
+#gracias {
+  grid-area: gracias; }
+
 @media screen and (min-width: 1024px) {
-  .bot2, .grilla .div3 #his, .grilla .div5 #tit, .grilla .div7 #not {
+  /* ###################################### INDEX.html ########################################### */
+  .bot2, .grilla .div3 #his, .grilla .div5 #tit, .grilla .div7 #not, .grillaH .divH4 #sig {
     width: 80px;
     height: 30px;
     margin-top: 55px;
@@ -284,68 +334,46 @@ body {
       .grilla .div7 #not:hover {
         background-color: #e7e72e;
         width: 85px;
-        height: 32px; } }
-
-/* ################################ CONTACTO.html ######################################## */
-#for {
-  grid-area: for; }
-
-@media screen and (min-width: 1024px) {
-  .grilla2 {
+        height: 32px; }
+  /* ################################ CONTACTO.html ######################################## */
+  .grillaC {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 78px 1fr 100px;
     column-gap: 0px;
     row-gap: 10px;
     grid-template-areas: "header" "for" "footer"; }
-    .grilla2 .div9 .formu {
+    .grillaC .divC1 .formu {
       width: 80%;
       height: fit-content;
       margin: 70px 0px 100px 15px;
       font-family: 'Teko2';
       font-size: 14pt; }
-      .grilla2 .div9 .formu h2 {
+      .grillaC .divC1 .formu h2 {
         font-family: 'Teko';
         font-size: 34pt;
         width: 98%;
         text-align: left; }
-      .grilla2 .div9 .formu .datos {
+      .grillaC .divC1 .formu .datos {
         float: left;
         width: 98%;
         margin: 0 auto; }
-        .grilla2 .div9 .formu .datos .nom {
+        .grillaC .divC1 .formu .datos .nom {
           margin-top: 20px; }
-        .grilla2 .div9 .formu .datos .ape {
+        .grillaC .divC1 .formu .datos .ape {
           margin-top: 30px; }
-        .grilla2 .div9 .formu .datos .mail {
+        .grillaC .divC1 .formu .datos .mail {
           margin-top: 30px; }
-        .grilla2 .div9 .formu .datos .tick {
+        .grillaC .divC1 .formu .datos .tick {
           margin-top: 30px; }
-        .grilla2 .div9 .formu .datos .opt {
+        .grillaC .divC1 .formu .datos .opt {
           margin-top: 30px; }
-        .grilla2 .div9 .formu .datos .cont {
+        .grillaC .divC1 .formu .datos .cont {
           margin-top: 30px; }
-        .grilla2 .div9 .formu .datos .env {
+        .grillaC .divC1 .formu .datos .env {
           margin-top: 40px;
-          margin-bottom: 20px; } }
-
-/* ####################################### HISTORIA.html ########################################## */
-#elClub {
-  grid-area: elClub; }
-
-#colores {
-  grid-area: colores; }
-
-#primera {
-  grid-area: primera; }
-
-#gira {
-  grid-area: gira; }
-
-#prof {
-  grid-area: prof; }
-
-@media screen and (min-width: 1024px) {
+          margin-bottom: 20px; }
+  /* ####################################### HISTORIA.html ########################################## */
   .textazo-HistoriaR h3, .grillaH .divH2 h3, .grillaH .divH4 h3 {
     text-align: right;
     font-size: 34pt;
@@ -419,9 +447,10 @@ body {
       margin-top: -210px; }
       .grillaH .divH4 img {
         margin-left: -2px; }
-      .grillaH .divH4 a {
-        margin-top: 40px;
-        float: right; }
+      .grillaH .divH4 #sig:hover {
+        background-color: #e7e72e;
+        width: 85px;
+        height: 32px; }
   .grillaH2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -432,324 +461,214 @@ body {
       width: 98%;
       height: fit-content;
       margin: 0 auto;
-      margin-top: 50px; } }
-
-/* ####################################### PLANTILLA.html ########################################## */
-#plantel {
-  grid-area: plantel; }
-
-#plantelG {
-  grid-area: plantelG; }
-
-#gremio {
-  grid-area: gremio; }
-
-#gremioT {
-  grid-area: gremioT; }
-
-@media screen and (min-width: 1024px) {
-  .grilla3 {
+      margin-top: 50px; }
+  /* ####################################### PLANTILLA.html ########################################## */
+  .grillaP {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 78px repeat(1, 1fr) 100px;
+    grid-template-rows: 78px 1fr 100px;
     row-gap: 10px;
     grid-template-areas: "header header" "plantel plantel" "footer footer"; }
-    .grilla3 .div10 {
+    .grillaP .divP1 {
       width: 98%;
       height: fit-content;
       margin: 0 auto;
       margin-top: 80px; }
-      .grilla3 .div10 h2 {
+      .grillaP .divP1 h2 {
         font-size: 34pt; }
-      .grilla3 .div10 table {
+      .grillaP .divP1 table {
         text-align: center;
         font-size: 14pt; }
-        .grilla3 .div10 table thead {
+        .grillaP .divP1 table thead {
           font-size: 18pt; }
-  /* ------------------------------------- PLANTELES -------------------------------------------------*/
-  .grilla3 .div11 {
-    width: 98%;
-    height: fit-content;
-    margin: 0 auto;
-    margin-top: 40px; }
-    .grilla3 .div11 h2 {
-      font-size: 34pt;
-      width: fit-content; }
-    .grilla3 .div11 h3 {
-      margin-top: 50px;
-      font-size: 28pt;
-      width: fit-content; }
-    .grilla3 .div11 table {
-      text-align: center;
-      font-size: 14pt; }
-      .grilla3 .div11 table thead {
-        font-size: 18pt; }
-  .grilla3 .div12 {
-    height: fit-content;
-    margin: 0 auto;
-    margin-top: -680px; }
-    .grilla3 .div12 img {
-      width: 98%;
-      border: 2px solid white; }
-  .grilla3 .div13 {
-    border: 2px solid black;
-    margin-top: -620px;
-    top: 0%;
-    height: 330.45px; }
-    .grilla3 .div13 p {
-      font-size: 18pt;
-      text-align: left;
-      margin: 0 auto;
-      margin-top: 15px;
-      width: 99%; } }
-
-/* ####################################### TITULOS.html ########################################## */
-#trofeos {
-  grid-area: trofeos; }
-
-#palermo {
-  grid-area: palermo; }
-
-@media screen and (min-width: 1024px) {
-  .grilla5 {
+  /* ####################################### TITULOS.html ########################################## */
+  .grillaT {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 78px 1fr 40rem 100px;
     row-gap: 0px;
     grid-template-areas: "header header" "trofeos trofeos" "palermo recuerdo" "footer footer"; }
-    .grilla5 .div18 {
+    .grillaT .divT1 {
       margin-top: 80px; }
-      .grilla5 .div18 h2 {
+      .grillaT .divT1 h2 {
         font-size: 34pt;
         margin-left: 15px; }
-      .grilla5 .div18 table {
+      .grillaT .divT1 table {
         text-align: center;
         font-size: 20pt; }
-        .grilla5 .div18 table thead {
+        .grillaT .divT1 table thead {
           font-size: 22pt; }
-        .grilla5 .div18 table img {
+        .grillaT .divT1 table img {
           margin: 0 auto;
           width: 40px;
           height: 60px; }
-    .grilla5 .div19 {
+    .grillaT .divT2 {
       width: 98%;
       height: 25rem;
       margin: 0 auto;
       margin-top: 140px; }
-      .grilla5 .div19 h2 {
+      .grillaT .divT2 h2 {
         font-size: 34pt;
         width: 90%;
         margin: 0 auto;
         margin-top: 10px; }
-      .grilla5 .div19 p {
+      .grillaT .divT2 p {
         font-size: 18pt;
         text-align: left;
         margin: 0 auto;
         margin-top: 15px;
         width: 98%;
         height: fit-content; }
-    .grilla5 .div190 {
+    .grillaT .divT3 {
       width: 98%;
       height: fit-content;
       margin: 0 auto;
       margin-top: 40px; }
-      .grilla5 .div190 iframe {
+      .grillaT .divT3 iframe {
         width: 98%;
         height: 280px;
         margin: 0 auto;
         margin-left: 6px;
         margin-top: 10px;
         border: 2px solid white; }
-      .grilla5 .div190 img {
+      .grillaT .divT3 img {
         width: 98%;
         height: 280px;
         margin: 0 auto;
         margin-left: 6px;
         margin-top: 10px;
         margin-bottom: 10px;
-        border: 2px solid white; } }
-
-/* ####################################### NOTICIAS.html ########################################## */
-#cor {
-  grid-area: cor; }
-
-#dyj {
-  grid-area: dyj; }
-
-#tig {
-  grid-area: tig; }
-
-#asa {
-  grid-area: asa; }
-
-@media screen and (min-width: 1024px) {
-  .grilla6 {
+        border: 2px solid white; }
+  /* ####################################### NOTICIAS.html ########################################## */
+  .grillaN {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 78px repeat(2, 1fr) 100px;
     gap: 24px;
     grid-template-areas: "header header" "not1 not2" "not3 not4" "footer footer"; }
-    .grilla6 .noti {
+    .grillaN .noti {
       font-size: 34pt;
       margin-left: 15px;
       margin-top: 60px; }
-    .grilla6 .div20 {
+    .grillaN .divN1 {
       height: 480px;
       margin-left: 10px; }
-      .grilla6 .div20 img {
+      .grillaN .divN1 img {
         width: 86%;
         height: 240px;
         margin: 0 auto;
         margin-top: 5px; }
-      .grilla6 .div20 h2 {
+      .grillaN .divN1 h2 {
         font-size: 22pt; }
-      .grilla6 .div20 p {
+      .grillaN .divN1 p {
         font-size: 16pt; }
-    .grilla6 .div21 {
+    .grillaN .divN2 {
       margin-top: 135px;
       margin-right: 10px;
       height: 480px; }
-      .grilla6 .div21 img {
+      .grillaN .divN2 img {
         width: 86%;
         height: 240px;
         margin: 0 auto;
         margin-top: 5px; }
-      .grilla6 .div21 h2 {
+      .grillaN .divN2 h2 {
         font-size: 22pt; }
-      .grilla6 .div21 p {
+      .grillaN .divN2 p {
         font-size: 16pt; }
-    .grilla6 .div22 {
+    .grillaN .divN3 {
       height: 480px;
       margin-left: 10px; }
-      .grilla6 .div22 img {
+      .grillaN .divN3 img {
         width: 86%;
         height: 240px;
         margin: 0 auto;
         margin-top: 5px; }
-      .grilla6 .div22 h2 {
+      .grillaN .divN3 h2 {
         font-size: 22pt; }
-      .grilla6 .div22 p {
+      .grillaN .divN3 p {
         font-size: 15pt; }
-    .grilla6 .div30 {
+    .grillaN .divN4 {
       height: 480px;
       margin-right: 10px; }
-      .grilla6 .div30 img {
+      .grillaN .divN4 img {
         width: 86%;
         height: 240px;
         margin: 0 auto;
         margin-top: 5px; }
-      .grilla6 .div30 h2 {
+      .grillaN .divN4 h2 {
         font-size: 22pt; }
-      .grilla6 .div30 p {
-        font-size: 16pt; } }
-
-/* ####################################### RESERVA.html ########################################## */
-#tabla {
-  grid-area: tabla; }
-
-#barr {
-  grid-area: barr; }
-
-#prox {
-  grid-area: prox; }
-
-#pibes {
-  grid-area: pibes; }
-
-#hur {
-  grid-area: hur; }
-
-@media screen and (min-width: 1024px) {
-  .grilla7 {
+      .grillaN .divN4 p {
+        font-size: 16pt; }
+  /* ####################################### RESERVA.html ########################################## */
+  .grillaR {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 78px repeat(5, 1fr) 100px;
+    grid-template-rows: 78px 60rem repeat(2, 700px) 1fr 100px;
     gap: 15px;
-    grid-template-areas: "header header" "tabla prox" "tabla prox" "notR1 notR2" "pibes pibes" "hur hur" "footer footer"; }
-    .grilla7 .div23 {
+    grid-template-areas: "header header" "tabla prox" "tabla prox" "notR1 notR2" "pibes pibes" "footer footer"; }
+    .grillaR .divR1 {
       margin-left: 10px;
       margin-top: 80px;
       height: fit-content; }
-      .grilla7 .div23 .res h2 {
+      .grillaR .divR1 .res h2 {
         font-size: 40pt;
         margin-left: 10px; }
-      .grilla7 .div23 h2 {
+      .grillaR .divR1 h2 {
         font-size: 34pt;
         margin-left: 10px; }
-      .grilla7 .div23 table {
+      .grillaR .divR1 table {
         margin: 0 auto;
         margin-left: 10px;
         text-align: center;
         font-size: 16pt; }
-        .grilla7 .div23 table thead {
+        .grillaR .divR1 table thead {
           font-size: 16pt; }
-    .grilla7 .div24 {
-      width: 480px;
-      height: 500px;
-      margin: 0 auto;
-      margin-top: 40px; }
-      .grilla7 .div24 img {
-        width: 86%;
-        height: 250px; }
-      .grilla7 .div24 h2 {
-        font-size: 18pt; }
-      .grilla7 .div24 p {
-        font-size: 14pt; }
-    .grilla7 .div240 {
-      width: 480px;
-      height: 500px;
-      margin: 0 auto;
-      margin-top: 40px; }
-      .grilla7 .div240 img {
-        width: 86%;
-        height: 250px; }
-      .grilla7 .div240 h2 {
-        font-size: 18pt; }
-      .grilla7 .div240 p {
-        font-size: 14pt; }
-    .grilla7 .div25 {
+    .grillaR .divR2 {
       margin: 0 auto;
       margin-top: 150px;
       margin-right: 60px;
       height: fit-content; }
-      .grilla7 .div25 h2 {
+      .grillaR .divR2 h2 {
         font-size: 34pt;
         text-align: center; }
-      .grilla7 .div25 table {
+      .grillaR .divR2 table {
         margin: 0 auto;
         width: 430px;
         text-align: center;
         font-size: 14pt; }
-        .grilla7 .div25 table thead {
+        .grillaR .divR2 table thead {
           font-size: 18pt; }
-    .grilla7 .div26 {
+    .grillaR .divR3,
+    .grillaR .divR4 {
+      width: 480px;
+      height: 500px;
+      margin: 0 auto;
+      margin-top: 20px; }
+      .grillaR .divR3 img,
+      .grillaR .divR4 img {
+        width: 86%;
+        height: 250px; }
+      .grillaR .divR3 h2,
+      .grillaR .divR4 h2 {
+        font-size: 18pt; }
+      .grillaR .divR3 p,
+      .grillaR .divR4 p {
+        font-size: 14pt; }
+    .grillaR .divR5 {
       width: 98%;
       margin: 0 auto;
       margin-left: 10px;
-      margin-top: -190px; }
-      .grilla7 .div26 h2 {
+      margin-top: -140px; }
+      .grillaR .divR5 h2 {
         font-size: 34pt;
         font-family: 'Teko'; }
-      .grilla7 .div26 table {
+      .grillaR .divR5 table {
         text-align: center;
         font-size: 14pt;
         width: 98%; }
-        .grilla7 .div26 table thead {
+        .grillaR .divR5 table thead {
           font-size: 18pt; }
-    .grilla7 .div27 {
-      height: fit-content;
-      border: 2px solid;
-      width: fit-content;
-      margin-top: -80px; }
-      .grilla7 .div27 img {
-        width: 800px;
-        height: 400px; } }
-
-/* ####################################### gracias.html ########################################## */
-#gracias {
-  grid-area: gracias; }
-
-@media screen and (min-width: 1024px) {
+  /* ####################################### gracias.html ########################################## */
   .grilla8 {
     display: grid;
     grid-template-columns: 1fr;
@@ -767,7 +686,7 @@ body {
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MOBILE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /* ####################################### INDEX.html ########################################## */
-.bot, .div3 #his, .div5 #tit, .div7 #not {
+.bot, .divI2 #his, .divI3 #tit, .divI6 #not, .divH4 #sig {
   width: 80px;
   margin-top: 10px;
   margin-right: 10px;
@@ -782,29 +701,29 @@ body {
   border: 2px solid black;
   border-radius: 4px; }
 
-.div2 {
+.divI1 {
   width: 98%;
   margin: 0 auto;
   margin-top: 100px;
   border: 2px solid black;
   background-image: url("../img/diario.jpg"); }
-  .div2 .fotos {
+  .divI1 .fotos {
     width: 100%;
     height: 250px;
     margin: 0 auto; }
 
-.div3 {
+.divI2 {
   width: 98%;
   height: 260px;
   margin: 0 auto;
   background-image: url("../img/diario.jpg");
   border: 2px solid black; }
-  .div3 h2 {
+  .divI2 h2 {
     margin-top: 20px;
     font-family: 'Teko';
     color: black;
     text-align: center; }
-  .div3 p {
+  .divI2 p {
     font-size: 11pt;
     font-family: 'Teko2';
     text-align: left;
@@ -812,53 +731,53 @@ body {
     margin-left: 4px;
     color: black; }
 
-.div4 {
-  width: 98%;
-  height: 220px;
-  margin: 0 auto;
-  margin-top: 0px;
-  border: 2px solid black; }
-  .div4 iframe {
-    width: 100%;
-    height: 215px; }
-
-.div5 {
+.divI3 {
   margin: 0 auto;
   margin-top: 20px;
   width: 98%;
   border: 2px solid black; }
-  .div5 h2 {
+  .divI3 h2 {
     margin-top: 20px;
     color: black;
     font-family: 'Teko';
     text-align: center; }
-  .div5 p {
+  .divI3 p {
     font-size: 14pt;
     font-family: 'Teko2';
     text-align: left;
     margin-left: 4px;
     color: black; }
 
-.div6 {
+.divI4 {
+  width: 98%;
+  height: 220px;
+  margin: 0 auto;
+  margin-top: 0px;
+  border: 2px solid black; }
+  .divI4 iframe {
+    width: 100%;
+    height: 215px; }
+
+.divI5 {
   margin: 0 auto;
   margin-top: 20px;
   width: 98%;
   border: 2px solid black; }
-  .div6 img {
+  .divI5 img {
     width: 100%; }
 
-.div7 {
+.divI6 {
   width: 98%;
   height: 240px;
   margin: 0 auto;
   border: 2px solid black; }
-  .div7 h2 {
+  .divI6 h2 {
     font-size: 20pt;
     margin-top: 20px;
     color: black;
     font-family: 'Teko';
     text-align: center; }
-  .div7 p {
+  .divI6 p {
     font-size: 13pt;
     font-family: 'Teko2';
     text-align: left;
@@ -897,67 +816,24 @@ body {
       margin-top: 20px; }
 
 /* ####################################### PLANTILLA.html ########################################## */
-.div10 {
+.divP1 {
   margin-top: 120px; }
-  .div10 h2 {
+  .divP1 h2 {
     font-size: 20pt;
     margin-left: 5px;
     font-family: 'Teko';
     color: #ffe100; }
-  .div10 table {
+  .divP1 table {
     font-size: 11pt;
     width: 98%;
     margin: 0 auto;
     font-family: 'Teko2';
     color: white;
     text-align: center; }
-    .div10 table thead {
+    .divP1 table thead {
       font-family: 'Teko2';
-      font-size: 9pt;
+      font-size: 10pt;
       color: #ffe100; }
-
-.div11 {
-  margin-top: 40px; }
-  .div11 h2 {
-    font-size: 20pt;
-    margin-left: 5px;
-    font-family: 'Teko';
-    color: #ffe100; }
-  .div11 h3 {
-    font-size: 18pt;
-    margin-left: 5px;
-    font-family: 'Teko';
-    color: #ffe100; }
-  .div11 table {
-    font-size: 11pt;
-    width: 98%;
-    margin: 0 auto;
-    font-family: 'Teko2';
-    color: white; }
-    .div11 table thead {
-      font-family: 'Teko2';
-      font-size: 9pt;
-      color: #ffe100; }
-
-.div12 img {
-  width: 98%;
-  margin: 0 auto;
-  margin-top: 15px;
-  margin-left: 4px;
-  border: 2px solid white; }
-
-.div13 {
-  border: 2px solid;
-  margin-top: 15px;
-  margin-left: 4px;
-  width: 98%; }
-  .div13 p {
-    font-family: 'Teko2';
-    font-size: 14pt;
-    color: black;
-    text-align: left;
-    margin: 0 auto;
-    width: 99%; }
 
 /* ####################################### HISTORIA.html ########################################## */
 .texto-Historia h3, .divH1 h3, .divH2 h3, .divH3 h3, .divH4 h3, .divH5 h3 {
@@ -1004,48 +880,45 @@ body {
 .divH4 {
   margin-top: 50px;
   margin-bottom: 50px; }
-  .divH4 a {
-    float: right;
-    margin-right: 10px; }
 
 .divH5 {
   margin-top: 50px; }
 
 /* ####################################### TITULOS.html ########################################## */
-.div18 {
+.divT1 {
   margin-top: 120px; }
-  .div18 h2 {
+  .divT1 h2 {
     font-size: 24pt;
     font-family: 'Teko';
     color: #ffe100;
     margin-left: 5px; }
-  .div18 table {
-    font-size: 9pt;
+  .divT1 table {
+    font-size: 10pt;
     width: 98%;
     margin: 0 auto;
     font-family: 'Teko2';
     color: white;
     text-align: center;
     vertical-align: middle; }
-    .div18 table thead {
+    .divT1 table thead {
       font-family: 'Teko2';
-      font-size: 6pt;
+      font-size: 10pt;
       color: #ffe100; }
-    .div18 table a {
+    .divT1 table a {
       text-decoration: underline goldenrod;
       color: white; }
-    .div18 table img {
+    .divT1 table img {
       width: 30px;
       height: 40px; }
 
-.div19 {
+.divT2 {
   margin-top: 40px; }
-  .div19 h2 {
+  .divT2 h2 {
     font-size: 24pt;
     font-family: 'Teko';
     color: #ffe100;
     text-align: center; }
-  .div19 p {
+  .divT2 p {
     font-size: 14pt;
     font-family: 'Teko2';
     color: black;
@@ -1054,7 +927,7 @@ body {
     margin: 0 auto;
     margin-top: 10px; }
 
-.div190 iframe {
+.divT3 iframe {
   width: 98%;
   height: 250px;
   margin: 0 auto;
@@ -1062,7 +935,7 @@ body {
   margin-top: 5px;
   border: 2px solid white; }
 
-.div190 img {
+.divT3 img {
   width: 98%;
   height: 200px;
   margin: 0 auto;
@@ -1078,207 +951,198 @@ body {
   color: #ffe100;
   margin-left: 5px; }
 
-.div20 {
+.divN1 {
   width: 98%;
   height: fit-content;
   margin: 0 auto;
   margin-top: 20px;
   border: 5px solid; }
-  .div20 img {
+  .divN1 img {
     width: 98%;
     height: 280px;
     margin: 0 auto;
     margin-top: 2px;
     border: 2px solid; }
-  .div20 h2 {
+  .divN1 h2 {
     font-family: 'Teko';
     font-size: 16.5pt;
     text-align: center;
     color: black; }
-  .div20 p {
+  .divN1 p {
     font-family: 'Teko2';
     font-size: 14pt;
     color: black; }
 
-.div21 {
+.divN2 {
   width: 98%;
   height: fit-content;
   margin: 0 auto;
   margin-top: 20px;
   border: 5px solid; }
-  .div21 img {
+  .divN2 img {
     width: 98%;
     height: 280px;
     margin: 0 auto;
     margin-top: 2px;
     border: 2px solid; }
-  .div21 h2 {
+  .divN2 h2 {
     font-family: 'Teko';
     font-size: 16.5pt;
     text-align: center;
     color: black; }
-  .div21 p {
+  .divN2 p {
     font-family: 'Teko2';
     font-size: 14pt;
     color: black; }
 
-.div22 {
+.divN3 {
   width: 98%;
   height: fit-content;
   margin: 0 auto;
   margin-top: 20px;
   border: 5px solid; }
-  .div22 img {
+  .divN3 img {
     width: 98%;
     height: 280px;
     margin: 0 auto;
     margin-top: 2px;
     border: 2px solid; }
-  .div22 h2 {
+  .divN3 h2 {
     font-family: 'Teko';
     font-size: 16.5pt;
     text-align: center;
     color: black; }
-  .div22 p {
+  .divN3 p {
     font-family: 'Teko2';
     font-size: 14pt;
     color: black; }
 
-.div30 {
+.divN4 {
   width: 98%;
   height: fit-content;
   margin: 0 auto;
   margin-top: 20px;
   border: 5px solid; }
-  .div30 img {
+  .divN4 img {
     width: 98%;
     height: 280px;
     margin: 0 auto;
     margin-top: 2px;
     border: 2px solid; }
-  .div30 h2 {
+  .divN4 h2 {
     font-family: 'Teko';
     font-size: 16.5pt;
     text-align: center;
     color: black; }
-  .div30 p {
+  .divN4 p {
     font-family: 'Teko2';
     font-size: 14pt;
     color: black; }
 
 /* ####################################### RESERVA.html ########################################## */
-.div23 {
+.divR1 {
   margin-top: 110px; }
-  .div23 .res h2 {
+  .divR1 .res h2 {
     font-size: 24pt;
     margin-left: 5px;
     font-family: 'Teko';
     color: #ffe100; }
-  .div23 h2 {
+  .divR1 h2 {
     font-size: 20pt;
     margin-left: 5px;
     font-family: 'Teko';
     color: #ffe100; }
-  .div23 table {
-    font-size: 9pt;
+  .divR1 table {
+    font-size: 10pt;
     width: 98%;
     margin: 0 auto;
     font-family: 'Teko2';
     color: white;
     text-align: center; }
-    .div23 table thead {
+    .divR1 table thead {
       font-family: 'Teko2';
-      font-size: 8pt;
+      font-size: 9pt;
       color: #ffe100; }
 
-.div24 {
-  width: 98%;
-  height: fit-content;
-  border: 5px solid;
-  margin: 0 auto;
+.divR2 {
   margin-top: 20px; }
-  .div24 img {
-    width: 98%;
-    height: 350px;
-    margin: 0 auto;
-    margin-top: 2px;
-    border: 2px solid; }
-  .div24 h2 {
-    font-family: 'Teko';
-    font-size: 16.5pt;
-    text-align: center;
-    color: black; }
-  .div24 p {
-    font-family: 'Teko2';
-    font-size: 12pt;
-    color: black; }
-
-.div240 {
-  width: 98%;
-  height: fit-content;
-  border: 5px solid;
-  margin: 0 auto;
-  margin-top: 20px; }
-  .div240 img {
-    width: 98%;
-    height: 350px;
-    margin: 0 auto;
-    margin-top: 2px;
-    border: 2px solid; }
-  .div240 h2 {
-    font-family: 'Teko';
-    font-size: 16.5pt;
-    text-align: center;
-    color: black; }
-  .div240 p {
-    font-family: 'Teko2';
-    font-size: 12pt;
-    color: black; }
-
-.div25 {
-  margin-top: 20px; }
-  .div25 h2 {
+  .divR2 h2 {
     font-size: 24pt;
     margin-left: 5px;
     font-family: 'Teko';
     color: #ffe100; }
-  .div25 table {
+  .divR2 table {
     font-size: 14pt;
     width: 98%;
     margin: 0 auto;
     font-family: 'Teko2';
     color: white; }
-    .div25 table thead {
+    .divR2 table thead {
       font-family: 'Teko2';
       font-size: 16pt;
       color: #ffe100; }
 
-.div26 {
+.divR3 {
+  width: 98%;
+  height: fit-content;
+  border: 5px solid;
+  margin: 0 auto;
   margin-top: 20px; }
-  .div26 h2 {
+  .divR3 img {
+    width: 98%;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 2px;
+    border: 2px solid; }
+  .divR3 h2 {
+    font-family: 'Teko';
+    font-size: 16.5pt;
+    text-align: center;
+    color: black; }
+  .divR3 p {
+    font-family: 'Teko2';
+    font-size: 12pt;
+    color: black; }
+
+.divR4 {
+  width: 98%;
+  height: fit-content;
+  border: 5px solid;
+  margin: 0 auto;
+  margin-top: 20px; }
+  .divR4 img {
+    width: 98%;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 2px;
+    border: 2px solid; }
+  .divR4 h2 {
+    font-family: 'Teko';
+    font-size: 16.5pt;
+    text-align: center;
+    color: black; }
+  .divR4 p {
+    font-family: 'Teko2';
+    font-size: 12pt;
+    color: black; }
+
+.divR5 {
+  margin-top: 20px; }
+  .divR5 h2 {
     font-size: 24pt;
     margin-left: 5px;
     font-family: 'Teko';
     color: #ffe100; }
-  .div26 table {
+  .divR5 table {
     font-size: 12pt;
     width: 98%;
     margin: 0 auto;
     font-family: 'Teko2';
     color: white; }
-    .div26 table thead {
+    .divR5 table thead {
       font-family: 'Teko';
       font-size: 14pt;
       color: #ffe100; }
-
-.div27 {
-  margin-top: 20px; }
-  .div27 img {
-    width: 98%;
-    height: 280px;
-    margin-left: 6px;
-    margin-top: 2px;
-    border: 2px solid; }
 
 /* ####################################### gracias.html ########################################## */
 .grilla8 .div000 {
