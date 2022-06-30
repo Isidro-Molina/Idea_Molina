@@ -203,7 +203,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   /* ###################################### INDEX.html ########################################### */
-  .bot2, .grilla .div3 #his, .grilla .div5 #tit, .grilla .div7 #not, .grillaH .divH4 #sig {
+  .bot2, .grilla .divI2 #his, .grilla .divI3 #tit, .grilla .divI6 #not, .grillaH .divH4 #sig {
     width: 80px;
     height: 30px;
     margin-top: 55px;
@@ -221,7 +221,7 @@ body {
     grid-template-rows: 78px repeat(3, 1fr) 100px;
     row-gap: 15px;
     grid-template-areas: "header header" "fot club" "rom vid" "tig sab" "footer footer"; }
-    .grilla .div2 {
+    .grilla .divI1 {
       width: 99%;
       height: 360px;
       margin: 0 auto;
@@ -229,11 +229,11 @@ body {
       margin-left: 12px;
       border: 2px solid black;
       background-image: url("../img/diario.jpg"); }
-      .grilla .div2 .fotos {
+      .grilla .divI1 .fotos {
         width: 480px;
         height: 320px;
         margin: 0 auto; }
-    .grilla .div3 {
+    .grilla .divI2 {
       width: 99%;
       height: 360px;
       margin: 0 auto;
@@ -241,36 +241,22 @@ body {
       margin-right: 12px;
       background-image: url("../img/diario.jpg");
       border: 2px solid black; }
-      .grilla .div3 h2 {
+      .grilla .divI2 h2 {
         margin-top: 20px;
         font-family: 'Teko';
         font-size: 28pt;
         text-align: center; }
-      .grilla .div3 p {
+      .grilla .divI2 p {
         font-size: 14pt;
         width: 98%;
         margin: 0 auto;
         font-family: 'Teko2';
         text-align: left; }
-      .grilla .div3 #his:hover {
+      .grilla .divI2 #his:hover {
         background-color: #e7e72e;
         width: 85px;
         height: 32px; }
-    .grilla .div4 {
-      width: 99%;
-      height: 360px;
-      margin: 0 auto;
-      margin-top: 10px;
-      margin-right: 12px;
-      border: 2px solid black; }
-      .grilla .div4 iframe {
-        width: 95%;
-        height: 320px;
-        margin: 0 auto;
-        margin-top: 16px;
-        margin-left: 20px;
-        border: 2px solid white; }
-    .grilla .div5 {
+    .grilla .divI3 {
       width: 99%;
       height: 360px;
       border: 2px solid black;
@@ -278,25 +264,39 @@ body {
       margin: 0 auto;
       margin-top: 10px;
       margin-left: 12px; }
-      .grilla .div5 h2 {
+      .grilla .divI3 h2 {
         width: 97%;
         margin: 0 auto;
         margin-top: 20px;
         font-family: 'Teko';
         font-size: 28pt;
         text-align: center; }
-      .grilla .div5 p {
+      .grilla .divI3 p {
         font-size: 18pt;
         width: 97%;
         margin: 0 auto;
         margin-top: 10px;
         font-family: 'Teko2';
         text-align: left; }
-      .grilla .div5 #tit:hover {
+      .grilla .divI3 #tit:hover {
         background-color: #e7e72e;
         width: 85px;
         height: 32px; }
-    .grilla .div6 {
+    .grilla .divI4 {
+      width: 99%;
+      height: 360px;
+      margin: 0 auto;
+      margin-top: 10px;
+      margin-right: 12px;
+      border: 2px solid black; }
+      .grilla .divI4 iframe {
+        width: 95%;
+        height: 320px;
+        margin: 0 auto;
+        margin-top: 16px;
+        margin-left: 20px;
+        border: 2px solid white; }
+    .grilla .divI5 {
       width: 99%;
       height: 360px;
       margin: 0 auto;
@@ -304,34 +304,34 @@ body {
       margin-top: -30px;
       border: 2px solid black;
       border-right: none; }
-      .grilla .div6 img {
+      .grilla .divI5 img {
         width: 96%;
         height: 320px;
         margin-top: 15px;
         margin-left: 13px;
         border: 2px solid white; }
-    .grilla .div7 {
+    .grilla .divI6 {
       width: 99%;
       height: 360px;
       margin: 0 auto;
       margin-right: 12px;
       margin-top: -30px;
       border: 2px solid black; }
-      .grilla .div7 h2 {
+      .grilla .divI6 h2 {
         margin: 0 auto;
         margin-top: 20px;
         width: 97%;
         font-family: 'Teko';
         font-size: 24pt;
         text-align: center; }
-      .grilla .div7 p {
+      .grilla .divI6 p {
         margin: 0 auto;
         margin-top: 10px;
         width: 97%;
         font-size: 16pt;
         font-family: 'Teko2';
         text-align: left; }
-      .grilla .div7 #not:hover {
+      .grilla .divI6 #not:hover {
         background-color: #e7e72e;
         width: 85px;
         height: 32px; }
